@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.stone4.criterios.LiquidosM2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_m2"
+                style="@style/DivisaoOrienta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/tv_m2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tanques"
+                style="@style/DivisaoOrienta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#FF5722"
+                android:hint="@string/tv_tanques"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/ck_liquidos1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:checked="false"
+                android:gravity="center"
+                android:hint="@string/bt_liquidos1"
+                android:onClick="onClic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColorHint="#FF5722"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/ck_liquidos2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:hint="@string/bt_liquidos2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColorHint="#FF5722"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:checked="false"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:onClick="onClic"
+                />
+
+            <TextView
+                android:id="@+id/tv_produtos"
+                style="@style/DivisaoOrienta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#009688"
+                android:hint="@string/tv_produtos"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/ck_produtos1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:hint="@string/bt_produtos1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColorHint="#009688"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:checked="false"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:onClick="onClic"
+                />
+
+            <CheckedTextView
+                android:id="@+id/ck_produtos2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:hint="@string/bt_produtos2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColorHint="#009688"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:checked="false"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:onClick="onClic"
+                />
+
+            <TextView
+                android:id="@+id/tv_plataforma"
+                style="@style/DivisaoOrienta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#8BC34A"
+                android:hint="@string/bt_plataforma"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/ck_plataforma"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:hint="@string/bt_plataforma"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColorHint="#8BC34A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:checked="false"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:onClick="onClic"
+                />
+
+            <Button
+                android:id="@+id/bt_prosM2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_prosseguir"
+                style="@style/button_Divisao"
+                android:onClick="onClicBt"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

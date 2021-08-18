@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="br.com.stone4.divisoes.DivisaoF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lay_vert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_divf"
+                style="@style/DivisaoOrienta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/tv_divaorienta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/F1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F1"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/purple_200" />
+
+            <Button
+                android:id="@+id/F2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F2"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/purple_700" />
+
+            <Button
+                android:id="@+id/F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F3"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/teal_200" />
+
+            <Button
+                android:id="@+id/F4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F4"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/design_default_color_error" />
+
+            <Button
+                android:id="@+id/F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F5"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/F6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F6"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/holo_orange_dark" />
+
+            <Button
+                android:id="@+id/F7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F7"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/holo_purple" />
+
+            <Button
+                android:id="@+id/F8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F8"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/holo_red_light" />
+
+            <Button
+                android:id="@+id/F9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F9"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/purple_700" />
+
+            <Button
+                android:id="@+id/F10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F10"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/F11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_F11"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

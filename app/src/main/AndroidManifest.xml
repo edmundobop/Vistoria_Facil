@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.stone4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vistoria"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/vistoria"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SESCIP_Vistorias">
+
+        <activity android:name=".Resultado_Detalhes2"
+            android:label="Detalhes"
+            android:parentActivityName=".Resultado">
+        </activity>
+
+        <activity
+            android:name=".Resultado_Detalhes"
+            android:label="Detalhes"
+            android:parentActivityName=".Resultado"></activity>
+        <activity
+            android:name=".criterios.Prisoes"
+            android:label="Prisões"
+            android:parentActivityName=".criterios.Altura" />
+        <activity android:name=".cert_previa2" />
+        <activity
+            android:name=".criterios.Publico"
+            android:label="Público"
+            android:parentActivityName=".criterios.Altura" />
+        <activity
+            android:name=".criterios.Deteccao_F4"
+            android:label="Divisão F4"
+            android:parentActivityName=".criterios.Altura" />
+        <activity
+            android:name=".criterios.Alojameos"
+            android:label="Depósito"
+            android:parentActivityName=".criterios.Altura" />
+        <activity
+            android:name=".criterios.Deposito"
+            android:label="Depósito"
+            android:parentActivityName=".criterios.Altura" />
+        <activity
+            android:name=".criterios.LiquidosM2"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".criterios.Tunel_M1"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".Resultado"
+            android:label="Vistoria Inteligente"
+            android:launchMode="singleTop"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".criterios.Pavimentos"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".criterios.Lotacao" />
+        <activity
+            android:name=".criterios.Lotacao"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".criterios.Altura" />
+        <activity
+            android:name=".divisoes.DivisaoN"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoM"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoL"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoJ"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoI"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoH"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoG"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoF"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoE"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoD"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoC"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoB"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".divisoes.DivisaoA"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".criterios.Altura"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".criterios.Area" />
+        <activity
+            android:name=".criterios.Area"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".VistoriaInteligente" />
+        <activity
+            android:name=".PassoApasso"
+            android:label="Passo-a-Passo"
+            android:parentActivityName=".Vistorias" />
+        <activity
+            android:name=".Cert_Previa"
+            android:label="Certificação Prévia"
+            android:parentActivityName=".Vistorias" />
+        <activity
+            android:name=".VistoriaInteligente"
+            android:label="Vistoria Inteligente"
+            android:parentActivityName=".Vistorias" />
+        <activity
+            android:name=".Vistorias"
+            android:label="Vistorias"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

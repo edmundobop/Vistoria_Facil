@@ -1,0 +1,392 @@
+<resources>
+    <string name="app_name">Vistoria Fácil</string>
+    <string name="button_vistorias">VISTORIA</string>
+    <string name="button_Vistoriador">VISTORIA INTELIGENTE</string>
+    <string name="button_ConsultaRapida">CONSULTA RÁPIDA</string>
+    <string name="button_passoaPasso">SOLICITAR VISTORIA: PASSO-A-PASSO</string>
+    <string name="button_certPrevia">CERTIFICAÇÃO PRÉVIA</string>
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // Tela Vistoria Inteligente
+    // título da guia
+    <string name="tv_Tguia">Vistoria Inteligente</string>
+    // sub-título
+    <string name="tv_orienta">Escolha o Tipo Da Edificação</string>
+    // botôes
+    <string name="button_A">A-Residêncial</string>
+    <string name="button_B">B-Serviços De Hospedagem</string>
+    <string name="button_C">C-Comercial</string>
+    <string name="button_D">D-Serviço Profissional</string>
+    <string name="button_E">E-Educacional E Cultura Física</string>
+    <string name="button_F">F-Local De Reunião De Público</string>
+    <string name="button_G">G-Serviço Automotivo E Assemelhados</string>
+    <string name="button_H">H-Serviço De Saúde E Institucional</string>
+    <string name="button_I">I-Indústria</string>
+    <string name="button_J">J-Depósito</string>
+    <string name="button_L">L-Explosivos</string>
+    <string name="button_M">M-Especial</string>
+    <string name="button_N">N-Setor Primário</string>
+
+    // Tela Vistoria Inteligente - Divisões
+    // título da guia
+    <string name="tv_divaorienta">Especifique o Tipo Da Edificação</string>
+    // botôes Divisão A
+    <string name="button_A1">A-1:Habitação unifamiliar: Condomínios de casas térreas ou assobradadas isoladas e assemelhados</string>
+    <string name="button_A2">A-2:Habitação multifamiliar: Condomínios de casas térreas ou assobradadas não isoladas, edifícios de apartamentos em geral e condomínios verticais e assemelhados</string>
+    <string name="button_A3">A-3:Habitação coletiva: Pensionatos, internatos, alojamentos, mosteiros, conventos, residências geriátricas. Todos com capacidade máxima de 16 leitos e assemelhados</string>
+    // botôes Divisão B
+    <string name="button_B1">B-1:Hotel e assemelhado: Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos e divisão A3 com mais de 16 leitos e assemelhados</string>
+    <string name="button_B2">B-2:Hotel residencial: Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se apart-hotéis, flats, hotéis residenciais) e assemelhados</string>
+    // botôes Divisão C
+    <string name="button_C1">C-1:Comércio com baixa carga de incêndio: Armarinhos, artigos de metal, louças, artigos hospitalares e outros</string>
+    <string name="button_C2">C-2:Comércio com média e alta carga de incêndio: Edifícios de lojas de departamentos, magazines, galerias comerciais, supermercados em geral, mercados e outros</string>
+    <string name="button_C3">C-3:Shoppings centers: Centro de compras em geral, feiras permanentes, shopping centers e outros</string>
+
+    // botôes Divisão D
+    <string name="button_D1">D-1:Local para prestação de serviço profissional ou condução de negócios. Administração pública em geral.</string>
+    <string name="button_D2">D-2:Agência bancária: Agências bancárias e assemelhadas.</string>
+    <string name="button_D3">D-3:Serviço de reparação (exceto os classificados em G-4): Lavanderias, assistência técnica, reparação e
+manutenção de aparelhos eletrodomésticos, chaveiros, pintura de letreiros e outros.</string>
+    <string name="button_D4">D-4:Laboratório: Laboratórios de análises clínicas sem internação, laboratórios químicos,
+fotográficos e assemelhados.</string>
+
+    // botôes Divisão E
+    <string name="button_E1">E-1:Escola em geral: Escolas de primeiro, segundo e terceiro
+graus, cursos supletivos, pré-universitários e assemelhados.</string>
+    <string name="button_E2">E-2:Escola especial: Escolas de artes e artesanato, de línguas, de
+cultura geral, de cultura estrangeira, escolas religiosas e assemelhados.</string>
+    <string name="button_E3">E-3:Espaço para cultura física: Locais de ensino e/ou práticas de artes
+marciais, ginásticas (artística, dança, musculação e outros) esportes coletivos (tênis, futebol e outros que não estejam
+incluídos em F-3), sauna, casas de fisioterapia e assemelhados.</string>
+    <string name="button_E4">E-4:Centro de treinamento profissional: Escolas profissionais em geral.</string>
+    <string name="button_E5">E-5:Pré-escola: Creches, escolas maternais e de educação infantil e assemelhados.</string>
+    <string name="button_E6">E-6:Escola para portadores de deficiências: Escolas para excepcionais, deficientes
+visuais e auditivos e assemelhados.</string>
+
+    // botôes Divisão F
+    <string name="button_F1">F-1:Local onde há objeto de valor inestimável: Museus, centro de documentos históricos,
+bibliotecas e assemelhados.</string>
+    <string name="button_F2">F-2:Local religioso e velório: Igrejas, capelas, sinagogas, mesquitas,
+templos, cemitérios, crematórios, necrotérios, salas de funerais e assemelhados.</string>
+    <string name="button_F3">F-3:Centro esportivo e de exibição: Estádios, ginásios e piscinas com
+arquibancadas, rodeios, autódromos, sambódromos, arenas em geral, pista de patinação e assemelhados.</string>
+    <string name="button_F4">F-4:Estação e terminal de passageiro: Estações rodoferroviárias, metrô, aeroportos,
+heliponto, estações de transbordo em geral e assemelhados.</string>
+    <string name="button_F5">F-5:Arte cênica e auditório: Teatros em geral, cinemas, óperas, auditórios
+de estúdios de rádio e televisão, auditórios em geral e assemelhados.</string>
+    <string name="button_F6">F-6:Boates: Casas Noturnas, danceterias, restaurantes
+dançantes, pub´s e assemelhados.</string>
+    <string name="button_F7">F-7:Eventos Temporários: Eventos temporários com concentração de público.</string>
+    <string name="button_F8">F-8:Local para refeição: Restaurantes, lanchonetes, bares, cafés,
+refeitórios, cantinas e assemelhados.</string>
+    <string name="button_F9">F-9:Recreação pública: Jardim zoológico, parques recreativos e
+assemelhados, instalados em edificações permanentes</string>
+    <string name="button_F10">F-10:Exposição de objetos ou animais: Salões e salas de exposição de objetos e
+animais, show-room, galerias de arte, aquários, planetários e assemelhados em edificações permanentes.</string>
+    <string name="button_F11">F-11:Clubes sociais e Salões de Festas: Salões de Festas (buffet), clubes em geral,
+bingo, bilhares, tiro ao alvo, boliche e assemelhados.</string>
+
+    // botôes Divisão G
+    <string name="button_G1">G-1:Garagem sem acesso de público e sem abastecimento: Garagens automáticas.</string>
+    <string name="button_G2">G-2:Garagem com acesso de público e sem abastecimento de combustível: Garagens coletivas sem automação, em
+geral, sem abastecimento (exceto veículos de carga e coletivos).</string>
+    <string name="button_G3">G-3:Local dotado de abastecimento de combustível: Postos de abastecimento de combustível e
+serviço, garagens (exceto veículos de carga e coletivos).</string>
+    <string name="button_G4">G-4:Serviço de conservação, manutenção e reparos: Oficinas de conserto de veículos,
+borracharias (sem recauchutagem); oficinas e garagens de veículos de carga e coletivos, máquinas agrícolas e rodoviárias,
+retificadoras de motores.</string>
+    <string name="button_G5">G-5:Hangares: Abrigos para aeronaves com ou sem abastecimento de combustível.</string>
+    <string name="button_G6">G-6:Marinas, portos, garagens náuticas: Gestão e atividades auxiliares de transporte
+aquaviário.</string>
+
+    // botôes Divisão H
+    <string name="button_H1">H-1:Hospital veterinário e assemelhados: Hospitais, clínicas e consultórios veterinários
+e assemelhados (inclui-se alojamento com ou sem adestramento).</string>
+    <string name="button_H2">H-2:Asilos, orfanatos, abrigos geriátricos, hospitais psiquiátricos, reformatórios,
+tratamento de dependentes de drogas, álcool e assemelhados. Todos sem celas.</string>
+    <string name="button_H3">H-3:Hospitais, casa de saúde, prontos-socorros, clínicas com internação, ambulatórios e
+postos de atendimento de urgência, postos de saúde e puericultura e assemelhados com internação</string>
+    <string name="button_H4">H-4:Quartéis, unidades de segurança pública e assemelhados: Quartéis, centrais de polícia, delegacias,
+postos policiais, postos de bombeiros e assemelhados.</string>
+    <string name="button_H5">H-5:Local onde a liberdade das pessoas sofre restrições: Hospitais psiquiátricos, manicômios,
+reformatórios, prisões em geral (casa de detenção, penitenciárias, presídios) e instituições assemelhadas. Todos com celas.</string>
+    <string name="button_H6">H-6:Clínica e consultório médico e odontológico: Clínicas médicas, consultórios em geral,
+unidades de hemodiálise, ambulatórios e assemelhados. Todos sem internação.</string>
+
+    // botôes Divisão I
+    <string name="button_I1">I-1:Indústrias com carga de incêndio de risco baixo: Atividades que manipulem materiais com
+baixo risco de incêndio, tais como fábricas em geral, onde os processos não envolvem a utilização intensiva de materiais combustíveis
+(aço; aparelhos de rádio e som; armas; artigos de metal; gesso; esculturas de pedra; ferramentas; fotogravuras; joias; relógios;
+sabão; serralheria; suco de frutas; louças;
+metais; máquinas).</string>
+    <string name="button_I2">I-2:Indústrias com carga de incêndio de risco médio: Atividades que manipulam materiais com
+médio risco de incêndio, tais como: artigos de vidro; automóveis, bebidas destiladas; instrumentos musicais; móveis; alimentos
+marcenarias, fábricas de caixas e assemelhados.</string>
+    <string name="button_I3">I-3:Indústrias com carga de incêndio de risco alto: Fabricação de explosivos, atividades
+industriais que envolvam líquidos e gases inflamáveis, materiais oxidantes, destilarias, refinarias, ceras, espuma sintética, tintas,
+borracha e assemelhados.</string>
+
+    // botôes Divisão J
+    <string name="button_J1">J-1:Depósitos de material incombustível: Edificações sem processo industrial que
+armazenem tijolos, cimentos, metais e outros materiais incombustíveis. Todos sem embalagem.</string>
+    <string name="button_J2">J-2:Depósitos com carga de incêndio de risco baixo: Todo tipo de depósito.</string>
+    <string name="button_J3">J-3:Depósitos com carga de incêndio de risco médio: Todo tipo de depósito.</string>
+    <string name="button_J4">J-4:Depósitos com carga de incêndio de risco alto: Todo tipo de depósito.</string>
+
+    // botôes Divisão L
+    <string name="button_L1">L-1:Comércio: Comércio em geral de fogos de artifício e assemelhados.</string>
+    <string name="button_L2">L-2:Indústria: Indústria de material explosivo.</string>
+    <string name="button_L3">L-3:Depósito: Depósito de material explosivo.</string>
+
+    // botôes Divisão M
+    <string name="button_M1">M-1:Túnel: Túnel rodoferroviário, destinado a transporte
+de passageiros ou cargas diversas.</string>
+    <string name="button_M2">M-2:Líquido ou gás, inflamáveis ou combustíveis: Edificação destinada à produção,
+manipulação, armazenamento e distribuição de líquidos ou gases combustíveis e inflamáveis.</string>
+    <string name="button_M3">M-3:Central de comunicação e energia: Central telefônica, centros de comunicação,
+centrais de transmissão ou de distribuição de energia e assemelhados.</string>
+    <string name="button_M4">M-4:Propriedade em transformação: Locais em construção ou demolição e assemelhados.</string>
+    <string name="button_M5">M-5:Silos: Armazéns de grãos e assemelhados.</string>
+    <string name="button_M6">M-6:Terra Selvagem: Floresta reserva ecológica, parque florestal e assemelhados.</string>
+    <string name="button_M7">M-7:Pátio de Contêiner: Armazenamento de contêiner em área Aberta.</string>
+    <string name="button_M8">M-8:Torres de telefonia móvel: Torre metálica com armários para
+equipamentos de telefonia</string>
+    <string name="button_M9">M-9:Transporte e Navegação: Atividades de transporte de passageiros ou
+mercadorias, nas modalidades ferroviária, rodoviária, aquaviária e aérea (sem armazenamento).</string>
+    <string name="button_M10">M-10:Resíduos: Coleta, tratamento e gestão de resíduos,
+recuperação de materiais.</string>
+
+    // botôes Divisão N
+    <string name="button_N1">N-1:Agricultura: Cultivo de plantas, frutas e assemelhados.</string>
+    <string name="button_N2">N-2:Zootecnia: Criação de Animais no interior de edificações</string>
+    <string name="button_N3">N-3:Mineração: Extração de Minérios e assemelhados</string>
+
+
+    // tela de Área da edificação
+    <string name="tv_area">Informe a Área da Edificação <i>(área construída)</i></string>
+    <string name="button_area">Prosseguir</string>
+
+    // tela de Altura da edificação
+    <string name="tv_altura">Informe a Altura da Edificação</string>
+    <string name="bt_altura1">Edificação Térrea: Um pavimento</string>
+    <string name="bt_altura2">Edificação Baixa: Menor que 6,00 m</string>
+    <string name="bt_altura3">Edificação de Baixa-Média Altura: Entre 6,00 m E 12,00 m</string>
+    <string name="bt_altura4">Edificação de Média Altura: Entre 12,00 m E 23,00 m</string>
+    <string name="bt_altura5">Edificação Medianamente Alta: Entre 23,00 m E 30,00 m</string>
+    <string name="bt_altura6">Edificação Alta: Acima de 30,00 m</string>
+    <string name="bt_altura7">Edificação Alta: Acima de 60,00 m</string>
+    <string name="bt_altura8">Edificação Alta: Acima de 80,00 m</string>
+
+    // tela Lotação
+    <string name="tv_lotacao">A Edificação possui lotação superior a 50 pessoas?</string>
+    <string name="button_Lsim">SIM</string>
+    <string name="button_Lnao">NÃO</string>
+
+    // tela Pavimentos
+    <string name="tv_pavimentos">A Edificação possui mais do que 2 pavimentos?</string>
+    <string name="button_Psim">SIM</string>
+    <string name="button_Pnao">NÃO</string>
+
+    // tela Deposito
+    <string name="tv_deposito">A Edificação possui depósito(s) superior(es) a 750m²?</string>
+    <string name="button_Dsim">SIM</string>
+    <string name="button_Dnao">NÃO</string>
+
+    // tela Alojamentos
+    <string name="tv_alojamento">A Edificação possui alojamento(s) ou dormitório(s) superior(es) a 750m²?</string>
+    <string name="button_Alsim">SIM</string>
+    <string name="button_Alnao">NÃO</string>
+
+    // tela Detecção Incendio F4
+    <string name="tv_deteccaof4">Existe algum desses itens nesta edificação? \n\n
+        1- Depósitos, escritórios, cozinhas, pisos técnicos, casa de máquinas, etc.\n
+        2- Nos locais de reunião: teto ou forro falso com revestimento combustível.</string>
+    <string name="button_DetecSim">SIM</string>
+    <string name="button_DetecNao">NÃO</string>
+
+    // tela Prisoes
+    <string name="tv_prisoes">Esta edificação faz parte desse grupo? \n\n
+        1- Prisões em geral (Casas de Detenção, Penitenciárias, Presídios etc.)\n</string>
+    <string name="button_prisaoSim">SIM</string>
+    <string name="button_prisaoNao">NÃO</string>
+
+    // tela Público
+    <string name="tv_publico">Informe o Público:</string>
+    <string name="button_acimaDe200">ACIMA de 200 Pessoas</string>
+    <string name="button_abaixoDe500">ABAIXO de 500 Pessoas</string>
+    <string name="button_acimaDe500">ACIMA de 500 Pessoas</string>
+    <string name="button_acimaDe3000">ACIMA de 3000 Pessoas</string>
+
+    // tela Tunel M-1
+    <string name="tv_tunel">Informe a Extensão - Em Metros</string>
+    <string name="bt_ext1">Até 200m</string>
+    <string name="bt_ext2">De 200m a 500m</string>
+    <string name="bt_ext3">De 500m a 1000m</string>
+    <string name="bt_ext4">Acima de 1000m</string>
+
+    // tela M-2 – Líquido ou gás, Inflamáveis ou combustíveis
+    <string name="tv_m2">Marque a(s) opção(ões) desejada(s)</string>
+    <string name="tv_tanques">Tanques ou Cilindros</string>
+    <string name="bt_liquidos1">Líquidos até 20 m³ ou gases até 10m³</string>
+    <string name="bt_liquidos2">Líquidos acima de 20 m³ ou gases acima de 10m³</string>
+    <string name="bt_plataforma">Plataformas de carregamento</string>
+    <string name="tv_produtos">Produtos acondicionados</string>
+    <string name="bt_produtos1">Líquidos até 20 m³ ou gases até 24.960kg</string>
+    <string name="bt_produtos2">Líquidos acima de 20 m³ ou gases acima de 24.960kg</string>
+    <string name="bt_prosseguir">Prosseguir</string>
+
+
+    __________________________________________________________________________________________________________________________________________
+    // Descrições Medidas de Segurança:
+    // Extintores
+    <string name="tit_extintor">NORMA TÉCNICA 21/2014</string>
+    <string name="subtit_extintor">NORMA TÉCNICA 21/2014</string>
+    <string name="desc_extintor">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Controle de Materiais de Acabamento
+    <string name="tit_acabamento">NORMA TÉCNICA 10/2014</string>
+    <string name="subtit_acabamento">NORMA TÉCNICA 10/2014</string>
+    <string name="desc_acabamento">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Saídas de Emergência
+    <string name="tit_saida">NORMA TÉCNICA 11/2014</string>
+    <string name="subtit_saida">NORMA TÉCNICA 11/2014</string>
+    <string name="desc_saida">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Iluminação de Emergência
+    <string name="tit_iluminacao">NORMA TÉCNICA 18/2014</string>
+    <string name="subtit_iluminacao">NORMA TÉCNICA 18/2014</string>
+    <string name="desc_iluminacao">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Acesso de Viatura na Edificação
+    <string name="tit_viatura">NORMA TÉCNICA 06/2014</string>
+    <string name="subtit_viatura">NORMA TÉCNICA 06/2014</string>
+    <string name="desc_viatura">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Segurança Estrutural
+    <string name="tit_estrutural">""</string>
+    <string name="subtit_estrutural">""</string>
+    <string name="desc_estrutural">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Central de Gás
+    <string name="tit_gas">NORMA TÉCNICA 29/2014</string>
+    <string name="subtit_gas">NORMA TÉCNICA 29/2014</string>
+    <string name="desc_gas">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Compartimentação Vertical
+    <string name="tit_vertical">NORMA TÉCNICA 09/2017</string>
+    <string name="subtit_vertical">NORMA TÉCNICA 09/2017</string>
+    <string name="desc_vertical">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Compartimentação Horizontal (ou de Áreas)
+    <string name="tit_horizontal">NORMA TÉCNICA 09/2017</string>
+    <string name="subtit_horizontal">NORMA TÉCNICA 09/2017</string>
+    <string name="desc_horizontal">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Alarme de Incêndio
+    <string name="tit_alarme">NORMA TÉCNICA 19/2014</string>
+    <string name="subtit_alarme">NORMA TÉCNICA 19/2014</string>
+    <string name="desc_alarme">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Hidrante e Mangotinhos
+    <string name="tit_mangotinhos">NORMA TÉCNICA 22/2014</string>
+    <string name="subtit_mangotinhos">NORMA TÉCNICA 22/2014</string>
+    <string name="desc_mangotinhos">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Brigada
+    <string name="tit_brigada">NORMA TÉCNICA 17/2021</string>
+    <string name="subtit_brigada">NORMA TÉCNICA 17/2021</string>
+    <string name="desc_brigada">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // SPDA
+    <string name="tit_SPDA">NORMA TÉCNICA 40/2019</string>
+    <string name="subtit_SPDA">NORMA TÉCNICA 40/2019</string>
+    <string name="desc_SPDA">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Hidrante Urbano
+    <string name="tit_hidrante">NORMA TÉCNICA 34/2014</string>
+    <string name="subtit_hidrante">NORMA TÉCNICA 34/2014</string>
+    <string name="desc_hidrante">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Detecção de Incêndio
+    <string name="tit_deteccao">NORMA TÉCNICA 19/2014</string>
+    <string name="subtit_deteccao">NORMA TÉCNICA 19/2014</string>
+    <string name="desc_deteccao">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Chuveiros Automáticos
+    <string name="tit_chuveiros">NORMA TÉCNICA 23/2014</string>
+    <string name="subtit_chuveiros">NORMA TÉCNICA 23/2014</string>
+    <string name="desc_chuveiros">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Controle de Fumaça
+    <string name="tit_fumaca">NORMA TÉCNICA 15/2014</string>
+    <string name="subtit_fumaca">NORMA TÉCNICA 15/2014</string>
+    <string name="desc_fumaca">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Elevador de Emergencia
+    <string name="tit_elevador">""</string>
+    <string name="subtit_elevador">""</string>
+    <string name="desc_elevador">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Sinalização de Emergencia
+    <string name="tit_sinalizacao">NORMA TÉCNICA 20/2014</string>
+    <string name="subtit_sinalizacao">NORMA TÉCNICA 20/2014</string>
+    <string name="desc_sinalizacao">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Sistema de Espuma
+    <string name="tit_espuma">""</string>
+    <string name="subtit_espuma">""</string>
+    <string name="desc_espuma">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Sistema de Resfriamento
+    <string name="tit_Resfriamento">""</string>
+    <string name="subtit_Resfriamento">""</string>
+    <string name="desc_Resfriamento">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Sistema de Comunicação
+    <string name="tit_comunicacao">""</string>
+    <string name="subtit_comunicacao">""</string>
+    <string name="desc_comunicacao">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+    // Sistema de Tv
+    <string name="tit_tv">""</string>
+    <string name="subtit_tv">""</string>
+    <string name="desc_tv">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
+
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Tela da Certificação Prévia
+    <string name="txt_TcertPrevia">CERTIFICAÇÃO PRÉVIA</string>
+    <string name="txt_certPrevia">
+ Recurso utilizado para emissão de CERCON apenas com apresentação de documentação; (Processo simplificado)\n
+ Os responsáveis legais pela edificação ficam responsabilizados pelas informações prestadas ao CBMGO e podem ser fiscalizados a qualquer tempo. Em caso de
+descumprimento será aplicada sanções administrativas.\n\n
+Edificações que podem solicitar certificação prévia\n
+ 1. Menores que 750 m2;\n
+ 2. Com no máximo 3 pavimentos;\n
+ 3. Com lotação até 200 pessoas;\n
+ 4. Com subsolo exclusivo para estacionamento, caso possuir;\n
+ 5. Com armazenamento ou revenda de no máximo 500 lts de combustível inflamável;\n
+ 6. Com GLP no máximo 190 Kg, desde que não seja estacionário.\n
+ 7. Não ser revenda de GLP;\n
+ 8. Não comercializar explosivos, radioativos, ou produtos perigosos à saúde humana.\n\n
+Exceções:\n
+Edificações acima de 200m2
+pertencente aos grupos B1, B2,
+(serviço de hospedagem), C3 (shopping centers), E1, E4, E5, E6
+(escolas e centros educacionais), F (local de reunião de público),
+H2, H3, H4, H5 (asilos, hospitais, quartéis, presídios) e J2, J3, J4
+(depósitos), necessitarão de processo técnico, no mínimo
+inspeção e alguns casos de acordo com os critérios, análise de
+projeto.\n
+Locais de revenda e produção de explosivos (L1, L2 e L3) bem
+como locais de produção, armazenamento, distribuição de
+líquidos ou gases inflamáveis e combustíveis independente da
+área necessitarão de processo técnico (inspeção + projeto).\n\n
+COMO SOLICITAR CERTIFICAÇÃO PRÉVIA
+ No site do CBMGO. Ver passo a passo no anexo.</string>
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+
+    //Tela do Passo-aPasso
+    <string name="txt_TpAp">PASSO A PASSO PARA SOLICITAR VISTORIA NO CBMGO</string>
+    <string name="txt_pAp">1 – Acessar o sito do CBMGO pelo link: <u><b>www.bombeiros.go.gov.br;</b></u>\n\n
+2 - A esquerda superior <b>MENU – SERVIÇOS – INSPEÇÕES E ANÁLISE PROJETOS;</b>\n\n
+3 – Em <b>azul</b> Solicitar serviço – Inspeções;\n\n
+4 – Aparecerá um informativo de Portaria 268/2020, role a barra e clique em continuar;\n\n
+5 – Buscar Solicitação de Serviço – Escolha a opção de vistoria para funcionamento;\n\n
+6 - Informe o CNPJ/CPF, o CEP do município e clique em pesquisar;\n\n
+7 – Se a empresa já possuir a certificação do CBMGO, aparecerá a opção para renovar
+o serviço, confirme os dados cadastrados, prossiga até o item CNAE da barra de
+cadastro, verifique se a área está correta e finalize o processo gerando o número de protocolo;\n\n
+8 – Se a empresa não possui aprovação junto ao CBMGO, verificado após a pesquisa, acesse o cadastro pelo botão <b>clique aqui;</b>\n\n
+9 – Na parte do <b>Cadastro</b> informe o CPF/CNPJ e preencha os campos obrigatórios;\n\n
+10 – Preencha os campos obrigatórios em <b>Solicitante</b>;\n\n
+11 – Preencha os campos obrigatórios em <b>Endereço da obra/Edificação;</b>\n\n
+12 – Preencha os campos do <b>CNAE</b>, informando o CNAE principal e a área utilizada do
+estabelecimento comercial;\n\n
+13 – Clique em <b>Incluir</b> e após em <b>Finalizar o cadastro</b>;\n\n
+14 – Aparecerá um questionário a ser preenchido, responda as perguntas para finalizar
+o processo e gerar o número do protocolo.</string>
+    <string name="title_item_list">itens</string>
+    <string name="title_item_detail">Item Detail</string>
+</resources>

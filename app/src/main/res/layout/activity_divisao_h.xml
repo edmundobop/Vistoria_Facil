@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="br.com.stone4.divisoes.DivisaoH">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lay_vert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_divh"
+                style="@style/DivisaoOrienta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/tv_divaorienta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_H1"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/purple_200" />
+
+            <Button
+                android:id="@+id/H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_H2"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/purple_700" />
+
+            <Button
+                android:id="@+id/H3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_H3"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/teal_200" />
+
+            <Button
+                android:id="@+id/H4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_H4"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/design_default_color_error" />
+
+            <Button
+                android:id="@+id/H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_H5"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/H6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/button_H6"
+                android:onClick="onClick"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/holo_orange_dark" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

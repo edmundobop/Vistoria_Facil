@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.stone4.criterios.Tunel_M1">
+
+    <TextView
+        android:id="@+id/tv_tunel"
+        style="@style/DivisaoOrienta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_tunel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tunel1"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bt_ext1"
+        android:onClick="onClick"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tunel" />
+
+    <Button
+        android:id="@+id/tunel2"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bt_ext2"
+        android:onClick="onClick"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tunel1" />
+
+    <Button
+        android:id="@+id/tunel3"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bt_ext3"
+        android:onClick="onClick"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tunel2" />
+
+    <Button
+        android:id="@+id/tunel4"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bt_ext4"
+        android:onClick="onClick"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tunel3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

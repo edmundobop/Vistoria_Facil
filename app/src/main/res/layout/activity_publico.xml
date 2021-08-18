@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.stone4.criterios.Publico">
+
+    <TextView
+        android:id="@+id/tv_publico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/tv_publico"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/acimaDe200"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/button_acimaDe200"
+        android:onClick="onClick"
+        android:textColorHint="@color/black"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_publico" />
+
+
+    <Button
+        android:id="@+id/abaixoDe500"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/button_abaixoDe500"
+        android:onClick="onClick"
+        android:textColorHint="@color/black"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acimaDe200" />
+
+    <Button
+        android:id="@+id/acimaDe500"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/button_acimaDe500"
+        android:onClick="onClick"
+        android:textColorHint="@color/black"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abaixoDe500" />
+
+    <Button
+        android:id="@+id/acimaDe3000"
+        style="@style/button_Divisao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/button_acimaDe3000"
+        android:onClick="onClick"
+        android:textColorHint="@color/black"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acimaDe500" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

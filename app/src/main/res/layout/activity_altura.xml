@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.stone4.criterios.Altura">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_altura"
+                style="@style/DivisaoOrienta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/tv_altura"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ALT1"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura1"
+                android:onClick="onClic"
+                app:backgroundTint="@color/purple_200" />
+
+            <Button
+                android:id="@+id/ALT2"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura2"
+                android:onClick="onClic"
+                app:backgroundTint="@color/purple_700" />
+
+            <Button
+                android:id="@+id/ALT3"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura3"
+                android:onClick="onClic"
+                app:backgroundTint="@color/teal_200" />
+
+            <Button
+                android:id="@+id/ALT4"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura4"
+                android:onClick="onClic"
+                app:backgroundTint="@color/design_default_color_error" />
+
+            <Button
+                android:id="@+id/ALT5"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura5"
+                android:onClick="onClic"
+                app:backgroundTint="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/ALT6"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura6"
+                android:onClick="onClic"
+                app:backgroundTint="@android:color/holo_orange_dark" />
+
+            <Button
+                android:id="@+id/ALT7"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura7"
+                android:onClick="onClic"
+                app:backgroundTint="@android:color/holo_purple" />
+
+            <Button
+                android:id="@+id/ALT8"
+                style="@style/button_Divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bt_altura8"
+                android:onClick="onClic"
+                app:backgroundTint="@android:color/holo_red_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
