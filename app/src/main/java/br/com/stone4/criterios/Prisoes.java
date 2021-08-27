@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Prisoes extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class Prisoes extends AppCompatActivity {
         Bundle parametros = intent.getExtras();
         parametros.putInt("prisoes", v.getId());
 
-        intent.setClass(this, Resultado.class);
+        intent.setClass(this, Controle_Resultado.class);
 
         intent.putExtras(parametros);
 

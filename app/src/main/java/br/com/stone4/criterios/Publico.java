@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Publico extends AppCompatActivity {
 
@@ -38,22 +38,22 @@ public class Publico extends AppCompatActivity {
             case R.id.F10:
                 if (altura != R.id.ALT1) {
                     intent.setClass(this, Pavimentos.class);
-                } else intent.setClass(this, Resultado.class);
+                } else intent.setClass(this, Controle_Resultado.class);
                 break;
             case R.id.F7:
-                intent.setClass(this, Resultado.class);
+                intent.setClass(this, Controle_Resultado.class);
                 break;
             case R.id.F4:
             case R.id.F5:
             case R.id.F11:
                 if (altura <= R.id.ALT4) {
                     intent.setClass(this, Deteccao_F4.class);
-                } else intent.setClass(this, Resultado.class);
+                } else intent.setClass(this, Controle_Resultado.class);
                 break;
             case R.id.F6:
                 if (altura <= R.id.ALT1) {
                     intent.setClass(this, Deteccao_F4.class);
-                } else intent.setClass(this, Resultado.class);
+                } else intent.setClass(this, Controle_Resultado.class);
                 break;
         }
 

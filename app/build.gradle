@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.vistoria.sescip_vistorias"
+        applicationId "com.vistoria.vistoriaFacil_v2"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

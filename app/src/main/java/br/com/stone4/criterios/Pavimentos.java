@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Pavimentos extends AppCompatActivity {
 
@@ -50,11 +50,11 @@ public class Pavimentos extends AppCompatActivity {
             case R.id.bt_N:
                 if (v.getId() == R.id.Pnao && menorQ){
                     intent.setClass(this, Lotacao.class);
-                } else intent = new Intent(this, Resultado.class);
+                } else intent = new Intent(this, Controle_Resultado.class);
                 break;
             case R.id.bt_B:
             case R.id.bt_M:
-                intent = new Intent(this, Resultado.class);
+                intent = new Intent(this, Controle_Resultado.class);
                 break;
 
         }

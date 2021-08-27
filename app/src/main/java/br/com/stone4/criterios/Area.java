@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Area extends AppCompatActivity {
 
@@ -50,7 +50,7 @@ public class Area extends AppCompatActivity {
             else if (divisao == R.id.M2){
                 intent = new Intent(this, Pavimentos.class);
                 //o restante dos grupos vão para a tela de altura
-            } else intent = new Intent(this, Resultado.class);
+            } else intent = new Intent(this, Controle_Resultado.class);
 
             intent.putExtras(parametro);
 

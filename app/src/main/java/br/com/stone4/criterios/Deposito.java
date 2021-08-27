@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Deposito extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class Deposito extends AppCompatActivity {
 
         if (altura != R.id.ALT1) {
             intent.setClass(this, Pavimentos.class);
-        } else intent.setClass(this, Resultado.class);
+        } else intent.setClass(this, Controle_Resultado.class);
 
         intent.putExtras(parametros);
 

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 
 public class Tunel_M1 extends AppCompatActivity {
@@ -25,7 +25,7 @@ public class Tunel_M1 extends AppCompatActivity {
         // do something when the button is clicked
         intent = getIntent();
         Bundle parametro = intent.getExtras();
-        intent.setClass(this, Resultado.class);
+        intent.setClass(this, Controle_Resultado.class);
         parametro.putInt("tunel",v.getId());
         intent.putExtras(parametro);
         startActivity(intent);

@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "SESCIP_Vistorias"
+rootProject.name = "vistoriaFacil_v2"

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Lotacao extends AppCompatActivity {
 
@@ -30,7 +30,7 @@ public class Lotacao extends AppCompatActivity {
         int grupo = parametros.getInt("grupo");
         int divisao = parametros.getInt("divisao");
 
-        intent = new Intent(this, Resultado.class);
+        intent = new Intent(this, Controle_Resultado.class);
 
         intent.putExtras(parametros);
 

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Deteccao_F4 extends AppCompatActivity {
 
@@ -39,13 +39,13 @@ public class Deteccao_F4 extends AppCompatActivity {
             case R.id.F4:
                 if (altura >= R.id.ALT2) {
                     intent.setClass(this, Pavimentos.class);
-                } else intent.setClass(this, Resultado.class);
+                } else intent.setClass(this, Controle_Resultado.class);
                 break;
             case R.id.F5:
             case R.id.F6:
             case R.id.F10:
             case R.id.F11:
-                intent.setClass(this, Resultado.class);
+                intent.setClass(this, Controle_Resultado.class);
                 break;
         }
 

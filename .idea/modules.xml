@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SESCIP_Vistorias.iml" filepath="$PROJECT_DIR$/.idea/modules/SESCIP_Vistorias.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SESCIP_Vistorias.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SESCIP_Vistorias.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vistoriaFacil_v2.iml" filepath="$PROJECT_DIR$/.idea/modules/vistoriaFacil_v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/vistoriaFacil_v2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/vistoriaFacil_v2.app.iml" />
     </modules>
   </component>
 </project>

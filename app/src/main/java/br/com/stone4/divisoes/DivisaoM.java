@@ -10,7 +10,7 @@ import br.com.stone4.criterios.Area;
 import br.com.stone4.criterios.LiquidosM2;
 import br.com.stone4.criterios.Pavimentos;
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 import br.com.stone4.criterios.Tunel_M1;
 
 public class DivisaoM extends AppCompatActivity {
@@ -35,7 +35,7 @@ public class DivisaoM extends AppCompatActivity {
             intent = new Intent(this, LiquidosM2.class);
         } else if (v.getId() == R.id.M9){
             intent = new Intent(this, Pavimentos.class);
-        } else intent = new Intent(this, Resultado.class);
+        } else intent = new Intent(this, Controle_Resultado.class);
 
         parametro.putInt("divisao",v.getId());
         intent.putExtras(parametro);

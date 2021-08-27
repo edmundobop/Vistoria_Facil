@@ -10,20 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SESCIP_Vistorias">
 
-        <activity android:name=".Resultado_Detalhes2"
+        <activity android:name=".Resultado_Detalhes"
             android:label="Detalhes"
-            android:parentActivityName=".Resultado">
+            android:parentActivityName=".Controle_Resultado">
         </activity>
 
-        <activity
-            android:name=".Resultado_Detalhes"
-            android:label="Detalhes"
-            android:parentActivityName=".Resultado"></activity>
         <activity
             android:name=".criterios.Prisoes"
             android:label="Prisões"
             android:parentActivityName=".criterios.Altura" />
-        <activity android:name=".cert_previa2" />
+        <activity android:name=".principal.cert_previa2" />
         <activity
             android:name=".criterios.Publico"
             android:label="Público"
@@ -43,16 +39,16 @@
         <activity
             android:name=".criterios.LiquidosM2"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".criterios.Tunel_M1"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
-            android:name=".Resultado"
+            android:name=".Controle_Resultado"
             android:label="Vistoria Inteligente"
             android:launchMode="singleTop"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".criterios.Pavimentos"
             android:label="Vistoria Inteligente"
@@ -64,55 +60,55 @@
         <activity
             android:name=".divisoes.DivisaoN"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoM"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoL"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoJ"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoI"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoH"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoG"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoF"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoE"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoD"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoC"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoB"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".divisoes.DivisaoA"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
             android:name=".criterios.Altura"
             android:label="Vistoria Inteligente"
@@ -120,24 +116,24 @@
         <activity
             android:name=".criterios.Area"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".VistoriaInteligente" />
+            android:parentActivityName=".principal.VistoriaInteligente" />
         <activity
-            android:name=".PassoApasso"
+            android:name=".principal.PassoApasso"
             android:label="Passo-a-Passo"
-            android:parentActivityName=".Vistorias" />
+            android:parentActivityName=".principal.Vistorias" />
         <activity
-            android:name=".Cert_Previa"
+            android:name=".principal.Cert_Previa"
             android:label="Certificação Prévia"
-            android:parentActivityName=".Vistorias" />
+            android:parentActivityName=".principal.Vistorias" />
         <activity
-            android:name=".VistoriaInteligente"
+            android:name=".principal.VistoriaInteligente"
             android:label="Vistoria Inteligente"
-            android:parentActivityName=".Vistorias" />
+            android:parentActivityName=".principal.Vistorias" />
         <activity
-            android:name=".Vistorias"
+            android:name=".principal.Vistorias"
             android:label="Vistorias"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:parentActivityName=".principal.MainActivity" />
+        <activity android:name=".principal.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

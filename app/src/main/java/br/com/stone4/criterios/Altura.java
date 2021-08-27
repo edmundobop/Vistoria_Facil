@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Resultado;
+import br.com.stone4.Controle_Resultado;
 
 public class Altura extends AppCompatActivity {
 
@@ -48,13 +48,13 @@ public class Altura extends AppCompatActivity {
                 } else {
                     if (v.getId() != R.id.ALT1) {
                         intent.setClass(this, Pavimentos.class);
-                    } else intent.setClass(this, Resultado.class);
+                    } else intent.setClass(this, Controle_Resultado.class);
                 }
                 break;
             case R.id.bt_B:
                 if (maiorQ){
                     intent.setClass(this, Pavimentos.class);
-                } else intent.setClass(this, Resultado.class);
+                } else intent.setClass(this, Controle_Resultado.class);
                 break;
             case R.id.bt_C:
                 if (menorQ) {
@@ -92,7 +92,7 @@ public class Altura extends AppCompatActivity {
                             } else intent.setClass(this, Lotacao.class);
                         } else if (altura <= R.id.ALT4){
                             intent.setClass(this, Deteccao_F4.class);
-                        } else intent.setClass(this, Resultado.class);
+                        } else intent.setClass(this, Controle_Resultado.class);
                         break;
                     case R.id.F6:
                         if (menorQ) {
@@ -103,7 +103,7 @@ public class Altura extends AppCompatActivity {
                             intent.setClass(this, Publico.class);
                         } else if (altura <= R.id.ALT1){
                             intent.setClass(this, Deteccao_F4.class);
-                        } else intent.setClass(this, Resultado.class);
+                        } else intent.setClass(this, Controle_Resultado.class);
                         break;
                     case R.id.F7:
                         if (menorQ) {
@@ -117,7 +117,7 @@ public class Altura extends AppCompatActivity {
                             if (v.getId() != R.id.ALT1) {
                                 intent.setClass(this, Pavimentos.class);
                             } else intent.setClass(this, Lotacao.class);
-                        } else intent.setClass(this, Resultado.class);
+                        } else intent.setClass(this, Controle_Resultado.class);
                         break;
                 }
                 break;
@@ -135,7 +135,7 @@ public class Altura extends AppCompatActivity {
                         } else {
                             if (v.getId() != R.id.ALT1) {
                                 intent.setClass(this, Pavimentos.class);
-                            } else intent.setClass(this, Resultado.class);
+                            } else intent.setClass(this, Controle_Resultado.class);
                         }
                         break;
                     case R.id.H5:
@@ -150,17 +150,17 @@ public class Altura extends AppCompatActivity {
             case R.id.bt_M:
                 if (v.getId() != R.id.ALT1 && divisao == R.id.M10) {
                     intent.setClass(this, Pavimentos.class);
-                } else intent.setClass(this, Resultado.class);
+                } else intent.setClass(this, Controle_Resultado.class);
                 break;
             case R.id.bt_J:
                 if (menorQ) {
                     if (v.getId() != R.id.ALT1) {
                         intent.setClass(this, Pavimentos.class);
                     } else intent.setClass(this, Lotacao.class);
-                } else intent.setClass(this, Resultado.class);
+                } else intent.setClass(this, Controle_Resultado.class);
                 break;
             case R.id.bt_N:
-                intent.setClass(this, Resultado.class);
+                intent.setClass(this, Controle_Resultado.class);
                 break;
         }
 
