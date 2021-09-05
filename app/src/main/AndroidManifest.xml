@@ -10,11 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SESCIP_Vistorias">
 
-        <activity android:name=".Resultado_Detalhes"
+        <activity android:name=".Consulta_Rapida_Detalhes"
             android:label="Detalhes"
             android:parentActivityName=".Controle_Resultado">
         </activity>
-
+        <activity android:name=".VistoriaInteligente_Resultado_Detalhes"
+            android:label="Detalhes"
+            android:parentActivityName=".VistoriaInteligente_Resultado">
+        </activity>
+        <activity android:name=".VistoriaInteligente_Resultado"
+            android:label="Resultado Vistoria Inteligente"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Controle_Resultado">
+        </activity>
         <activity
             android:name=".criterios.Prisoes"
             android:label="Prisões"
@@ -124,6 +132,10 @@
         <activity
             android:name=".principal.Cert_Previa"
             android:label="Certificação Prévia"
+            android:parentActivityName=".principal.Vistorias" />
+        <activity
+            android:name=".principal.Consulta_rapida"
+            android:label="Consulta Rapida"
             android:parentActivityName=".principal.Vistorias" />
         <activity
             android:name=".principal.VistoriaInteligente"

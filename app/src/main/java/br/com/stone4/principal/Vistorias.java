@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import br.com.stone4.Controle_Resultado;
 import br.com.stone4.R;
 
 public class Vistorias extends AppCompatActivity {
@@ -54,7 +53,7 @@ public class Vistorias extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 System.out.println("Cliquei em Consulta Rápida");
-                Intent irTela = new Intent(Vistorias.this, Controle_Resultado.class);
+                Intent irTela = new Intent(Vistorias.this, Consulta_rapida.class);
 
                 Bundle parametros = new Bundle();
                 parametros.putBoolean("true",true);

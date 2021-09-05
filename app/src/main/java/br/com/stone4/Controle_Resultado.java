@@ -1,65 +1,23 @@
 package br.com.stone4;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
+import androidx.appcompat.app.AppCompatActivity;
 
-import br.com.stone4.medidas.seguranca.AcessoViaturaEdificacao;
-import br.com.stone4.medidas.seguranca.AlarmeDeIncendio;
-import br.com.stone4.medidas.seguranca.Brigada;
-import br.com.stone4.medidas.seguranca.CentralDeGas;
-import br.com.stone4.medidas.seguranca.ChuveiroAutomatico;
-import br.com.stone4.medidas.seguranca.CompartimentacaoHorizontal;
-import br.com.stone4.medidas.seguranca.CompartimentacaoVertical;
-import br.com.stone4.medidas.seguranca.ControleDeFumaca;
-import br.com.stone4.medidas.seguranca.ControleMaterialAcabamento;
-import br.com.stone4.medidas.seguranca.DeteccaoDeIncendio;
-import br.com.stone4.medidas.seguranca.ElevadorDeEmergencia;
-import br.com.stone4.medidas.seguranca.Extintor;
-import br.com.stone4.medidas.seguranca.HidranteEMangotinho;
-import br.com.stone4.medidas.seguranca.HidranteHurbano;
-import br.com.stone4.medidas.seguranca.IluminacaoDeEmergencia;
-import br.com.stone4.medidas.seguranca.Resfriamento;
-import br.com.stone4.medidas.seguranca.SPDA;
-import br.com.stone4.medidas.seguranca.SaidaDeEmergencia;
-import br.com.stone4.medidas.seguranca.SegurancaEstrutural;
-import br.com.stone4.medidas.seguranca.SinalizacaoDeEmergencia;
-import br.com.stone4.medidas.seguranca.SistemaDeCircuitoDeTv;
-import br.com.stone4.medidas.seguranca.SistemaDeComunicacao;
-import br.com.stone4.medidas.seguranca.SistemaDeEspuma;
 
 public class Controle_Resultado extends AppCompatActivity {
 
-    ListView listView;
     Intent intent;
-    ArrayList<String> mTitle;
-    ArrayList<String> sTitle;
-    ArrayList<String> mDescription;
-    ArrayList<String> recomendado;
-    ArrayList<Integer> images;
-    ArrayList<String> URLpdf;
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resultado);
+        setContentView(R.layout.activity_resultado_main);
 
         // Controle de Resultado
         intent = getIntent();
@@ -84,332 +42,314 @@ public class Controle_Resultado extends AppCompatActivity {
         int publico = parametros.getInt("publico");
         int prisoes = parametros.getInt("prisoes");
 
+        TextView tvGrupo = findViewById(R.id.textView7);
+        TextView tvDivisao = findViewById(R.id.textView8);
+        TextView tvArea = findViewById(R.id.textView10);
+        TextView tvAltura = findViewById(R.id.textView9);
 
-        //System.out.println("Plataforma: "+plataforma);
+        switch (grupo) {
+            case R.id.bt_A:
+                tvGrupo.setText(R.string.button_A);
+                switch (divisao){
+                    case R.id.A1:
+                        tvDivisao.setText(R.string.button_A1);
+                        break;
+                    case R.id.A2:
+                        tvDivisao.setText(R.string.button_A2);
+                        break;
+                    case R.id.A3:
+                        tvDivisao.setText(R.string.button_A3);
+                        break;
+                }
+                break;
+            case R.id.bt_B:
+                tvGrupo.setText(R.string.button_B);
+                switch (divisao){
+                    case R.id.B1:
+                        tvDivisao.setText(R.string.button_B1);
+                        break;
+                    case R.id.B2:
+                        tvDivisao.setText(R.string.button_B2);
+                        break;
+                }
+                break;
+            case R.id.bt_C:
+                tvGrupo.setText(R.string.button_C);
+                switch (divisao){
+                    case R.id.C1:
+                        tvDivisao.setText(R.string.button_C1);
+                        break;
+                    case R.id.C2:
+                        tvDivisao.setText(R.string.button_C2);
+                        break;
+                    case R.id.C3:
+                        tvDivisao.setText(R.string.button_C3);
+                        break;
+                }
+                break;
+            case R.id.bt_D:
+                tvGrupo.setText(R.string.button_D);
+                switch (divisao){
+                    case R.id.D1:
+                        tvDivisao.setText(R.string.button_D1);
+                        break;
+                    case R.id.D2:
+                        tvDivisao.setText(R.string.button_D2);
+                        break;
+                    case R.id.D3:
+                        tvDivisao.setText(R.string.button_D3);
+                        break;
+                    case R.id.F4:
+                        tvDivisao.setText(R.string.button_D4);
+                        break;
+                }
+                break;
+            case R.id.bt_E:
+                tvGrupo.setText(R.string.button_E);
+                switch (divisao){
+                    case R.id.E1:
+                        tvDivisao.setText(R.string.button_E1);
+                        break;
+                    case R.id.E2:
+                        tvDivisao.setText(R.string.button_E2);
+                        break;
+                    case R.id.E3:
+                        tvDivisao.setText(R.string.button_E3);
+                        break;
+                    case R.id.E4:
+                        tvDivisao.setText(R.string.button_E4);
+                        break;
+                    case R.id.E5:
+                        tvDivisao.setText(R.string.button_E5);
+                        break;
+                    case R.id.E6:
+                        tvDivisao.setText(R.string.button_E6);
+                        break;
+                }
+                break;
+            case R.id.bt_F:
+                tvGrupo.setText(R.string.button_F);
+                switch (divisao){
+                    case R.id.F1:
+                        tvDivisao.setText(R.string.button_F1);
+                        break;
+                    case R.id.F2:
+                        tvDivisao.setText(R.string.button_F2);
+                        break;
+                    case R.id.F3:
+                        tvDivisao.setText(R.string.button_F3);
+                        break;
+                    case R.id.F4:
+                        tvDivisao.setText(R.string.button_F4);
+                        break;
+                    case R.id.F5:
+                        tvDivisao.setText(R.string.button_F5);
+                        break;
+                    case R.id.F6:
+                        tvDivisao.setText(R.string.button_F6);
+                        break;
+                    case R.id.F7:
+                        tvDivisao.setText(R.string.button_F7);
+                        break;
+                    case R.id.F8:
+                        tvDivisao.setText(R.string.button_F8);
+                        break;
+                    case R.id.F9:
+                        tvDivisao.setText(R.string.button_F9);
+                        break;
+                    case R.id.F10:
+                        tvDivisao.setText(R.string.button_F10);
+                        break;
+                    case R.id.F11:
+                        tvDivisao.setText(R.string.button_F11);
+                        break;
+                }
+                break;
+            case R.id.bt_G:
+                tvGrupo.setText(R.string.button_G);
+                switch (divisao){
+                    case R.id.G1:
+                        tvDivisao.setText(R.string.button_G1);
+                        break;
+                    case R.id.G2:
+                        tvDivisao.setText(R.string.button_G2);
+                        break;
+                    case R.id.G3:
+                        tvDivisao.setText(R.string.button_G3);
+                        break;
+                    case R.id.G4:
+                        tvDivisao.setText(R.string.button_G4);
+                        break;
+                    case R.id.G5:
+                        tvDivisao.setText(R.string.button_G5);
+                        break;
+                    case R.id.G6:
+                        tvDivisao.setText(R.string.button_G6);
+                        break;
+                }
+                break;
+            case R.id.bt_H:
+                tvGrupo.setText(R.string.button_H);
+                switch (divisao){
+                    case R.id.H1:
+                        tvDivisao.setText(R.string.button_H1);
+                        break;
+                    case R.id.H2:
+                        tvDivisao.setText(R.string.button_H2);
+                        break;
+                    case R.id.H3:
+                        tvDivisao.setText(R.string.button_H3);
+                        break;
+                    case R.id.H4:
+                        tvDivisao.setText(R.string.button_H4);
+                        break;
+                    case R.id.H5:
+                        tvDivisao.setText(R.string.button_H5);
+                        break;
+                    case R.id.H6:
+                        tvDivisao.setText(R.string.button_H6);
+                        break;
+                }
+                break;
+            case R.id.bt_I:
+                tvGrupo.setText(R.string.button_I);
+                switch (divisao){
+                    case R.id.I1:
+                        tvDivisao.setText(R.string.button_I1);
+                        break;
+                    case R.id.I2:
+                        tvDivisao.setText(R.string.button_I2);
+                        break;
+                    case R.id.I3:
+                        tvDivisao.setText(R.string.button_I3);
+                        break;
+                   }
+                break;
+            case R.id.bt_J:
+                tvGrupo.setText(R.string.button_J);
+                switch (divisao){
+                    case R.id.J1:
+                        tvDivisao.setText(R.string.button_J1);
+                        break;
+                    case R.id.J2:
+                        tvDivisao.setText(R.string.button_J2);
+                        break;
+                    case R.id.J3:
+                        tvDivisao.setText(R.string.button_J3);
+                        break;
+                    case R.id.J4:
+                        tvDivisao.setText(R.string.button_J4);
+                        break;
+                }
+                break;
+            case R.id.bt_L:
+                tvGrupo.setText(R.string.button_L);
+                switch (divisao){
+                    case R.id.L1:
+                        tvDivisao.setText(R.string.button_L1);
+                        break;
+                    case R.id.L2:
+                        tvDivisao.setText(R.string.button_L2);
+                        break;
+                    case R.id.L3:
+                        tvDivisao.setText(R.string.button_L3);
+                        break;
+                }
+                break;
+            case R.id.bt_M:
+                tvGrupo.setText(R.string.button_M);
+                switch (divisao){
+                    case R.id.M1:
+                        tvDivisao.setText(R.string.button_M1);
+                        break;
+                    case R.id.M2:
+                        tvDivisao.setText(R.string.button_M2);
+                        break;
+                    case R.id.M3:
+                        tvDivisao.setText(R.string.button_M3);
+                        break;
+                    case R.id.M4:
+                        tvDivisao.setText(R.string.button_M4);
+                        break;
+                    case R.id.M5:
+                        tvDivisao.setText(R.string.button_M5);
+                        break;
+                    case R.id.M6:
+                        tvDivisao.setText(R.string.button_M6);
+                        break;
+                    case R.id.M7:
+                        tvDivisao.setText(R.string.button_M7);
+                        break;
+                    case R.id.M8:
+                        tvDivisao.setText(R.string.button_M8);
+                        break;
+                    case R.id.M9:
+                        tvDivisao.setText(R.string.button_M9);
+                        break;
+                    case R.id.M10:
+                        tvDivisao.setText(R.string.button_M10);
+                        break;
+                }
+                break;
+            case R.id.bt_N:
+                tvGrupo.setText(R.string.button_N);
+                switch (divisao){
+                    case R.id.N1:
+                        tvDivisao.setText(R.string.button_N1);
+                        break;
+                    case R.id.N2:
+                        tvDivisao.setText(R.string.button_N2);
+                        break;
+                    case R.id.N3:
+                        tvDivisao.setText(R.string.button_N3);
+                        break;
+                }
+                break;
+        }
 
-        // Criando os Objetos Medidas de Segurança
-        AcessoViaturaEdificacao acessoViatura = new AcessoViaturaEdificacao();
-        ControleMaterialAcabamento acabamento = new ControleMaterialAcabamento();
-        SegurancaEstrutural estrutural = new SegurancaEstrutural();
-        CompartimentacaoHorizontal horizontal = new CompartimentacaoHorizontal();
-        CompartimentacaoVertical vertical = new CompartimentacaoVertical();
-        SaidaDeEmergencia saidaDeEmergencia = new SaidaDeEmergencia();
-        ElevadorDeEmergencia elevadorDeEmergencia = new ElevadorDeEmergencia();
-        Brigada brigada = new Brigada();
-        IluminacaoDeEmergencia iluminacaoDeEmergencia = new IluminacaoDeEmergencia();
-        DeteccaoDeIncendio deteccaoDeIncendio = new DeteccaoDeIncendio();
-        AlarmeDeIncendio alarmeDeIncendio = new AlarmeDeIncendio();
-        SinalizacaoDeEmergencia sinalizacaoDeEmergencia = new SinalizacaoDeEmergencia();
-        Extintor extintor = new Extintor();
-        HidranteEMangotinho hidranteEMangotinho = new HidranteEMangotinho();
-        ChuveiroAutomatico chuveiroAutomatico = new ChuveiroAutomatico();
-        ControleDeFumaca controleDeFumaca = new ControleDeFumaca();
-        CentralDeGas centralDeGas = new CentralDeGas();
-        SPDA spda = new SPDA();
-        HidranteHurbano hidranteHurbano = new HidranteHurbano();
-        SistemaDeEspuma sistemaDeEspuma = new SistemaDeEspuma();
-        Resfriamento resfriamento = new Resfriamento();
-        SistemaDeComunicacao sistemaDeComunicacao = new SistemaDeComunicacao();
-        SistemaDeCircuitoDeTv sistemaDeCircuitoDeTv = new SistemaDeCircuitoDeTv();
+        tvArea.setText(String.valueOf(area));
 
-        listView = (ListView) findViewById(R.id.listView);
-
-        mTitle = new ArrayList<>();
-        sTitle = new ArrayList<>();
-        mDescription = new ArrayList<>();
-        recomendado = new ArrayList<>();
-        images = new ArrayList<>();
-        URLpdf = new ArrayList<>();
-
-        if (acessoViatura.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(acessoViatura.getNome());
-            sTitle.add(getString(R.string.subtit_viatura));
-            mDescription.add(getString(R.string.desc_viatura));
-            images.add(acessoViatura.getImagem());
-            if (acessoViatura.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
-            URLpdf.add("nt-06_2014-acesso-de-viaturas.pdf");
-        }
-        if (alarmeDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, alojamentos) || consulta) {
-            mTitle.add(alarmeDeIncendio.getNome());
-            sTitle.add(getString(R.string.subtit_alarme));
-            mDescription.add(getString(R.string.desc_alarme));
-            images.add(alarmeDeIncendio.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-19_2014-sistemas-de-deteccao-e-alarme-de-incendio.pdf");
-        }
-        if (brigada.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, publico) || consulta) {
-            mTitle.add(brigada.getNome());
-            sTitle.add(getString(R.string.subtit_brigada));
-            mDescription.add(getString(R.string.desc_brigada));
-            images.add(brigada.getImagem());
-            if (brigada.Recomendado(grupo, divisao, area, publico)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
-            URLpdf.add("NT-17_2021-Brigada-de-Incendio.pdf");
-        }
-        if (centralDeGas.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(centralDeGas.getNome());
-            sTitle.add(getString(R.string.subtit_gas));
-            mDescription.add(getString(R.string.desc_gas));
-            images.add(centralDeGas.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-29_2014-comercializacao-distribuicao-e-utilizacao-de-gas-natural.pdf");
-        }
-        if (horizontal.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(horizontal.getNome());
-            sTitle.add(getString(R.string.subtit_horizontal));
-            mDescription.add(getString(R.string.desc_horizontal));
-            images.add(horizontal.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
-        }
-        if (vertical.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(vertical.getNome());
-            sTitle.add(getString(R.string.subtit_vertical));
-            mDescription.add(getString(R.string.desc_vertical));
-            images.add(vertical.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
-        }
-        if (acabamento.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(acabamento.getNome());
-            sTitle.add(getString(R.string.subtit_acabamento));
-            mDescription.add(getString(R.string.desc_acabamento));
-            images.add(acabamento.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-10_2014-controle-de-materiais-de-acabamento-e-revestimento.pdf");
-        }
-        if (controleDeFumaca.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(controleDeFumaca.getNome());
-            sTitle.add(getString(R.string.subtit_fumaca));
-            mDescription.add(getString(R.string.desc_fumaca));
-            images.add(controleDeFumaca.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-15_2014-controle-de-fumaca-parte-1-regras-gerais.pdf");
-        }
-        if (chuveiroAutomatico.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, publico) || consulta) {
-            mTitle.add(chuveiroAutomatico.getNome());
-            sTitle.add(getString(R.string.subtit_chuveiros));
-            mDescription.add(getString(R.string.desc_chuveiros));
-            images.add(chuveiroAutomatico.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-23_2014-sistema-de-chuveiros-automaticos.pdf");
-        }
-        if (deteccaoDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, deteccaof4, prisoes) || consulta) {
-            mTitle.add(deteccaoDeIncendio.getNome());
-            sTitle.add(getString(R.string.subtit_deteccao));
-            mDescription.add(getString(R.string.desc_deteccao));
-            images.add(deteccaoDeIncendio.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-19_2014-sistemas-de-deteccao-e-alarme-de-incendio.pdf");
-        }
-        if (elevadorDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(elevadorDeEmergencia.getNome());
-            sTitle.add(getString(R.string.subtit_elevador));
-            mDescription.add(getString(R.string.desc_elevador));
-            images.add(elevadorDeEmergencia.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("");
-        }
-        if (extintor.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(extintor.getNome());
-            sTitle.add(getString(R.string.subtit_extintor));
-            mDescription.add(getString(R.string.desc_extintor));
-            images.add(extintor.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-21_2014-extintores.pdf");
-        }
-        if (hidranteEMangotinho.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, alojamentos) || consulta) {
-            mTitle.add(hidranteEMangotinho.getNome());
-            sTitle.add(getString(R.string.subtit_mangotinhos));
-            mDescription.add(getString(R.string.desc_mangotinhos));
-            images.add(hidranteEMangotinho.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("nt-22_2014-sistemas-de-hidrantes-e-de-mangotinhos-para-combate-a-incendio.pdf");
-        }
-        if (hidranteHurbano.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(hidranteHurbano.getNome());
-            sTitle.add(getString(R.string.subtit_hidrante));
-            mDescription.add(getString(R.string.desc_hidrante));
-            images.add(hidranteHurbano.getImagem());
-            if (hidranteHurbano.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
-            URLpdf.add("nt-34_2014-hidrante-urbano.pdf");
-        }
-        if (iluminacaoDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(iluminacaoDeEmergencia.getNome());
-            sTitle.add(getString(R.string.subtit_iluminacao));
-            mDescription.add(getString(R.string.desc_iluminacao));
-            images.add(iluminacaoDeEmergencia.getImagem());
-            if (iluminacaoDeEmergencia.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
-            URLpdf.add("nt-18_2014-iluminacao-de-emergencia.pdf");
-        }
-        if (resfriamento.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(resfriamento.getNome());
-            sTitle.add(getString(R.string.subtit_Resfriamento));
-            mDescription.add(getString(R.string.desc_Resfriamento));
-            images.add(resfriamento.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("");
-        }
-        if (saidaDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(saidaDeEmergencia.getNome());
-            sTitle.add(getString(R.string.subtit_saida));
-            mDescription.add(getString(R.string.desc_saida));
-            images.add(saidaDeEmergencia.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("NT-11_2021-Saidas-de-Emergencia.pdf");
-        }
-        if (estrutural.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(estrutural.getNome());
-            sTitle.add(getString(R.string.subtit_estrutural));
-            mDescription.add(getString(R.string.desc_estrutural));
-            images.add(estrutural.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("");
-        }
-        if (sinalizacaoDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(sinalizacaoDeEmergencia.getNome());
-            sTitle.add(getString(R.string.subtit_sinalizacao));
-            mDescription.add(getString(R.string.desc_sinalizacao));
-            images.add(sinalizacaoDeEmergencia.getImagem());
-            if (sinalizacaoDeEmergencia.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
-            URLpdf.add("nt-20_2014-sinalizacao-de-emergencia.pdf");
-        }
-        if (spda.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(spda.getNome());
-            sTitle.add(getString(R.string.subtit_SPDA));
-            mDescription.add(getString(R.string.desc_SPDA));
-            images.add(spda.getImagem());
-            if (spda.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
-            URLpdf.add("NT-40_2019-SPDA.pdf");
-        }
-        if (sistemaDeEspuma.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(sistemaDeEspuma.getNome());
-            sTitle.add(getString(R.string.subtit_espuma));
-            mDescription.add(getString(R.string.desc_espuma));
-            images.add(sistemaDeEspuma.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("");
-        }
-        if (sistemaDeComunicacao.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(sistemaDeComunicacao.getNome());
-            sTitle.add(getString(R.string.subtit_comunicacao));
-            mDescription.add(getString(R.string.desc_comunicacao));
-            images.add(sistemaDeComunicacao.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("");
-        }
-        if (sistemaDeCircuitoDeTv.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            mTitle.add(sistemaDeCircuitoDeTv.getNome());
-            sTitle.add(getString(R.string.subtit_tv));
-            mDescription.add(getString(R.string.desc_tv));
-            images.add(sistemaDeCircuitoDeTv.getImagem());
-            recomendado.add("Exigência");
-            URLpdf.add("");
+        switch (altura){
+            case R.id.ALT1:
+                tvAltura.setText(R.string.bt_altura1);
+                break;
+            case R.id.ALT2:
+                tvAltura.setText(R.string.bt_altura2);
+                break;
+            case R.id.ALT3:
+                tvAltura.setText(R.string.bt_altura3);
+                break;
+            case R.id.ALT4:
+                tvAltura.setText(R.string.bt_altura4);
+                break;
+            case R.id.ALT5:
+                tvAltura.setText(R.string.bt_altura5);
+                break;
+            case R.id.ALT6:
+                tvAltura.setText(R.string.bt_altura6);
+                break;
+            case R.id.ALT7:
+                tvAltura.setText(R.string.bt_altura7);
+                break;
+            case R.id.ALT8:
+                tvAltura.setText(R.string.bt_altura8);
+                break;
         }
 
-        // DIRECIONA PARA CONSULTA OU VISTORIA INTELIGENTE
-        if (consulta){
-            ConsultaRapida();
-        } else {
-            Resultado();
-        }
+
+        intent.setClass(this, VistoriaInteligente_Resultado.class);
+
+        intent.putExtras(parametros);
+    }
+
+    public void certificacaoPrevia(){
 
     }
 
-    public void Resultado(){
-        setContentView(R.layout.activity_resultado);
-
-        Button bt_exigencias = findViewById(R.id.button2);
-
-        bt_exigencias.setOnClickListener(new AdapterView.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ConsultaRapida();
-
-            }
-        });
+    public void onClick(View view) {
+        startActivity(intent);
     }
 
-    public void ConsultaRapida(){
-
-        MyAdapter adapter = new MyAdapter(this, mTitle, sTitle, mDescription, images, recomendado);
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                System.out.println("O id do item clicado é: "+view.getId());
-                Intent intent = new Intent(getApplicationContext(), Resultado_Detalhes.class);
-                // this intent put our 0 index image to another activity
-                Bundle bundle = new Bundle();
-                bundle.putInt("image", (int) images.get(position));
-                intent.putExtras(bundle);
-                // now put title and description to another activity
-                intent.putExtra("title", (String) mTitle.get(position));
-                intent.putExtra("subTitle", (String) sTitle.get(position));
-                intent.putExtra("description", (String) mDescription.get(position));
-                intent.putExtra("recomendado", (String) recomendado.get(position));
-                intent.putExtra("urlPDF", (String) URLpdf.get(position));
-                // also put your position
-                intent.putExtra("position", ""+position);
-                startActivity(intent);
-
-            }
-        });
-    }
-
-    class MyAdapter extends ArrayAdapter<String> {
-
-        Context context;
-        List rTitle;
-        List sTitle;
-        List rImages;
-        List Recomend;
-
-        MyAdapter (Context c, ArrayList title, ArrayList sTitle, ArrayList mDescription, ArrayList imgs, ArrayList Recomend) {
-            super(c, R.layout.arte_resultado, R.id.tv_arte_result, title);
-            this.context = c;
-            this.rTitle = title;
-            this.sTitle = sTitle;
-            this.rImages = imgs;
-            this.Recomend = Recomend;
-        }
-
-        @SuppressLint("ResourceAsColor")
-        @NonNull
-        @Override
-        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-            LayoutInflater layoutInflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-            @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.arte_resultado, parent, false);
-
-            ImageView images = row.findViewById(R.id.image);
-            TextView myTitle = row.findViewById(R.id.textView1);
-            TextView myDescription = row.findViewById(R.id.textView2);
-            TextView myRecomend = row.findViewById(R.id.tv_Recomend);
-
-            images.setImageResource((int) rImages.get(position));
-            myTitle.setText((String) rTitle.get(position));
-            myDescription.setText((String) sTitle.get(position));
-            myRecomend.setText((String) Recomend.get(position));
-
-            if (myRecomend.getText().equals("Recomendado")){
-               myRecomend.setBackgroundResource(R.color.teal_200);
-            } else {
-                myRecomend.setBackgroundResource(R.color.red_700);
-                myRecomend.setTextColor(getResources().getColor(R.color.white));
-            }
-
-
-            return row;
-        }
-    }
 }
 
 // vou chamar a tela da nova Listagem, passando como parametro o conteudo, por meio de lista
