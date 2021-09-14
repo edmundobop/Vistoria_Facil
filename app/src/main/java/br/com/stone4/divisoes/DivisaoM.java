@@ -10,7 +10,7 @@ import br.com.stone4.criterios.Area;
 import br.com.stone4.criterios.LiquidosM2;
 import br.com.stone4.criterios.Pavimentos;
 import br.com.stone4.R;
-import br.com.stone4.Controle_Resultado;
+import br.com.stone4.resultados.Controle_Resultado;
 import br.com.stone4.criterios.Tunel_M1;
 
 public class DivisaoM extends AppCompatActivity {

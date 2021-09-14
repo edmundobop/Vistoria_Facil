@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">vistoriaFacil_v2</string>
     <string name="button_vistorias">VISTORIA</string>
+    <string name="button_vistPassoApasso">VISTORIA PASSO-A-PASSO</string>
     <string name="button_Vistoriador">VISTORIA INTELIGENTE</string>
     <string name="button_ConsultaRapida">CONSULTA RÁPIDA</string>
     <string name="button_passoaPasso">SOLICITAR VISTORIA: PASSO-A-PASSO</string>
@@ -369,7 +371,7 @@ COMO SOLICITAR CERTIFICAÇÃO PRÉVIA
 
     //Tela do Passo-aPasso
     <string name="txt_TpAp">PASSO A PASSO PARA SOLICITAR VISTORIA NO CBMGO</string>
-    <string name="txt_pAp">1 – Acessar o sito do CBMGO pelo link: <u><b>www.bombeiros.go.gov.br;</b></u>\n\n
+    <string name="txt_pAp">1 – Acessar o site do CBMGO pelo link: <u><b>www.bombeiros.go.gov.br;</b></u>\n\n
 2 - A esquerda superior <b>MENU – SERVIÇOS – INSPEÇÕES E ANÁLISE PROJETOS;</b>\n\n
 3 – Em <b>azul</b> Solicitar serviço – Inspeções;\n\n
 4 – Aparecerá um informativo de Portaria 268/2020, role a barra e clique em continuar;\n\n
@@ -389,4 +391,54 @@ estabelecimento comercial;\n\n
 o processo e gerar o número do protocolo.</string>
     <string name="title_item_list">itens</string>
     <string name="title_item_detail">Item Detail</string>
+
+    // -------------------------------------------------------------------------------------------------------------------------------------
+    Tela Vistoria passo-a-passo
+    <string name="bt_vistPaP750m">"Para Vistorias com ÁREA MENOR que 750m² e Altura MENOR que 12m"</string>
+    <string name="bt_vistPaP1500Hid">"Para Edificações com ÁREA MAIOR OU IGUAL a 1500m² COM Hidrante"</string>
+
+    Vistorias maiores que 1500m com hidrante
+    <string name="txt_vistPaP1500HidT">PROCEDIMENTOS EM VISTORIAS COM HIDRANTES</string>
+    <string name="txt_vistPaP1500HidObs">Somente para edificações com Área MAIOR ou IGUAL a 1500² c/ Hidrante</string>
+    <string name="txt_vistPaP1500HidTxt">
+        <b>1</b>.	Ao chegar no local, informar o motivo da visita e solicitar o projeto aprovado pelo CBMGO e um responsável que conheça a edificação para acompanhar a vistoria;
+\n\n<b>2.</b>	Verificar no memorial descritivo quais itens de segurança estão previstos para a edificação em questão;
+\n\n<b>3.</b>	Se localizar no espaço em relação ao projeto para iniciar a vistoria;
+\n\n<b>4.</b>	Verificar os itens básicos como: extintores; funcionamento da iluminação de emergência, localização dos hidrantes conforme o projeto; pontos de alarme conforme o projeto; localização da central de alarme de incêndio; sinalização visual e sonora (tipo sirene); rota de fuga; e sinalização dos sistemas;
+\n\n<b>5.</b>	Se todos os itens anteriores estiverem de acordo com o projeto, deverá iniciar os testes dos sistemas (hidrantes e alarme);
+\n\n<b>6.</b>	Testar o sistema de hidrantes verificando as bombas elétricas e a combustão (potência conforme o memorial descritivo), verificar se o acionamento é manual ou automático Se o sistema for manual, o mesmo deverá possuir uma botoeira tipo liga/desliga ao lado de cada caixa de hidrante;
+\n\n<b>7.</b>	Verificar se, ao acionar a bomba de incêndio, a sirene localizada na casa de bombas foi acionada;
+\n\n<b>8.</b>	Verificar se edificação possui gerador e se o mesmo atende aos sistemas;
+\n\n<b>9.</b>	Verificar a central de alarme de acordo com o acionamento da botoeira; se a central for do tipo endereçável, vai aparecer no painel o local do acionamento do alarme. Porém, se a central foi convencional, será obrigatório ter uma legenda fixada ao lado informado quais os locais de acionamento do alarme;
+\n\n<b>10.</b>	Deverão verificar após os testes, se a alimentação da bomba de incêndio encontra-se anterior à chave geral e sinalizada, e realizar os testes dos hidrantes novamente;
+\n\n<b>11.</b> Se o sistema for atendido por gerador, deverá realizar o teste desligando a energia da edificação e, após o acionamento do gerador, realizar o teste dos hidrantes novamente, atentando-se que somente a bomba poderá receber eletricidade; portanto o resto da edificação deverá estar sem energia;
+\n\n<b>12.</b>	Verificar as condições e localizações conforme projeto do registro de recalque (contendo luva de redução e estar limpo) bem como sua sinalização;
+\n\n<b>13.</b>	Verificar no projeto se é solicitada a área reservada para viatura do CBMGO e solicitar sua sinalização;
+\n\n<b>14.</b>	Em edificações verticais o acesso ao barrilete (casa de bombas) deverá ser sinalizado e sua porta de acesso deverá ser tipo porta corta-fogo;
+\n\n<b>15.</b>	Verificar a identificação e sinalização do barrilete (casa de bombas), bem como sua altura e da reserva técnica de incêndio (R.T.I) com sua capacidade;
+\n\n<b>16.</b>	Solicitar ART/RRT do responsável pela instalação/manutenção dos sistemas existentes na edificação;
+\n\n<b>17.</b>	Quando houver sistema de sprinklers, o mesmo possui sua própria bomba e um registro de recalque independente;
+\n\n<b>18.</b>	Quando houver na edificação o sistema de hidrantes e o de sprinklers, os registros de recalque deverão ser identificados conforme o sistema;
+\n\n<b>19.</b>	Verificar a existência do SPDA e suas condições, bem como sua ART de manutenção/instalação;
+\n\n<b>20.</b>	Verificar no memorial descritivo se há a necessidade de instalação de hidrante público de coluna em um raio máximo de 300 metros e solicitar a instalação do mesmo;
+\n\n<b>21.</b>	Verificar no memorial descritivo se o estabelecimento exige Brigada de incêndio. Se for exigido, será obrigatório o certificado da Brigada;
+\n\n
+<b>Obs:</b> verificar sempre na Norma (ou no menu “Vistoria Inteligente”, deste aplicativo), se há a exigência da Brigada. Ex: em silos com aprovação antiga há a obrigação de treinamento de brigada, porém com a atualização da Norma, está recomendado (não é mais obrigatório).
+
+    </string>
+
+    Vistorias Menores que 750m
+
+    <string name="txt_vistPaP750menorT">PROCEDIMENTOS EM VISTORIAS MENORES QUE 750m²</string>
+    <string name="txt_vistPaP750menorObs">Somente para edificações com Área MENOR que 750m² e Altura MENOR que 12m</string>
+    <string name="txt_vistPaP750menorTxt">
+        <b>1</b>.	Ao chegar no local, informar o motivo da visita e solicitar um responsável que conheça a edificação para acompanhar a vistoria;
+\n\n<b>2.</b>	Visitar toda a área correspondênte à edificação (área construída);
+\n\n<b>3.</b>	Verificar os itens básicos exigidos para a vistoria da edificação.<u> Se estiver utilizando o módulo de "Vistoria Inteligente", clique na imagem "Medidas de Segurança", para ver quais são os itens;</u>
+\n\n<b>5.</b>	Solicitar (QUANDO NECESSÁRIO) documentos (Nota fiscal, ART/RRT do responsável pela instalação/manutenção dos sistemas e equipamentos existentes na edificação, etc);
+\n\n<b>4.</b>	Preencher o relatório de vistoria conforme as exigências; assinar e pegar a assinatura do responsável ou envolvido;
+\n\n<b>4.</b>	Pronto! Vistoria Realizada! Agora é só lançar no sistema.
+
+    </string>
+
 </resources>

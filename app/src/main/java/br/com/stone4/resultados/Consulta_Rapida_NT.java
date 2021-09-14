@@ -1,4 +1,4 @@
-package br.com.stone4;
+package br.com.stone4.resultados;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,9 @@ import android.os.Bundle;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-public class Consulta_Rapida_Detalhes extends AppCompatActivity {
+import br.com.stone4.R;
+
+public class Consulta_Rapida_NT extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

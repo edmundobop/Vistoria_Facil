@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import br.com.stone4.R;
-import br.com.stone4.Controle_Resultado;
+import br.com.stone4.resultados.Controle_Resultado;
 
 public class Prisoes extends AppCompatActivity {
 

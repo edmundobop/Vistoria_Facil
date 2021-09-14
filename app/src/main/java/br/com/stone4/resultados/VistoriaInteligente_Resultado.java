@@ -1,4 +1,4 @@
-package br.com.stone4;
+package br.com.stone4.resultados;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import br.com.stone4.R;
 import br.com.stone4.medidas.seguranca.AcessoViaturaEdificacao;
 import br.com.stone4.medidas.seguranca.AlarmeDeIncendio;
 import br.com.stone4.medidas.seguranca.Brigada;
@@ -114,7 +115,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_viatura));
             images.add(acessoViatura.getImagem());
             if (acessoViatura.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
+            else recomendado.add("Obrigatório");
             URLpdf.add("nt-06_2014-acesso-de-viaturas.pdf");
         }
         if (alarmeDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, alojamentos) || consulta) {
@@ -122,7 +123,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_alarme));
             mDescription.add(getString(R.string.desc_alarme));
             images.add(alarmeDeIncendio.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-19_2014-sistemas-de-deteccao-e-alarme-de-incendio.pdf");
         }
         if (brigada.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, publico) || consulta) {
@@ -131,7 +132,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_brigada));
             images.add(brigada.getImagem());
             if (brigada.Recomendado(grupo, divisao, area, publico)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
+            else recomendado.add("Obrigatório");
             URLpdf.add("NT-17_2021-Brigada-de-Incendio.pdf");
         }
         if (centralDeGas.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -139,7 +140,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_gas));
             mDescription.add(getString(R.string.desc_gas));
             images.add(centralDeGas.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-29_2014-comercializacao-distribuicao-e-utilizacao-de-gas-natural.pdf");
         }
         if (horizontal.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -147,7 +148,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_horizontal));
             mDescription.add(getString(R.string.desc_horizontal));
             images.add(horizontal.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
         }
         if (vertical.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -155,7 +156,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_vertical));
             mDescription.add(getString(R.string.desc_vertical));
             images.add(vertical.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
         }
         if (acabamento.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -163,7 +164,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_acabamento));
             mDescription.add(getString(R.string.desc_acabamento));
             images.add(acabamento.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-10_2014-controle-de-materiais-de-acabamento-e-revestimento.pdf");
         }
         if (controleDeFumaca.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -171,7 +172,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_fumaca));
             mDescription.add(getString(R.string.desc_fumaca));
             images.add(controleDeFumaca.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-15_2014-controle-de-fumaca-parte-1-regras-gerais.pdf");
         }
         if (chuveiroAutomatico.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, publico) || consulta) {
@@ -179,7 +180,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_chuveiros));
             mDescription.add(getString(R.string.desc_chuveiros));
             images.add(chuveiroAutomatico.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-23_2014-sistema-de-chuveiros-automaticos.pdf");
         }
         if (deteccaoDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, deteccaof4, prisoes) || consulta) {
@@ -187,7 +188,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_deteccao));
             mDescription.add(getString(R.string.desc_deteccao));
             images.add(deteccaoDeIncendio.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-19_2014-sistemas-de-deteccao-e-alarme-de-incendio.pdf");
         }
         if (elevadorDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -195,7 +196,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_elevador));
             mDescription.add(getString(R.string.desc_elevador));
             images.add(elevadorDeEmergencia.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("");
         }
         if (extintor.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -203,7 +204,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_extintor));
             mDescription.add(getString(R.string.desc_extintor));
             images.add(extintor.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-21_2014-extintores.pdf");
         }
         if (hidranteEMangotinho.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, alojamentos) || consulta) {
@@ -211,7 +212,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_mangotinhos));
             mDescription.add(getString(R.string.desc_mangotinhos));
             images.add(hidranteEMangotinho.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("nt-22_2014-sistemas-de-hidrantes-e-de-mangotinhos-para-combate-a-incendio.pdf");
         }
         if (hidranteHurbano.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -220,7 +221,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_hidrante));
             images.add(hidranteHurbano.getImagem());
             if (hidranteHurbano.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
+            else recomendado.add("Obrigatório");
             URLpdf.add("nt-34_2014-hidrante-urbano.pdf");
         }
         if (iluminacaoDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -229,7 +230,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_iluminacao));
             images.add(iluminacaoDeEmergencia.getImagem());
             if (iluminacaoDeEmergencia.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
+            else recomendado.add("Obrigatório");
             URLpdf.add("nt-18_2014-iluminacao-de-emergencia.pdf");
         }
         if (resfriamento.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -237,7 +238,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_Resfriamento));
             mDescription.add(getString(R.string.desc_Resfriamento));
             images.add(resfriamento.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("");
         }
         if (saidaDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -245,7 +246,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_saida));
             mDescription.add(getString(R.string.desc_saida));
             images.add(saidaDeEmergencia.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("NT-11_2021-Saidas-de-Emergencia.pdf");
         }
         if (estrutural.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -253,7 +254,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_estrutural));
             mDescription.add(getString(R.string.desc_estrutural));
             images.add(estrutural.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("");
         }
         if (sinalizacaoDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -262,7 +263,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_sinalizacao));
             images.add(sinalizacaoDeEmergencia.getImagem());
             if (sinalizacaoDeEmergencia.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
+            else recomendado.add("Obrigatório");
             URLpdf.add("nt-20_2014-sinalizacao-de-emergencia.pdf");
         }
         if (spda.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -271,7 +272,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_SPDA));
             images.add(spda.getImagem());
             if (spda.Recomendado(grupo, divisao)) recomendado.add("Recomendado");
-            else recomendado.add("Exigência");
+            else recomendado.add("Obrigatório");
             URLpdf.add("NT-40_2019-SPDA.pdf");
         }
         if (sistemaDeEspuma.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -279,7 +280,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_espuma));
             mDescription.add(getString(R.string.desc_espuma));
             images.add(sistemaDeEspuma.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("");
         }
         if (sistemaDeComunicacao.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -287,7 +288,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_comunicacao));
             mDescription.add(getString(R.string.desc_comunicacao));
             images.add(sistemaDeComunicacao.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("");
         }
         if (sistemaDeCircuitoDeTv.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
@@ -295,7 +296,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             sTitle.add(getString(R.string.subtit_tv));
             mDescription.add(getString(R.string.desc_tv));
             images.add(sistemaDeCircuitoDeTv.getImagem());
-            recomendado.add("Exigência");
+            recomendado.add("Obrigatório");
             URLpdf.add("");
         }
 

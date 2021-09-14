@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="8dp"
     android:background="@color/cardview_light_background"
-    tools:context=".Controle_Resultado">
+    tools:context=".resultados.Controle_Resultado">
 
     <ListView
         android:id="@+id/listView"

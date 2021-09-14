@@ -1,4 +1,4 @@
-package br.com.stone4.principal;
+package br.com.stone4.principal.vistoria;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import br.com.stone4.R;
+import br.com.stone4.principal.Vistorias;
 
 public class MainActivity extends AppCompatActivity {
 

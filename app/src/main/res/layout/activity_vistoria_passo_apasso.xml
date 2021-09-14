@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="br.com.stone4.principal.PassoApasso">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,24 +15,25 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/tv_TpAp"
+                android:id="@+id/tv_PapT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:hint="@string/txt_TpAp"
-                android:textColorHint="@color/design_default_color_error"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                style="@style/vist_passoApassoT"
+                />
 
             <TextView
-                android:id="@+id/tv_pAp"
+                android:id="@+id/tv_PapObs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="fill_horizontal"
-                android:hint="@string/txt_pAp"
-                android:textColorHint="@color/black"
-                android:textIsSelectable="true"
-                android:textSize="18sp" />
+                style="@style/vist_passoApassoObs"
+                />
+
+            <TextView
+                android:id="@+id/tv_PapTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/vist_passoApassoTxt"
+                />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/bt_escolha1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bt_vistPaP750m"
+            android:insetTop="10dp"
+            android:insetBottom="10dp"
+            android:onClick="onClick"
+            android:textAllCaps="true"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_escolha2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:hint="@string/bt_vistPaP1500Hid"
+            android:insetTop="10dp"
+            android:onClick="onClick"
+            android:textAllCaps="true"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            app:backgroundTint="@color/red_700" />
+    </LinearLayout>
+
+</RelativeLayout>

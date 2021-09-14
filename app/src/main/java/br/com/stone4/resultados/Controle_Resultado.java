@@ -1,4 +1,4 @@
-package br.com.stone4;
+package br.com.stone4.resultados;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import br.com.stone4.R;
 
 public class Controle_Resultado extends AppCompatActivity {
 
@@ -336,14 +337,18 @@ public class Controle_Resultado extends AppCompatActivity {
                 break;
         }
 
+        TextView textView = findViewById(R.id.txt_guiapratico);
+
+        if (area < 750){
+            textView.setText(R.string.txt_vistPaP750menorTxt);
+        } else {
+            textView.setText(R.string.txt_vistPaP1500HidTxt);
+        }
+
 
         intent.setClass(this, VistoriaInteligente_Resultado.class);
 
         intent.putExtras(parametros);
-    }
-
-    public void certificacaoPrevia(){
-
     }
 
     public void onClick(View view) {

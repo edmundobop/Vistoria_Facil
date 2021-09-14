@@ -1,4 +1,4 @@
-package br.com.stone4;
+package br.com.stone4.resultados;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,6 +14,8 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.stone4.R;
 
 public class AdaptadorExigencias extends ArrayAdapter<String> {
 

@@ -5,62 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Consulta_Rapida_Detalhes"
+    tools:context=".resultados.VistoriaInteligente_Resultado_Detalhes"
     tools:ignore="MergeRootFrame">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
+        android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
             app:contentScrim="@color/material_on_primary_emphasis_medium"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/detail_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
             <ImageView
                 android:id="@+id/imagem_detalhe"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:srcCompat="@drawable/vistoria" />
 
             <TextView
                 android:id="@+id/titulo_detalhes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="120dp"
+                android:layout_marginStart="95dp"
                 android:layout_marginTop="15dp"
                 android:text="Título"
-                android:textColor="@color/black"
+                android:textColor="#FFE082"
+                android:textColorHighlight="#FFE082"
+                android:textColorHint="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/subTitulo_detalhes"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="120dp"
+                android:layout_marginStart="95dp"
                 android:layout_marginTop="60dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClick"
                 android:text="Sub Title"
                 android:textColor="#FBFAFA"
+                android:textColorHighlight="#EF9A9A"
                 android:textColorHint="#FBFAFA"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/pdf_NT_Result"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:contentDescription="Clique para Abrir"
+                android:onClick="onClick"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/logo_pdf" />
+
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -75,7 +88,20 @@
         <com.github.barteksc.pdfviewer.PDFView
             android:id="@+id/tv_arte_result"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#9FA8DA"
+                android:gravity="center_horizontal"
+                android:text="Bizus"
+                android:textColor="#FFEB3B"
+                android:textColorHighlight="#FFEB3B"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </com.github.barteksc.pdfviewer.PDFView>
     </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

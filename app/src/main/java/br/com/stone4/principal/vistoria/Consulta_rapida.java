@@ -1,4 +1,4 @@
-package br.com.stone4.principal;
+package br.com.stone4.principal.vistoria;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-import br.com.stone4.AdaptadorExigencias;
+import br.com.stone4.resultados.AdaptadorExigencias;
 import br.com.stone4.R;
-import br.com.stone4.Consulta_Rapida_Detalhes;
+import br.com.stone4.resultados.Consulta_Rapida_Detalhes;
+import br.com.stone4.resultados.Consulta_Rapida_NT;
 import br.com.stone4.medidas.seguranca.AcessoViaturaEdificacao;
 import br.com.stone4.medidas.seguranca.AlarmeDeIncendio;
 import br.com.stone4.medidas.seguranca.Brigada;
@@ -308,27 +309,24 @@ public class Consulta_rapida extends AppCompatActivity {
         AdaptadorExigencias adapter = new AdaptadorExigencias(this, mTitle, sTitle, mDescription, images, recomendado);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        listView.setOnItemClickListener((AdapterView.OnItemClickListener) (parent, view, position, id) -> {
 
-                System.out.println("O id do item clicado é: " + view.getId());
-                Intent intent = new Intent(getApplicationContext(), Consulta_Rapida_Detalhes.class);
-                // this intent put our 0 index image to another activity
-                Bundle bundle = new Bundle();
-                bundle.putInt("image", (int) images.get(position));
-                intent.putExtras(bundle);
-                // now put title and description to another activity
-                intent.putExtra("title", (String) mTitle.get(position));
-                intent.putExtra("subTitle", (String) sTitle.get(position));
-                intent.putExtra("description", (String) mDescription.get(position));
-                intent.putExtra("recomendado", (String) recomendado.get(position));
-                intent.putExtra("urlPDF", (String) URLpdf.get(position));
-                // also put your position
-                intent.putExtra("position", "" + position);
-                startActivity(intent);
+            System.out.println("O id do item clicado é: " + view.getId());
+            Intent intent = new Intent(getApplicationContext(), Consulta_Rapida_Detalhes.class);
+            // this intent put our 0 index image to another activity
+            Bundle bundle = new Bundle();
+            bundle.putInt("image", (int) images.get(position));
+            intent.putExtras(bundle);
+            // now put title and description to another activity
+            intent.putExtra("title", (String) mTitle.get(position));
+            intent.putExtra("subTitle", (String) sTitle.get(position));
+            intent.putExtra("description", (String) mDescription.get(position));
+            intent.putExtra("recomendado", (String) recomendado.get(position));
+            intent.putExtra("urlPDF", (String) URLpdf.get(position));
+            // also put your position
+            intent.putExtra("position", "" + position);
+            startActivity(intent);
 
-            }
         });
     }
 }
