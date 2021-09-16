@@ -85,15 +85,15 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <com.github.barteksc.pdfviewer.PDFView
-            android:id="@+id/tv_arte_result"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView21"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#9FA8DA"
                 android:gravity="center_horizontal"
                 android:text="Bizus"
@@ -101,7 +101,17 @@
                 android:textColorHighlight="#FFEB3B"
                 android:textSize="20dp"
                 android:textStyle="bold" />
-        </com.github.barteksc.pdfviewer.PDFView>
+
+            <TextView
+                android:id="@+id/bizus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5dp"
+                style="@style/bizus"
+                 />
+        </LinearLayout>
+
+
     </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

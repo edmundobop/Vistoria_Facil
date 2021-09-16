@@ -38,9 +38,26 @@ public class Consulta_Rapida_Detalhes extends AppCompatActivity {
         ImageView iCone = findViewById(R.id.imagem_detalhe);
         iCone.setImageResource(icone);
 
-        PDFView pdfView = findViewById(R.id.tv_arte_result);
-        pdfView.fitToWidth();
-        pdfView.fromAsset(URLpdf).load();
+        TextView bizus = findViewById(R.id.bizus_consulta);
+
+        System.out.println("Exigências tem essevalor: "+exigencia);
+        switch (exigencia){
+            case "Extintor":
+                bizus.setText(R.string.bizus_Extintor);
+                break;
+            case "Saida de Emergencia":
+                bizus.setText(R.string.bizus_SaidaDeEmergencia);
+                break;
+            case "Iluminção de Emergência":
+                bizus.setText(R.string.bizus_iluminacaoDeEmergencia);
+                break;
+            case "Central de Gás":
+                bizus.setText(R.string.bizus_centralDeGas);
+                break;
+            case "Sinalização de Emergência":
+                bizus.setText(R.string.bizus_sinalizacaoDeEmergencia);
+                break;
+        }
 
 
     }

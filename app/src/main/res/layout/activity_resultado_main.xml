@@ -21,7 +21,7 @@
 
                 <TextView
                     android:id="@+id/textView"
-                    style="@style/Tela_Controle_Resultado"
+                    style="@style/bizus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -190,7 +190,7 @@
 
                 <TextView
                     android:id="@+id/textView11"
-                    style="@style/Tela_Controle_Resultado"
+                    style="@style/bizus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -245,7 +245,7 @@
 
                 <TextView
                     android:id="@+id/textView14"
-                    style="@style/Tela_Controle_Resultado"
+                    style="@style/bizus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"

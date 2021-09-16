@@ -60,11 +60,7 @@
                 android:freezesText="false"
                 android:gravity="center"
                 android:text="Exigência"
-                android:textColor="#0B0B0B"
-                android:textColorHighlight="#050505"
-                android:textColorHint="#050505"
-                android:textSize="10dp"
-                android:textStyle="bold|italic" />
+                style="@style/activity_arte_resultado_rec" />
 
         </LinearLayout>
 

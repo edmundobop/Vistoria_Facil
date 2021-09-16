@@ -2,10 +2,10 @@
 <resources>
     <string name="app_name">vistoriaFacil_v2</string>
     <string name="button_vistorias">VISTORIA</string>
-    <string name="button_vistPassoApasso">VISTORIA PASSO-A-PASSO</string>
-    <string name="button_Vistoriador">VISTORIA INTELIGENTE</string>
-    <string name="button_ConsultaRapida">CONSULTA RÁPIDA</string>
-    <string name="button_passoaPasso">SOLICITAR VISTORIA: PASSO-A-PASSO</string>
+    <string name="button_vistPassoApasso">VISTORIA RÁPIDA: <i>Utilize se não tem dúvida sobre a edificação e os conceitos</i></string>
+    <string name="button_Vistoriador">VISTORIA SEGURA: <i>Utilize se tiver alguma dúvida sobre a edificação e os conceitos</i>. <u><i>Extremamete recomendado para INICIANTES</i></u></string>
+    <string name="button_ConsultaRapida">CONSULTA RÁPIDA: <i>Consulte todos os bizus e NTs</i></string>
+    <string name="button_passoaPasso">SOLICITAR VISTORIA: PASSO-A-PASSO: <i>Guia para o contribuinte</i></string>
     <string name="button_certPrevia">CERTIFICAÇÃO PRÉVIA</string>
 
     //---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -434,11 +434,118 @@ o processo e gerar o número do protocolo.</string>
     <string name="txt_vistPaP750menorTxt">
         <b>1</b>.	Ao chegar no local, informar o motivo da visita e solicitar um responsável que conheça a edificação para acompanhar a vistoria;
 \n\n<b>2.</b>	Visitar toda a área correspondênte à edificação (área construída);
-\n\n<b>3.</b>	Verificar os itens básicos exigidos para a vistoria da edificação.<u> Se estiver utilizando o módulo de "Vistoria Inteligente", clique na imagem "Medidas de Segurança", para ver quais são os itens;</u>
+        \n\n<b>3.</b>	Verificar os itens básicos exigidos para a vistoria da edificação. Se estiver utilizando o módulo de <u>Vistoria Segura</u>, clique na imagem acima <u>Medidas de Segurança</u>, para ver quais são os itens;
 \n\n<b>5.</b>	Solicitar (QUANDO NECESSÁRIO) documentos (Nota fiscal, ART/RRT do responsável pela instalação/manutenção dos sistemas e equipamentos existentes na edificação, etc);
 \n\n<b>4.</b>	Preencher o relatório de vistoria conforme as exigências; assinar e pegar a assinatura do responsável ou envolvido;
 \n\n<b>4.</b>	Pronto! Vistoria Realizada! Agora é só lançar no sistema.
 
     </string>
+    ---------------------------------------------------------------------------------------------------------------------------
+    TELA CONTROLE RESULTADO
+
+    ------------------------------------------------------------------------------------------------------------------------------
+    BIZUS
+
+    Extintores
+    <string name="bizus_Extintor">
+        <b>O que devo olhar ao verificar extintores:</b>\n
+        - Deve ser instalado pelo menos um extintor de incêndio a não mais de 5 m da entrada principal da edificação e das escadas nos demais
+    pavimentos.\n
+        - Verificar a validade - 2º nível
+        - Devem estar desobstruídos e devidamente sinalizados de acordo com o estabelecido na NT 20\n
+        - O lacre do extintor deve etar inviolável (não aberto)\n
+        - O manômetro deve indicar que o mesmo está pressurizado (o ponteiro deve estar localizado na área verde)\n
+        - Verificar se o mesmo está em condições de uso (exigir manutenção caso contrário)\n\n
+    <b>Qual tipo de Extintor devo Exigir?</b>\n
+        Casos Gerais - adequado para todos os casos, ou quando estiver em dúvida:  Pó ABC de 4kg \n
+        Casos Específicos: \n- Sólidos: Ex: Galpão preenchido SOMENTE por objetos de madeira ou tecido: Água (indicado para locais fechados);\n
+            - Equipamentos energizados. Ex: sala predominantemente composta por computadores: Pó BC ou CO2 (indicado para locais fechados);\n
+            - Líquidos Inflamáveis: Espuma, Pó BC ou CO2 (indicado para locais fechados);\n
+            - <u>OBSERVAÇÃO</u> Um extintor de risco específico NÃO substitui a necessidade de mais um que complete todo
+o ABC; Ex: Caso tenha 1 extintor A, deve haver outro BC - O tipo ABC substitui todos eles (por isso é o mais indicado) \n\n
+    <b>Quantos Extintores devo Exigir?</b>\n
+        Regra Geral: \nEdificação de Risco Baixo ou Médio: 1 (uma unidade) a cada 250m² por pavimento\n
+             - Edificação de Risco Alto: 1 (uma unidade) a cada 150m² por pavimento\n
+             - <u>OBSERVAÇÃO:</u> Os extintores deverão ser instalados de forma que a distância máxima a percorrer pelo
+operador não seja superior a 20 m.\n\n
+    <b>Onde e como devem ser instalados:</b>\n
+        Em paredes ou Divisórias: \n
+            - A altura de fixação do suporte deve variar no máximo entre 1,6 m do
+piso, e de forma que a parte inferior do extintor permaneça no mínimo a 0,2 m do piso acabado.\n
+        Sobre o piso:\n
+            - Em suportes apropriados, com altura recomendada entre 0,10 m e 0,20 m do piso.\n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+
+    </string>
+
+    Saída de Emergência
+    <string name="bizus_SaidaDeEmergencia">
+
+        <b>O que devo verificar?</b>\n
+        - A saída de emergência compreende o seguinte:\n
+            a) Acessos ou corredores;\n
+            b) Rotas de saídas horizontais, quando houver, e respectivas portas ou espaço livre exterior, nas edificações térreas;\n
+            c) Escadas ou rampas;\n
+            d) Descarga;\n
+            e) Elevador de Emergência\n
+        - <u>Todos os componentes da saída de emergência devem estar desobstruídos, livres de barreiras e de previsão destas.</u>
+        \n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    Central de Gás:
+    <string name="bizus_centralDeGas">
+        <b>Fique atento à:</b>\n
+        Registro:\n
+        - Deve estar dentro da validade e em boas condições.\n
+        Mangueira:\n
+        - Deve estar dentro da validade e em boas condições;\n
+        - Deve ser aprovada pelo Immetro. <u>Não aceite mangueiras multi-uso</u>\n
+        Botijão de gás:\n
+        - Quantidade MÁXIMA permitida: 2 (duas unidades);\n
+        - Deve estar em boas condições
+        Local:\n
+        - Deve estar FORA DA EDIFICAÇÃO;\n
+        - Deve estar protegido de sol e chuva e <u>com ventilação</u>;\n\n
+        Central de gás:\n
+        - Exigência: a partir do P45 ou quantidade acima de 2 para P13\n
+        - Isolamento\n
+        - Sinalização\n
+        - Registro de corte\n
+        - Cor da mangueira: amarela dentro da edificação e/ou branca fora dela (opcional)\n
+        - ART
+        \n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    Sinalização de Emergência:
+    <string name="bizus_sinalizacaoDeEmergencia">
+        <b>O que devo ficar de olho:</b>\n
+        - A sinalização de emergência faz uso de símbolos, mensagens e cores, definidos nesta NT, que devem ser alocados convenientemente no interior
+da edificação e áreas de risco, segundo os critérios desta NT;\n
+        - A sinalização de emergência divide-se em sinalização básica e sinalização complementar, conforme segue:\n\n
+        <u>Sinalização Básica:</u>\n
+        - conjunto mínimo de sinalização que uma edificação deve apresentar, constituído por 4 categorias, de acordo com sua função:\n
+        1 - Proibição: Ex: Proibido fumar; Proibido uso de Celular; etc; \n
+        2 - Alerta: Ex: Alerta Geral; Cuidado, risco de incêndio, etc;\n
+        3 - Orientação e Salvamento: Ex: Saída de Emergência; Escada de Emergência, etc;\n
+        4 - Equipamentos: Ex: Extintor de Incêndio, Alarme de Incêndio, etc.\n
+        <b>Consulte a NT para verificar a lista completa de cada item básico, na qual constam as informações necessárias, muitas delas em imagens de fácil entendimento.</b>
+
+        \n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    Iluminação de Emergência
+    <string name="bizus_iluminacaoDeEmergencia">
+        <b>No que devo ficar de olho:</b>\n
+        - A distância máxima entre os pontos de iluminação de emergência não deve ultrapassar 15 m e entre o ponto de iluminação e a parede 7,5 m.
+Outro distanciamento entre pontos pode ser adotado, desde que atenda aos parâmetros da NBR 10898;\n
+        - No caso de instalação aparente, a tubulação e as caixas de passagem devem ser metálicas ou em PVC rígido antichama, conforme NBR 15465;\n
+        <b>Aqui não tem muito bizu. Leia a NT, pois ela só tem 1 página e consta tudo que precisa saber.</b>
+        \n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
 
 </resources>

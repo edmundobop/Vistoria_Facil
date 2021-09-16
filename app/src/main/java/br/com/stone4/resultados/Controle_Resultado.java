@@ -339,7 +339,7 @@ public class Controle_Resultado extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.txt_guiapratico);
 
-        if (area < 750){
+        if (area <= 750){
             textView.setText(R.string.txt_vistPaP750menorTxt);
         } else {
             textView.setText(R.string.txt_vistPaP1500HidTxt);
@@ -351,11 +351,17 @@ public class Controle_Resultado extends AppCompatActivity {
         intent.putExtras(parametros);
     }
 
+    public int CargaDeIncendio(int grupo, int divisao){
+
+        return 0;
+    }
+
     public void onClick(View view) {
         startActivity(intent);
     }
 
 }
+
 
 // vou chamar a tela da nova Listagem, passando como parametro o conteudo, por meio de lista
         /*

@@ -1,6 +1,8 @@
 package br.com.stone4.resultados;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
+import java.util.Arrays;
+
 import br.com.stone4.R;
 import br.com.stone4.principal.Vistorias;
 import br.com.stone4.principal.vistoria.Cert_Previa;
@@ -20,6 +24,7 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
     Intent intent;
     Bundle parametros;
 
+    @SuppressLint({"ResourceType", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,9 +46,26 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
         ImageView iCone = findViewById(R.id.imagem_detalhe);
         iCone.setImageResource(icone);
 
-        PDFView pdfView = findViewById(R.id.tv_arte_result);
-        pdfView.fitToWidth();
-        pdfView.fromAsset(URLpdf).load();
+        TextView bizus = findViewById(R.id.bizus);
+
+        switch (exigencia){
+            case "Extintor":
+                bizus.setText(R.string.bizus_Extintor);
+                break;
+            case "Saida de Emergencia":
+                bizus.setText(R.string.bizus_SaidaDeEmergencia);
+                break;
+            case "Iluminção de Emergência":
+                bizus.setText(R.string.bizus_iluminacaoDeEmergencia);
+                break;
+            case "Central de Gás":
+                bizus.setText(R.string.bizus_centralDeGas);
+                break;
+            case "Sinalização de Emergência":
+                bizus.setText(R.string.bizus_sinalizacaoDeEmergencia);
+                break;
+        }
+
 
 
     }
@@ -55,3 +77,10 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
         startActivity(intent);
     }
 }
+/* Use o codigo abaixo para utilizar string-array
+        TextView bizus = findViewById(R.id.bizus);
+        Resources res = getResources();
+        String[] Sbizus = res.getStringArray(R.array.bizu_extintores_array);
+        bizus.setText(Arrays.toString(Sbizus));
+
+ */

@@ -27,7 +27,7 @@ public class AdaptadorExigencias extends ArrayAdapter<String> {
     List Recomend;
 
     public AdaptadorExigencias(Context c, ArrayList title, ArrayList sTitle, ArrayList mDescription, ArrayList imgs, ArrayList Recomend) {
-        super(c, R.layout.arte_resultado, R.id.tv_arte_result, title);
+        super(c, R.layout.arte_resultado, title);
 
         this.context = c;
         this.rTitle = title;
@@ -58,7 +58,6 @@ public class AdaptadorExigencias extends ArrayAdapter<String> {
            myRecomend.setBackgroundResource(R.color.teal_200);
         } else {
             myRecomend.setBackgroundResource(R.color.red_700);
-            myRecomend.setTextColor(R.color.white);
         }
 
 
