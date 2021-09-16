@@ -427,6 +427,52 @@ o processo e gerar o número do protocolo.</string>
 
     </string>
 
+    <string name="txt_vistPaP1500HidTxt1">
+        Ao chegar no local, informar o motivo da visita e solicitar o projeto aprovado pelo CBMGO e um responsável que conheça a edificação para acompanhar a vistoria;</string>
+    <string name="txt_vistPaP1500HidTxt2">
+        Verificar no memorial descritivo quais itens de segurança estão previstos para a edificação em questão;</string>
+    <string name="txt_vistPaP1500HidTxt3">
+        Se localizar no espaço em relação ao projeto para iniciar a vistoria;</string>
+    <string name="txt_vistPaP1500HidTxt4">
+        Verificar os itens básicos como: extintores; funcionamento da iluminação de emergência, localização dos hidrantes conforme o projeto; pontos de alarme conforme o projeto; localização da central de alarme de incêndio; sinalização visual e sonora (tipo sirene); rota de fuga; e sinalização dos sistemas;</string>
+    <string name="txt_vistPaP1500HidTxt5">
+        Se todos os itens anteriores estiverem de acordo com o projeto, deverá iniciar os testes dos sistemas (hidrantes e alarme);</string>
+    <string name="txt_vistPaP1500HidTxt6">
+        Testar o sistema de hidrantes verificando as bombas elétricas e a combustão (potência conforme o memorial descritivo), verificar se o acionamento é manual ou automático Se o sistema for manual, o mesmo deverá possuir uma botoeira tipo liga/desliga ao lado de cada caixa de hidrante;</string>
+    <string name="txt_vistPaP1500HidTxt7">
+        Verificar se, ao acionar a bomba de incêndio, a sirene localizada na casa de bombas foi acionada;</string>
+    <string name="txt_vistPaP1500HidTxt8">
+        Verificar se edificação possui gerador e se o mesmo atende aos sistemas;</string>
+    <string name="txt_vistPaP1500HidTxt9">
+        Verificar a central de alarme de acordo com o acionamento da botoeira; se a central for do tipo endereçável, vai aparecer no painel o local do acionamento do alarme. Porém, se a central foi convencional, será obrigatório ter uma legenda fixada ao lado informado quais os locais de acionamento do alarme;</string>
+    <string name="txt_vistPaP1500HidTxt10">
+        Deverão verificar após os testes, se a alimentação da bomba de incêndio encontra-se anterior à chave geral e sinalizada, e realizar os testes dos hidrantes novamente;</string>
+    <string name="txt_vistPaP1500HidTxt11">
+        Se o sistema for atendido por gerador, deverá realizar o teste desligando a energia da edificação e, após o acionamento do gerador, realizar o teste dos hidrantes novamente, atentando-se que somente a bomba poderá receber eletricidade; portanto o resto da edificação deverá estar sem energia;</string>
+    <string name="txt_vistPaP1500HidTxt12">
+        Verificar as condições e localizações conforme projeto do registro de recalque (contendo luva de redução e estar limpo) bem como sua sinalização;</string>
+    <string name="txt_vistPaP1500HidTxt13">
+        Verificar no projeto se é solicitada a área reservada para viatura do CBMGO e solicitar sua sinalização;</string>
+    <string name="txt_vistPaP1500HidTxt14">
+        Em edificações verticais o acesso ao barrilete (casa de bombas) deverá ser sinalizado e sua porta de acesso deverá ser tipo porta corta-fogo;</string>
+    <string name="txt_vistPaP1500HidTxt15">
+        Verificar a identificação e sinalização do barrilete (casa de bombas), bem como sua altura e da reserva técnica de incêndio (R.T.I) com sua capacidade;</string>
+    <string name="txt_vistPaP1500HidTxt16">
+        Solicitar ART/RRT do responsável pela instalação/manutenção dos sistemas existentes na edificação;</string>
+    <string name="txt_vistPaP1500HidTxt17">
+        Quando houver sistema de sprinklers, o mesmo possui sua própria bomba e um registro de recalque independente;</string>
+    <string name="txt_vistPaP1500HidTxt18">
+        Quando houver na edificação o sistema de hidrantes e o de sprinklers, os registros de recalque deverão ser identificados conforme o sistema;</string>
+    <string name="txt_vistPaP1500HidTxt19">
+        Verificar a existência do SPDA e suas condições, bem como sua ART de manutenção/instalação;</string>
+    <string name="txt_vistPaP1500HidTxt20">
+        Verificar no memorial descritivo se há a necessidade de instalação de hidrante público de coluna em um raio máximo de 300 metros e solicitar a instalação do mesmo;</string>
+    <string name="txt_vistPaP1500HidTxt21">
+        Verificar no memorial descritivo se o estabelecimento exige Brigada de incêndio. Se for exigido, será obrigatório o certificado da Brigada;</string>
+    <string name="txt_vistPaP1500HidTxt22">
+        Verificar sempre na Norma (ou no menu <u>Vistoria Segura</u>, deste aplicativo), se há a exigência da Brigada. Ex: em silos com aprovação antiga há a obrigação de treinamento de brigada, porém com a atualização da Norma, está recomendado (não é mais obrigatório).
+    </string>
+
     Vistorias Menores que 750m
 
     <string name="txt_vistPaP750menorT">PROCEDIMENTOS EM VISTORIAS MENORES QUE 750m²</string>
@@ -439,6 +485,25 @@ o processo e gerar o número do protocolo.</string>
 \n\n<b>4.</b>	Preencher o relatório de vistoria conforme as exigências; assinar e pegar a assinatura do responsável ou envolvido;
 \n\n<b>4.</b>	Pronto! Vistoria Realizada! Agora é só lançar no sistema.
 
+    </string>
+
+    <string name="txt_vistPaP750menorT1">PROCEDIMENTOS EM VISTORIAS MENORES QUE 750m²</string>
+    <string name="txt_vistPaP750menorObs1">Somente para edificações com Área MENOR que 750m² e Altura MENOR que 12m</string>
+    <string name="txt_vistPaP750menorTxt1">
+        Ao chegar no local, informar o motivo da visita e solicitar um responsável que conheça a edificação para
+        acompanhar a vistoria;</string>
+    <string name="txt_vistPaP750menorTxt2">
+        Visitar toda a área correspondênte à edificação (área construída);</string>
+    <string name="txt_vistPaP750menorTxt3">
+        Verificar os itens básicos exigidos para a vistoria da edificação. Se estiver utilizando o módulo
+        de <u>Vistoria Segura</u>, clique na imagem acima <u>Medidas de Segurança</u>, para ver quais são os itens;</string>
+    <string name="txt_vistPaP750menorTxt4">
+        Solicitar (QUANDO NECESSÁRIO) documentos (Nota fiscal, ART/RRT do responsável pela instalação/manutenção
+        dos sistemas e equipamentos existentes na edificação, etc);</string>
+    <string name="txt_vistPaP750menorTxt5">
+        Preencher o relatório de vistoria conforme as exigências; assinar e pegar a assinatura do responsável ou envolvido;</string>
+    <string name="txt_vistPaP750menorTxt6">
+        Pronto! Vistoria Realizada! Agora é só lançar no sistema.
     </string>
     ---------------------------------------------------------------------------------------------------------------------------
     TELA CONTROLE RESULTADO

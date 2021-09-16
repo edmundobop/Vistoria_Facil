@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,18 +17,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/cinco" />
+
         <CheckedTextView
             android:id="@+id/ct_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
             android:checked="false"
-            android:drawableLeft="@drawable/um"
-            android:gravity="center"
-            android:text="Teste de um texto utilizando um text view longo">
+            android:textSize="20dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="o">
 
         </CheckedTextView>
-
 
 
     </LinearLayout>

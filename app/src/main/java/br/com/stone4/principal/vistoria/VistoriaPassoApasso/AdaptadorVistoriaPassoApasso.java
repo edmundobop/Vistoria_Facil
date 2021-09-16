@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,12 +24,12 @@ public class AdaptadorVistoriaPassoApasso extends ArrayAdapter<String> {
     List iItem;
     List iImages;
 
-    public AdaptadorVistoriaPassoApasso(Context c, ArrayList item, ArrayList numero) {
+    public AdaptadorVistoriaPassoApasso(Context c, ArrayList item, ArrayList imagem) {
         super(c, R.layout.activity_passo_apasso_vist_design, item);
 
         this.context = c;
         this.iItem = item;
-        this.iImages = numero;
+        this.iImages = imagem;
     }
 
     @SuppressLint("ResourceAsColor")
@@ -41,7 +42,10 @@ public class AdaptadorVistoriaPassoApasso extends ArrayAdapter<String> {
 
 
         CheckedTextView item = row.findViewById(R.id.ct_item);
-        item.setCheckMarkDrawable((int)iImages.get(position));
+        ImageView item_image = row.findViewById(R.id.item_image);
+
+        item_image.setImageResource((int) iImages.get(position));
+        item.setText((String) iItem.get(position));
 
         return row;
     }
