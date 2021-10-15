@@ -183,7 +183,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             recomendado.add("Obrigatório");
             URLpdf.add("nt-23_2014-sistema-de-chuveiros-automaticos.pdf");
         }
-        if (deteccaoDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, deteccaof4, prisoes) || consulta) {
+        if (deteccaoDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, deteccaof4, prisoes, alojamentos) || consulta) {
             mTitle.add(deteccaoDeIncendio.getNome());
             sTitle.add(getString(R.string.subtit_deteccao));
             mDescription.add(getString(R.string.desc_deteccao));

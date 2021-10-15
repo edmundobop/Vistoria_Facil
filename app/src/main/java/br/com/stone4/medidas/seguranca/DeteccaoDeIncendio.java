@@ -49,7 +49,7 @@ public class DeteccaoDeIncendio {
     }
 
     @SuppressLint("NonConstantResourceId")
-    public Boolean Exigencia (int grupo, int divisao, int area, int altura,int lotacao,int pavimentos, int tunel, int liquidos, int produtos, int plataforma, int deposito, int deteccaof4, int prisoes){
+    public Boolean Exigencia (int grupo, int divisao, int area, int altura,int lotacao,int pavimentos, int tunel, int liquidos, int produtos, int plataforma, int deposito, int deteccaof4, int prisoes, int alojamentos){
 
         boolean tem = false;
         boolean maiorq12e750  = altura >= R.id.ALT4 || area > 750;
