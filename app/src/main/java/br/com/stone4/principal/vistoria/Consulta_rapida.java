@@ -2,18 +2,13 @@ package br.com.stone4.principal.vistoria;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-import br.com.stone4.resultados.AdaptadorExigencias;
 import br.com.stone4.R;
-import br.com.stone4.resultados.Consulta_Rapida_Detalhes;
-import br.com.stone4.resultados.Consulta_Rapida_NT;
 import br.com.stone4.medidas.seguranca.AcessoViaturaEdificacao;
 import br.com.stone4.medidas.seguranca.AlarmeDeIncendio;
 import br.com.stone4.medidas.seguranca.Brigada;
@@ -37,11 +32,11 @@ import br.com.stone4.medidas.seguranca.SinalizacaoDeEmergencia;
 import br.com.stone4.medidas.seguranca.SistemaDeCircuitoDeTv;
 import br.com.stone4.medidas.seguranca.SistemaDeComunicacao;
 import br.com.stone4.medidas.seguranca.SistemaDeEspuma;
+import br.com.stone4.resultados.AdaptadorExigencias;
+import br.com.stone4.resultados.Consulta_Rapida_Detalhes;
 
 public class Consulta_rapida extends AppCompatActivity {
 
-    private ListView listView;
-    private Intent intent;
     private ArrayList<String> mTitle;
     private ArrayList<String> sTitle;
     private ArrayList<String> mDescription;
@@ -55,8 +50,8 @@ public class Consulta_rapida extends AppCompatActivity {
         setContentView(R.layout.activity_resultado);
 
         // Controle de Resultado
-        intent = getIntent();
-        Bundle parametros = intent.getExtras();
+        Intent intent1 = getIntent();
+        Bundle parametros = intent1.getExtras();
         // Pego o conteudo do bundle
 
         Boolean consulta = parametros.getBoolean("true");
@@ -105,7 +100,7 @@ public class Consulta_rapida extends AppCompatActivity {
         SistemaDeComunicacao sistemaDeComunicacao = new SistemaDeComunicacao();
         SistemaDeCircuitoDeTv sistemaDeCircuitoDeTv = new SistemaDeCircuitoDeTv();
 
-        listView = (ListView) findViewById(R.id.listView);
+        ListView listView = findViewById(R.id.listView);
 
         mTitle = new ArrayList<>();
         sTitle = new ArrayList<>();
@@ -188,7 +183,7 @@ public class Consulta_rapida extends AppCompatActivity {
             recomendado.add("Exigência");
             URLpdf.add("nt-23_2014-sistema-de-chuveiros-automaticos.pdf");
         }
-        if (deteccaoDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, deteccaof4, prisoes) || consulta) {
+        if (deteccaoDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, deteccaof4, prisoes, alojamentos) || consulta) {
             mTitle.add(deteccaoDeIncendio.getNome());
             sTitle.add(getString(R.string.subtit_deteccao));
             mDescription.add(getString(R.string.desc_deteccao));
@@ -309,20 +304,20 @@ public class Consulta_rapida extends AppCompatActivity {
         AdaptadorExigencias adapter = new AdaptadorExigencias(this, mTitle, sTitle, mDescription, images, recomendado);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener((AdapterView.OnItemClickListener) (parent, view, position, id) -> {
+        listView.setOnItemClickListener((parent, view, position, id) -> {
 
             System.out.println("O id do item clicado é: " + view.getId());
             Intent intent = new Intent(getApplicationContext(), Consulta_Rapida_Detalhes.class);
             // this intent put our 0 index image to another activity
             Bundle bundle = new Bundle();
-            bundle.putInt("image", (int) images.get(position));
+            bundle.putInt("image", images.get(position));
             intent.putExtras(bundle);
             // now put title and description to another activity
-            intent.putExtra("title", (String) mTitle.get(position));
-            intent.putExtra("subTitle", (String) sTitle.get(position));
-            intent.putExtra("description", (String) mDescription.get(position));
-            intent.putExtra("recomendado", (String) recomendado.get(position));
-            intent.putExtra("urlPDF", (String) URLpdf.get(position));
+            intent.putExtra("title", mTitle.get(position));
+            intent.putExtra("subTitle", sTitle.get(position));
+            intent.putExtra("description", mDescription.get(position));
+            intent.putExtra("recomendado", recomendado.get(position));
+            intent.putExtra("urlPDF", URLpdf.get(position));
             // also put your position
             intent.putExtra("position", "" + position);
             startActivity(intent);

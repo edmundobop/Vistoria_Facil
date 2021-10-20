@@ -2,10 +2,15 @@ package br.com.stone4.principal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import br.com.stone4.R;
 import br.com.stone4.principal.vistoria.Cert_Previa;
@@ -16,13 +21,16 @@ import br.com.stone4.principal.vistoria.VistoriaPassoApasso.VistoriaPassoApasso;
 
 public class Vistorias extends AppCompatActivity {
 
+    private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vistorias);
 
+        /*
         // Botão Vistoria Passo-A-Passo
-        Button bt_vistPassoApasso = (Button) findViewById(R.id.button_vistPassoApasso);
+        Button bt_vistPassoApasso = (Button) findViewById(R.id.im);
         bt_vistPassoApasso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -31,7 +39,7 @@ public class Vistorias extends AppCompatActivity {
             }
         });
 
-        /** Called when the user taps the Send button */
+
         // Botão Certidão Prévia
         Button bt_certPrevia = (Button) findViewById(R.id.button_certPrevia);
         bt_certPrevia.setOnClickListener(new View.OnClickListener() {
@@ -78,5 +86,13 @@ public class Vistorias extends AppCompatActivity {
                 startActivity(irTela);
             }
         });
+        */
+
+    }
+
+    public void onClic(View v){
+        v.startAnimation(buttonClick);
+        Intent irTela = new Intent(Vistorias.this, VistoriaInteligente.class);
+        startActivity(irTela);
     }
 }
