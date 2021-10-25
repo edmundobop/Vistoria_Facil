@@ -2,22 +2,14 @@ package br.com.stone4.resultados;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.github.barteksc.pdfviewer.PDFView;
-
-import java.util.Arrays;
-
 import br.com.stone4.R;
-import br.com.stone4.principal.Vistorias;
-import br.com.stone4.principal.vistoria.Cert_Previa;
 
 public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
 
@@ -46,9 +38,10 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
         ImageView iCone = findViewById(R.id.imagem_detalhe);
         iCone.setImageResource(icone);
 
+
         TextView bizus = findViewById(R.id.bizus);
 
-        switch (exigencia){
+        switch (exigencia) {
             case "Extintor":
                 bizus.setText(R.string.bizus_Extintor);
                 break;
@@ -64,19 +57,27 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
             case "Sinalização de Emergência":
                 bizus.setText(R.string.bizus_sinalizacaoDeEmergencia);
                 break;
+            case "SPDA":
+                bizus.setText(R.string.bizus_spda);
+                break;
+            case "Controle de Materiais de Acabamento":
+                bizus.setText(R.string.bizus_material_acabamento);
+                break;
+            case "Hidrante e Mangotinho":
+                bizus.setText(R.string.bizus_hidranteM);
+                break;
         }
-
-
-
     }
 
-    public void onClick(View view){
-        // PDF Viwer
-        intent.setClass(this,Bizus_NT.class);
-        intent.putExtras(parametros);
-        startActivity(intent);
+
+        public void onClick (View view){
+            // PDF Viwer
+            intent.setClass(this, Bizus_NT.class);
+            intent.putExtras(parametros);
+            startActivity(intent);
+        }
     }
-}
+
 /* Use o codigo abaixo para utilizar string-array
         TextView bizus = findViewById(R.id.bizus);
         Resources res = getResources();

@@ -539,6 +539,7 @@ operador não seja superior a 20 m.\n\n
         Em paredes ou Divisórias: \n
             - A altura de fixação do suporte deve variar no máximo entre 1,6 m do
 piso, e de forma que a parte inferior do extintor permaneça no mínimo a 0,2 m do piso acabado.\n
+            - Quando em Coluna, colocar placa em todos os lados da mesma
         Sobre o piso:\n
             - Em suportes apropriados, com altura recomendada entre 0,10 m e 0,20 m do piso.\n\n
         <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
@@ -554,9 +555,27 @@ piso, e de forma que a parte inferior do extintor permaneça no mínimo a 0,2 m 
             b) Rotas de saídas horizontais, quando houver, e respectivas portas ou espaço livre exterior, nas edificações térreas;\n
             c) Escadas ou rampas;\n
             d) Descarga;\n
-            e) Elevador de Emergência\n
-        - <u>Todos os componentes da saída de emergência devem estar desobstruídos, livres de barreiras e de previsão destas.</u>
-        \n\n
+            e) Elevador de Emergência\n\n
+        - Todos os componentes da saída de emergência devem estar desobstruídos, livres de barreiras e de previsão destas (Ex: todas as portas de saída de emergência devem estar destrancadas);
+    \n
+        - A distância máxima a percorrer até uma saída de emergência não deve exceder 40m;\n\n
+        Corredores: \n
+        - Largura mínima de 1,20m (obs: pode-se relevar essa medida quando a edificação possuir mais de uma saída de emergência);\n\n
+        Rampas: \n
+        - Deve haver corrimão e guarda corpor em ambos os lados. <u>EXCEÇÃO: Escada de uso restrito com até 20 pessoas na edificação - pode haver corrimão em um só lado</u>;\n
+        - Proporção: Máximo de 12% de inclinação para rotas de fulga e 20% para as demais;\n\n
+        Sacadas: \n
+        - Mínimo de 1,30m de guarda corpo;\n\n
+        Escadas: \n
+        - Corrimão: <u>Entre 80cm e 92cm</u> (obs: fixar o corrimão por baixo, para não obstruir a passagem da mão por toda a barra;\n
+        - Guarda-Corpo: Mínimo de 1,05cm de altura. Quando precisa? <u>Acima de 19cm</u>;\n
+        - Degraus: Fórmula: Altura x 2 + Comprimento do piso = 63cm a 64cm;\n
+        - Janela: quando houver, o topo da mesma deve estar a 15cm do teto;\n\n
+        Sub-solo: \n
+        - Diferente de estacionamento, deve haver projeto;\n\n
+        Reunião de Público: \n
+        - Placa de lotação (Obrigatório);\n
+        - Barra anti-pânico exigida para lotação acima de 200 pessoas;\n\n
         <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
     </string>
 
@@ -568,19 +587,30 @@ piso, e de forma que a parte inferior do extintor permaneça no mínimo a 0,2 m 
         Mangueira:\n
         - Deve estar dentro da validade e em boas condições;\n
         - Deve ser aprovada pelo Immetro. <u>Não aceite mangueiras multi-uso</u>\n
-        Botijão de gás:\n
-        - Quantidade MÁXIMA permitida: 2 (duas unidades);\n
-        - Deve estar em boas condições
-        Local:\n
-        - Deve estar FORA DA EDIFICAÇÃO;\n
-        - Deve estar protegido de sol e chuva e <u>com ventilação</u>;\n\n
-        Central de gás:\n
-        - Exigência: a partir do P45 ou quantidade acima de 2 para P13\n
-        - Isolamento\n
-        - Sinalização\n
-        - Registro de corte\n
-        - Cor da mangueira: amarela dentro da edificação e/ou branca fora dela (opcional)\n
-        - ART
+        <b>Botijão de gás:\n</b>
+        - Deve estar FORA DA EDIFICAÇÃO (área EXTERNA); em local ventilado e protegido de sol e chuva;\n
+        - Quantidade MÁXIMA permitida: 5 unidades de P-13 ou até 190kg para certificação prévia (acima disso deve haver central de gás);\n
+        - Deve estar em boas condições;\n\n
+        <b>Central de gás:\n</b>
+        - Exigência: a partir de 190kg ou quantidade acima de 5 para P13;\n
+        - Isolamento;\n
+        - Sinalização;\n
+        - Registro de corte;\n
+        - Cor da mangueira: amarela dentro da edificação e/ou branca fora dela (opcional);\n
+        - Distância mínima da central de gás de outras fontes externas (ex: bueiros): 1,5m;\n
+        - ART\n\n
+        <b>Depósito de gás (Revenda/Distribuição):</b>\n
+        - Projeto Técnico;\n
+        - Placa de informações na entrada (ou em local próximo) da edificação, contendo dentre outras informações: <u>Classe do depósito, Razão Social, CNPJ;</u>\n
+        - Balança no local para pesar os botijões - conforme código de defesa do consumidor;\n
+        - Para classe 3 acima, deve haver corredor de inspeção;\n
+        - Saída de emergência: Deve haver 2 saída de emergência - 1 de 1,2m de largura por 2,10m de altura e outra como portão de entrada/saída de veículos;\n
+        - Demais itens de segurança: extintores, sinalização, etc;\n
+        Plataforma/Base de acondicionamento de botijões:\n
+        - cada lote não pode ultrapassar 480 unidades;\n
+        - Corredores de pelo menos 1m de distanciamento, separando cada lote;\n
+        - Altura das fileiras: 5 unidades para os vazios e 4 para cheios;\n
+        - Guarda corpo: qaundo houver, deve estar instalado até mesmo nas bases de carga/descarga (pode ser móvel nesses locais);
         \n\n
         <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
     </string>
@@ -609,10 +639,50 @@ da edificação e áreas de risco, segundo os critérios desta NT;\n
         - A distância máxima entre os pontos de iluminação de emergência não deve ultrapassar 15 m e entre o ponto de iluminação e a parede 7,5 m.
 Outro distanciamento entre pontos pode ser adotado, desde que atenda aos parâmetros da NBR 10898;\n
         - No caso de instalação aparente, a tubulação e as caixas de passagem devem ser metálicas ou em PVC rígido antichama, conforme NBR 15465;\n
+        - Não pode ser instalada rente ao teto.\n
         <b>Aqui não tem muito bizu. Leia a NT, pois ela só tem 1 página e consta tudo que precisa saber.</b>
         \n\n
         <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
     </string>
+
+    SPDA
+    <string name="bizus_spda">
+        <b>No que devo ficar de olho:</b>\n
+        - Fios e demais condutores do SPDA devem estar isolados pelo menos em alturas mínimas de acesso;
+        \n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    CONTROLE DE MATERIAIS DE ACABAMENTO
+    <string name="bizus_material_acabamento">
+        <b>No que devo ficar de olho:</b>\n
+        - Revestimento: TODO revestimento COMBUSTÍVEL (Madeira, tecido, etc) DEVE ser ANTI-CHAMAS - cobrar documentação (nota fiscal, ART, etc);
+        \n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    Hidrante
+    <string name="bizus_hidrante">
+        <b>No que devo ficar de olho:</b>\n
+        Barrilete ou Casa de Máquinas: \n
+        - Sinalização e demais itens básicos de segurança;\n
+        - Fonte de Energia de bombas ou máquinas: deve haver painel de energia INDEPENDENTE da edificação;\n
+        - O sistema da bomba deve estar pressurizado;\n
+        - Potência da bomba: verificar se o que está no projeto é o mesmo da bomba;\n
+        - Reserva Técnica: quando a reserva for compartilhada, verificar se a tubulação de incêndio está na base da caixa. Não pode haver outra tubulação concorrente de mesmo nível);\n
+        - Toda a tubulação destinada ao combate de incêndio deve estar na cor vermelha;\n
+        - Painel da bomba: Deve estar energizado e no automático. EXCEÇÃO: quando não houver mais do que 6 hidrantes, o painel pode ser manual;\n\n
+        Hidrantes: \n
+        - Distância: 30m ou 40m (a contar do esguicho d'água) ou mínimo 1 hidrante por pavimento;\n
+        - Esguicho d'água: mínimo de 10m de distância;\n
+        - Mangueira: A partir da data de validade (5 anos), deve haver teste hidrostático (sinalizado na própria mangueira);\n
+        \n\n
+        Registro de Recalque:\n
+        - Luva de redução;\n
+        - Sinalização;\n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
 
 
 </resources>

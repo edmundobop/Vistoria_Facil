@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView1"
+                android:id="@+id/txt_main_titulo1"
                 android:text="Main Title"
                 android:textColor="@color/black"
                 android:textStyle="bold"

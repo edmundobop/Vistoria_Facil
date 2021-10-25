@@ -45,7 +45,7 @@ public class AdaptadorExigencias extends ArrayAdapter<String> {
         @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.arte_resultado, parent, false);
 
         ImageView images = row.findViewById(R.id.image);
-        TextView myTitle = row.findViewById(R.id.textView1);
+        TextView myTitle = row.findViewById(R.id.txt_main_titulo1);
         TextView myDescription = row.findViewById(R.id.textView2);
         TextView myRecomend = row.findViewById(R.id.tv_Recomend);
 

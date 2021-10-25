@@ -1,105 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="br.com.stone4.principal.Vistorias">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="5dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    >
 
     <LinearLayout
-        android:id="@+id/layoult_vistInteligente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_centerVertical="true"
-        android:background="#F44336"
-        android:onClick="onClic"
-        android:padding="10dp">
+        android:padding="16dp"
+        android:orientation="horizontal"
+        >
 
         <ImageView
-            android:id="@+id/img_vistorias"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/exigencias" />
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/img_vist_option"
+            />
 
         <LinearLayout
-            android:id="@+id/lay_vistIntTxt"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:onClick="onClic"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
             <TextView
-                android:id="@+id/tv_vistTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/button_VistoriaInteligente_Title"
-                android:textAlignment="center"
-                android:textColorHint="#F8F7F7"
-                android:textSize="20dp"
+                android:id="@+id/txt_vist_option_titulo"
+                android:text="Main Title"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_vist_option_Subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sub Title"
+                android:textColor="#7E7D7D"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_vistSub"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/button_VistoriaInteligente_Sub"
-                android:textAlignment="center"
-                android:textColorHint="#FFEB3B" />
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layoult_consulta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoult_vistInteligente"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_centerVertical="true"
-        android:background="@color/teal_700"
-        android:onClick="onClic"
-        android:padding="10dp">
-
-        <ImageView
-            android:id="@+id/img_consulta"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/consulta" />
-
-        <LinearLayout
-            android:id="@+id/lay_consultaTxt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:onClick="onClic"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_consultaTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/button_ConsultaRapida"
-                android:textAlignment="center"
-                android:textColorHint="#FFFFFD"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv_consultaSub"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/button_ConsultaRapidaSub"
-                android:textAlignment="center"
-                android:textColorHint="#FFEB3B" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</androidx.cardview.widget.CardView>
