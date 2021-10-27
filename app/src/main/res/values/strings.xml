@@ -661,20 +661,21 @@ Outro distanciamento entre pontos pode ser adotado, desde que atenda aos parâme
         <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
     </string>
 
-    Hidrante
-    <string name="bizus_hidrante">
+    HIDRANTE E MANGOTINHO
+    <string name="bizus_hidranteM">
         <b>No que devo ficar de olho:</b>\n
         Barrilete ou Casa de Máquinas: \n
         - Sinalização e demais itens básicos de segurança;\n
         - Fonte de Energia de bombas ou máquinas: deve haver painel de energia INDEPENDENTE da edificação;\n
         - O sistema da bomba deve estar pressurizado;\n
         - Potência da bomba: verificar se o que está no projeto é o mesmo da bomba;\n
-        - Reserva Técnica: quando a reserva for compartilhada, verificar se a tubulação de incêndio está na base da caixa. Não pode haver outra tubulação concorrente de mesmo nível);\n
+        - Reserva Técnica: quando a reserva for compartilhada, verificar se a tubulação de incêndio está na base da caixa. Não pode haver outra
+        tubulação concorrente de mesmo nível;\n
         - Toda a tubulação destinada ao combate de incêndio deve estar na cor vermelha;\n
         - Painel da bomba: Deve estar energizado e no automático. EXCEÇÃO: quando não houver mais do que 6 hidrantes, o painel pode ser manual;\n\n
         Hidrantes: \n
-        - Distância: 30m ou 40m (a contar do esguicho d'água) ou mínimo 1 hidrante por pavimento;\n
-        - Esguicho d'água: mínimo de 10m de distância;\n
+        - Distância: 30m ou 40m (a contar do esguicho dágua) ou mínimo 1 hidrante por pavimento;\n
+        - Esguicho dágua: mínimo de 10m de distância;\n
         - Mangueira: A partir da data de validade (5 anos), deve haver teste hidrostático (sinalizado na própria mangueira);\n
         \n\n
         Registro de Recalque:\n

@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     - otimizar escolhas - ex: divisão e1 c/ altura > 4 nao precisa perguntar se tem alojamentos
     - otimizar divisao f8 - nao precisa pedir pavimento com altura >= 3
     - otimizar divisão g5/g6 - brigada - somente para quem tem sistema de resfriamento ou espuma
-    - colocar lista de exigencias exclusivas - quando olhar posso rolar pro ladoe elas somem
+    - colocar lista de exigencias exclusivas - quando olhar posso rolar pro lado e elas somem
     - calculo Carga de Incêndio (CI)
     - incluir menu de exigencias especificas no menu de vistorias
     - incluir menu para baixar ou mostrar pdfs do site: todos relacionados a vistoria

@@ -147,7 +147,7 @@
             android:parentActivityName=".main.Vistorias" />
         <activity
             android:name=".main.vistoria.Processos"
-            android:label="Certificação Prévia"
+            android:label="Processos"
             android:parentActivityName=".main.Vistorias" />
         <activity
             android:name=".main.vistoria.Consulta_rapida"
