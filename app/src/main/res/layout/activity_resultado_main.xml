@@ -58,6 +58,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginStart="3dp"
+                            style="@style/vist_passoApassoTxt"
                             android:textSize="18dp" />
                     </LinearLayout>
 
@@ -80,6 +81,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="3dp"
+                            style="@style/vist_passoApassoTxt"
                             android:textSize="18dp" />
 
                     </LinearLayout>
@@ -103,6 +105,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="3dp"
+                            style="@style/vist_passoApassoTxt"
                             android:textSize="18dp" />
 
                     </LinearLayout>
@@ -125,7 +128,16 @@
                             android:id="@+id/textView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            style="@style/vist_passoApassoTxt"
                             android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:textSize="18dp"
+                            style="@style/vist_passoApassoTxt"
+                            android:text="m²"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -148,6 +160,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="..."
+                            style="@style/vist_passoApassoTxt"
                             android:textSize="18dp" />
 
                         <TextView
@@ -155,6 +168,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="MJ/m²"
+                            style="@style/vist_passoApassoTxt"
                             android:textSize="18dp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -187,18 +201,38 @@
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
-                    <ImageView
-                        android:id="@+id/button2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:adjustViewBounds="true"
-                        android:cropToPadding="true"
-                        android:onClick="onClick"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/exigencias"
-                        app:srcCompat="@drawable/exigencias" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:onClick="onClick"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/exigencias"
+                            app:srcCompat="@drawable/exigencias" />
+
+                        <TextView
+                            android:id="@+id/txt_medidasresultado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Clique na imagem acima para visualizar todas as medias desegurança, bizus e NTs"
+                            android:gravity="center"
+                            android:textSize="16dp"
+
+                            style="@style/vist_passoApassoTxt"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -249,7 +283,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="3dp"
-                            android:textSize="18dp" />
+                            android:textSize="18dp"
+                            style="@style/vist_passoApassoTxt"/>
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -284,8 +319,7 @@
                         style="@style/vist_passoApassoTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:editable="true" />
+                        android:layout_marginTop="2dp" />
                 </LinearLayout>
 
 
