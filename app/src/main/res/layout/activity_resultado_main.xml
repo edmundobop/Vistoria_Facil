@@ -215,8 +215,8 @@
                             android:cropToPadding="true"
                             android:onClick="onClick"
                             android:scaleType="centerInside"
-                            android:src="@drawable/exigencias"
-                            app:srcCompat="@drawable/exigencias" />
+                            android:src="@drawable/prancheta"
+                            app:srcCompat="@drawable/prancheta" />
 
                         <TextView
                             android:id="@+id/txt_medidasresultado"
@@ -278,7 +278,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView15"
+                            android:id="@+id/tv_processo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="3dp"

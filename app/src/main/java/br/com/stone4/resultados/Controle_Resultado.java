@@ -337,14 +337,25 @@ public class Controle_Resultado extends AppCompatActivity {
                 break;
         }
 
-        TextView textView = findViewById(R.id.txt_guiapratico);
+        // Outras informações + Guia Prático:
+        TextView tvProcesso = findViewById(R.id.tv_processo);
+        TextView tvGuiaPratico = findViewById(R.id.txt_guiapratico);
+        int processo = tipoProcesso(grupo,divisao,area,pavimentos);
 
-        if (area <= 750){
-            textView.setText(R.string.txt_vistPaP750menorTxt);
-        } else {
-            textView.setText(R.string.txt_vistPaP1500HidTxt);
+        switch (processo) {
+            case 2:
+                tvProcesso.setText("Processo Simplificado para Certificação Prévia");
+                tvGuiaPratico.setText(R.string.txt_vistProcSimpCertPrevia);
+                break;
+            case 1:
+                tvProcesso.setText("Processo Técnico para Certificação Facilitada");
+                tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
+                break;
+            case 0:
+                tvProcesso.setText("Processo Técnico");
+                tvGuiaPratico.setText(R.string.txt_vistPaP1500HidTxt);
+                break;
         }
-
 
         intent.setClass(this, VistoriaInteligente_Resultado.class);
 
@@ -354,6 +365,16 @@ public class Controle_Resultado extends AppCompatActivity {
     public int CargaDeIncendio(int grupo, int divisao){
 
         return 0;
+    }
+
+    public int tipoProcesso(int grupo, int divisao, int area, int pavimentos){
+
+        if (area > 750 || divisao==R.id.F5 || divisao==R.id.F6 || divisao==R.id.F7 || pavimentos == R.id.Psim) {
+            return 0;
+        } else if (area <= 200){
+            return 1;
+        } else return 2;
+
     }
 
     public void onClick(View view) {
