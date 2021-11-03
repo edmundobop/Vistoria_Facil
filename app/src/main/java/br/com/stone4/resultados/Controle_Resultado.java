@@ -352,7 +352,7 @@ public class Controle_Resultado extends AppCompatActivity {
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
                 break;
             case 0:
-                tvProcesso.setText("Processo Técnico");
+                tvProcesso.setText("Projeto Técnico");
                 tvGuiaPratico.setText(R.string.txt_vistPaP1500HidTxt);
                 break;
         }

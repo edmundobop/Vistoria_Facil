@@ -430,27 +430,26 @@ o processo e gerar o número do protocolo.</string>
 
     </string>
     <string name="txt_vistProcSimpCertPrevia">
-    Como esta vistoria se enquadra em Processo Simplificado para Certificação Prévia (para ver mais sobre o tipo de processo, consulte a
-        opção <u>Processos</u> no menu principal), haverá apenas conferência de documentos via site;
+    Como esta vistoria se enquadra em Processo Simplificado para Certificação Prévia, haverá apenas conferência de documentos via site;
     \n\nDocumentos para conferência:
     \n<b>-</b> Anexo G;
     \n<b>-</b> Nota fiscal Extintore(s);
     \n<b>-</b> Foto Extintore(s);
     \n<b>-</b> Foto Fachada;
-    \n<b>-</b> Comprovante da taxa de Inspeção.
-
+    \n<b>-</b> Comprovante da taxa de Inspeção.\n\n
+    <u>Para dúvidas à respeito dos tipos de Processos, acessar a opção "Perguntas Frequentes", no Menu Principal)</u>
     </string>
 
     <string name="txt_vistProcSimpCertFac">
-    Como esta vistoria se enquadra em Processo Simplificado para Certificação Facilitada (para ver mais sobre o tipo de processo, consulte a
-        opção <u>Processos</u> no menu principal), <u>não haverá sequer conferência de documentos</u>. O próprio responsável ou
+    Como esta vistoria se enquadra em Processo Simplificado para Certificação Facilitada, <u>não haverá sequer conferência de documentos</u>. O próprio responsável ou
         proprietário poderá anexar os documentos no site e imprimir o CERCON;
     \n\nDocumentos anexados:
         \n<b>-</b> Anexo G;
         \n<b>-</b> Nota fiscal Extintore(s);
         \n<b>-</b> Foto Extintore(s);
         \n<b>-</b> Foto Fachada;
-        \n<b>-</b> Comprovante da taxa de Inspeção.
+        \n<b>-</b> Comprovante da taxa de Inspeção.\n\n
+        <u>Para dúvidas à respeito dos tipos de Processos, acessar a opção "Perguntas Frequentes", no Menu Principal)</u>
 
     </string>
 
