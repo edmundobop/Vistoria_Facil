@@ -18,7 +18,7 @@ public class Bizus_NT extends AppCompatActivity {
 
         Intent intent = getIntent();
         String URLpdf = intent.getStringExtra("urlPDF");
-        System.out.println("Cheguei no Bizu pdf e tenho esse valor"+URLpdf);
+        //System.out.println("Cheguei no Bizu pdf e tenho esse valor"+URLpdf);
 
         // PDF Viwer
         PDFView pdfView = findViewById(R.id.Rdetalhe);

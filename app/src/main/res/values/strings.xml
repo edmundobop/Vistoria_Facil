@@ -198,9 +198,10 @@ recuperação de materiais.</string>
     <string name="button_Dnao">NÃO</string>
 
     // tela Alojamentos
-    <string name="tv_alojamento">A Edificação possui alojamento(s) ou dormitório(s) superior(es) a 750m²?</string>
-    <string name="button_Alsim">SIM</string>
-    <string name="button_Alnao">NÃO</string>
+    <string name="tv_alojamento">Sobre alojamento(s)/dormitório(s) na edificação, escolha 1 (uma) das opções abaixo:</string>
+    <string name="btn_alojamento_acima_de_750m">Possui alojamento(s)/dormitório(s) MAIOR que 750m²</string>
+    <string name="btn_alojamento_abaixo_de_750m">Possui alojamento(s)/dormitório(s) MENOR que 750m²</string>
+    <string name="btn_alojamento_nao_possui">Não possui alojamento(s)/dormitório(s)</string>
 
     // tela Detecção Incendio F4
     <string name="tv_deteccaof4">Existe algum desses itens nesta edificação? \n\n
@@ -697,9 +698,15 @@ Outro distanciamento entre pontos pode ser adotado, desde que atenda aos parâme
         tubulação concorrente de mesmo nível;\n
         - Toda a tubulação destinada ao combate de incêndio deve estar na cor vermelha;\n
         - Painel da bomba: Deve estar energizado e no automático. EXCEÇÃO: quando não houver mais do que 6 hidrantes, o painel pode ser manual;\n\n
-        Hidrantes: \n
-        - Distância: 30m ou 40m (a contar do esguicho dágua) ou mínimo 1 hidrante por pavimento;\n
-        - Esguicho dágua: mínimo de 10m de distância;\n
+        Abrigo:\n
+        - Deve conter:\n
+          1-Mangueira;\n
+          2-Chave de Mangueira;\n
+          3-Esguicho;\n\n
+        Hidrante: \n
+        - <u>Teste:</u> testar sempre o hidrante mais desfavorável - o mais afastado para edificações horizontais; o mais alto para edificações verticais;\n
+        - Distância entre cada Abrigo: 30m ou 40m (a contar do esguicho dágua) ou mínimo 1 hidrante por pavimento;\n
+        - Potência do Esguicho dágua: mínimo de 10m de distância;\n
         - Mangueira: A partir da data de validade (5 anos), deve haver teste hidrostático (sinalizado na própria mangueira);\n
         \n\n
         Registro de Recalque:\n
@@ -708,6 +715,117 @@ Outro distanciamento entre pontos pode ser adotado, desde que atenda aos parâme
         <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
     </string>
 
+    HIDRANTE HURBANO
+    <string name="bizus_hidranteH">
+        <b>No que devo ficar de olho:</b>\n
+        <u>Documentação:</u> \n
+        - Na falta do Hidrante Hurbano, cobrar documentação de Inviabilidade Técnica;\n\n
+        <u>Área de Atuação:</u>\n
+        - O Hidrante Hurbano deve atender a um raio de até 300m;\n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    -------------------------------------------------------------------------------------------------------------------------------
+    PERGUNTAS E RESPOSTAS
+    <string name="pergunta1_projeto">Quais os tipos de Vistoria (Processos) existem no CBMGO?</string>
+    <string name="resposta1_projeto">
+        Existem 2 (dois) tipo de Processos:\n
+        - Projeto Técnico;\n
+        - Processo Simplificado;\n\n
+        O Processo Simplificado é classificado em 2 (dois) tipos:\n
+        - Processo para Certificação Prévia;\n
+        - Processo para Certificação Facilitada.
+    </string>
+
+    <string name="pergunta2_projeto">Para quais Edificações o Projeto Técnico é obrigatório?</string>
+    <string name="resposta2_projeto">
+        Será exigido se a edificação se enquadrar em ao menos 1 item abaixo:\n\n
+        a)	Ter área construída e/ou áreas de risco acima de 750 m2 ;\n
+        b)	Ser classificada nas divisões F-5, F-6 e F7, de acordo com a Tabela 1 do Anexo – A desta NT;\n
+        c)	Possuir acima de 03 (três) pavimentos;\n
+        d)	Possuir subsolo com ocupação distinta de estacionamento;\n
+        e)	Possuir armazenamento superior a 05 recipientes transportáveis com massa líquida unitária de até
+                13 kg de GLP (P-13) para consumo próprio, ou qualquer volume de GLP destinado à comercialização;\n
+        f)	Possuir central de GLP com recipiente estacionário;\n
+        g)	Armazenar acima de 500 (quinhentos) litros de líquidos inflamáveis ou combustíveis em tanques aéreos,
+                subterrâneos, cilindros ou recipientes fracionados, para qualquer finalidade;\n
+        h)	Comercializar, produzir ou armazenar fogos de artifício e/ou outros materiais explosivos;\n
+        i)	Quando houver necessidade de comprovação de Isolamento de Risco entre edificações, conforme NT-07.
+                Neste caso deve-se apresentar o cálculo de isolamento de risco entre edificações. (se não comprovar
+                o isolamento e as áreas excederem os 750m, exigir-se-á projeto);\n\n
+        Nota 1: As edificações que possuírem afastamento mínimo de 12 metros entre si estarão dispensadas da
+                aprovação do projeto técnico exigido na alínea “i”, desde que a referida aprovação não seja exigida
+                em alguma das demais alíneas deste item.
+    </string>
+
+    <string name="pergunta3_projeto">O que é o Processo Simplificado e pra quem é Indicado?</string>
+    <string name="resposta3_projeto">
+        O Processo Simplificado é o processo de regularização de uma edificação e/ou área de risco realizado por meio do
+        fornecimento de informações e declarações pelo proprietário ou o responsável pelo uso.\n\n
+        Aplica-se às edificações com área construída e/ou áreas de risco igual ou inferior a 750,00 m² desde que atendam às seguintes condições:\n
+        a) Não possuir mais de 03 (três) pavimentos e não possuir qualquer tipo de abertura através de portas, telhados e janelas, para o interior de
+        edificações ou estabelecimentos adjacentes; \n
+        b) Possuir lotação abaixo de 200 (duzentas) pessoas; \n
+        c) Não possuir subsolo com ocupação distinta de estacionamento;\n
+        d) Não comercializar ou armazenar volume superior a 500 (quinhentos) litros de líquido inflamável ou combustível;\n
+        e) Não possuir GLP acima de 190 (cento e noventa) Kg; \n
+        f) Não comercializar ou revender gás liquefeito de petróleo (GLP); \n
+        g) Não comercializar, manipular ou armazenar produtos perigosos à saúde humana, ao meio ambiente ou ao patrimônio, tais como: explosivos,
+        peróxidos orgânicos ou substâncias oxidantes, tóxicas, radioativas, corrosivas e perigosas diversas.\n\n
+        EXCETO:\n
+        As edificações com área construída e/ou área de risco maior que 200 m2 classificadas nas divisões B-1, B-2, C-3, E-1, E-4, E-5, E-6, F-1,
+        F-2, F-3, F-4, F-5, F-6, F-7, F-8, F-9, F-10, F-11, H-2, H3, H-4, H-5, J-2, J-3 e J-4 devem ser classificadas como Processo Técnico.
+        Não necessariamente terá que ter projeto, mais obrigatoriamente terá vistoria.\n
+        As edificações com área construída e/ou área de risco que se enquadrem nas divisões: L-1, L-2, L-3 e M-2 devem ser classificadas como
+        Processo Técnico, independentemente da área. Não necessariamente terá que ter projeto mais obrigatoriamente terá vistoria.
+
+    </string>
+
+
+    <string name="pergunta4_projeto">O que é a Certificação Prévia?</string>
+    <string name="resposta4_projeto">
+        Esse processo dispensa a vistoria in loco, ficando a cargo do proprietário ou responsável pela edificação a instalação dos
+        sistemas de incêndio. Com esse tipo de solicitação o CERCON é liberado após a conferência de documentos. SEGUIR CONFORME ITEM CERTIFICAÇÃO PRÉVIA.
+    </string>
+
+    <string name="pergunta5_projeto">O que é a Certificação Facilitada?</string>
+    <string name="resposta5_projeto">
+        São os mesmo critérios da certificação prévia, porém edificações que possuam até 200m2. Nesse caso, não será necessário sequer a
+        conferência de documento, bastando para o responsável pela edificação apenas anexar os documentos (mesmos da certificação prévia)
+        pagar a taxa e o certificado ficará disponível para impressão pelo contribuinte.
+    </string>
+
+    <string name="pergunta6_projeto">Quais os Procedimentos para a Certificação Prévia e Certificação Facilitada (SEM NECESSIDADE DE VISTORIA)?</string>
+    <string name="resposta6_projeto">
+        1 – FAZER PROTOCOLO NO SITE DO CBMGO\n
+        2 – ANEXAR ANEXO G (PREENCHIDO E ASSINADO) NT 01 – site do cbmgo\n
+        3 – NOTA FISCAL DE EXTINTOR OU SUA RECARGA. OBSERVAR A QUANTIDADE MÍNINA PARA O TAMANHO DA EDIFICAÇÃO.\n
+            - Até 250m²: 1 (um) extintor, conforme risco predominante da edificação;\n
+            - De 250m² a 500m²: 02 extintores de pó ABC (2A-20B:C) ou 01 extintor de água (2A); e 01 extintor (20B:C ou 5:BC);\n
+            - De 500m² a 750m²: 03 extintores de pó ABC (2A-20B:C) OU 02 extintores de água (2A); e 01 extintor (20B:C ou 5:BC) ou 01 extintor de água (2A)
+        e 02 extintores (20B:C ou 5:BC);\n
+        4 – CÓPIA DO CERTIFICADO DE CONFORMIDADE DA EDIFICAÇÃO EM QUE ESTA INSERIDO. ESTÃO DISPENSADAS DESTE ITEM OS ESTABELECIMENTOS QUE
+        POSSUAM SAÍDA DIRETA PARA VIA PÚBLICA.\n
+        5 – FOTO DA FACHADA DA EDIFICAÇÃO\n
+        6 – FOTO DO EXTINTOR DE INCÊNDIO INSTALADO, NOS CASOS EM QUE FOR OBRIGATÓRIO\n
+        7 – DOCUMENTO DE RESPONSABILIDADE TÉCNICA, NOS CASOS EM QUE FOREM NECESSÁRIOS. \n\n
+        <u>OBS:</u> Os empreendimentos de prestação de serviço que exerçam suas atividades em edificações exclusivamente residenciais
+        (pontos de referência) que não caracterizem ocupação mista (exercício de outra atividade auxiliar que demande medidas de segurança
+        contra incêndio e pânico) e que necessitem do Certificado de Conformidade estão dispensados das exigências “3”, “4” e “6” do item acima,
+        não obstante aos demais itens exigidos nesta norma.
+
+    </string>
+
+    <string name="pergunta7_projeto">Quando é necessário a atualização de Projeto Técnico?</string>
+    <string name="resposta7_projeto">
+        Quando houver modificação estrutural acima de 20% que cause alteração nas medidas de segurança contra incêndio e pânico
+    </string>
+
+    <string name="pergunta1_fat">O que é o FAT? E para que serve?</string>
+    <string name="resposta1_fat">
+        (FAT) FORMULÁRIO PARA ATENDIMENTO TÉCNICO. É um documento oficial utilizado para requisições, solicitações
+        e informações por parte do requerinte ao CMBGO.
+    </string>
 
 
 </resources>

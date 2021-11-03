@@ -308,7 +308,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                System.out.println("O id do item clicado é: " + view.getId());
+                System.out.println("A posição do item clicado é: " + position);
                 Intent intent = new Intent(getApplicationContext(), VistoriaInteligente_Resultado_Detalhes.class);
                 // this intent put our 0 index image to another activity
                 Bundle bundle = new Bundle();

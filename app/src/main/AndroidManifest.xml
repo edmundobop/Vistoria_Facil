@@ -146,22 +146,10 @@
             android:label="Passo-a-Passo"
             android:parentActivityName=".main.Vistorias" />
         <activity
-            android:name=".main.vistoria.Processos"
-            android:label="Processos"
-            android:parentActivityName=".main.Vistorias" />
-        <activity
             android:name=".main.vistoria.Consulta_rapida"
             android:label="Consulta Rapida"
             android:launchMode="singleTop"
             android:parentActivityName=".main.Vistorias" />
-        <activity
-            android:name=".main.vistoria.VistoriaPassoApasso.VistoriaPassoApasso"
-            android:label="Passo-a-Passo"
-            android:parentActivityName=".main.Vistorias" />
-        <activity
-            android:name=".main.vistoria.VistoriaPassoApasso.VistoriaPassoApasso_Result"
-            android:label="Passo-a-Passo"
-            android:parentActivityName=".main.vistoria.VistoriaPassoApasso.VistoriaPassoApasso" />
         <activity
             android:name=".main.vistoria.VistoriaInteligente"
             android:label="Vistoria Inteligente"
@@ -180,6 +168,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".main.vistoria.perguntas_frequentes.Perguntas_Frequentes"
+            android:label="Perguntas Frequentes"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.Vistorias" />
     </application>
 
 </manifest>

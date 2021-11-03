@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import br.com.stone4.R;
 import br.com.stone4.main.vistoria.CertiPreviaPassoApasso;
 import br.com.stone4.main.vistoria.Consulta_rapida;
-import br.com.stone4.main.vistoria.Processos;
 import br.com.stone4.main.vistoria.VistoriaInteligente;
+import br.com.stone4.main.vistoria.perguntas_frequentes.Perguntas_Frequentes;
 
 public class Vistorias extends AppCompatActivity {
 
@@ -36,15 +36,15 @@ public class Vistorias extends AppCompatActivity {
         titulo.add("Vistoria Inteligente");
         titulo.add("Consulta Rápida");
         titulo.add("Solicitar Vistoria");
-        titulo.add("Processos");
+        titulo.add("Perguntas Frequentes");
         subTitulo.add("Passo-a-passo para realizar uma vistoria");
         subTitulo.add("Consulte todos os Bizus e Nt's");
         subTitulo.add("Passo-a-passo para solicitar vistoria no site do CBMGO");
-        subTitulo.add("Bizuário para Processos técnico e Facilitado");
+        subTitulo.add("Perguntas que mais geram dúvidas para o vistoriador");
         imagem.add(R.drawable.vistoria_inteligente);
         imagem.add(R.drawable.lupa);
         imagem.add(R.drawable.solicitar_vistoria);
-        imagem.add(R.drawable.processos);
+        imagem.add(R.drawable.perguntas_respostas);
 
         // DIRECIONA PARA CONSULTA OU VISTORIA INTELIGENTE
         Adaptador_Vistorias_Opcoes adapter = new Adaptador_Vistorias_Opcoes(this, titulo, subTitulo, imagem);
@@ -69,7 +69,7 @@ public class Vistorias extends AppCompatActivity {
                         intent = new Intent(getApplicationContext(), CertiPreviaPassoApasso.class);
                         break;
                     case 3:
-                        intent = new Intent(getApplicationContext(), Processos.class);
+                        intent = new Intent(getApplicationContext(), Perguntas_Frequentes.class);
                         break;
                 }
 

@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -56,6 +58,8 @@ public class AdaptadorExigencias extends ArrayAdapter<String> {
 
         if (myRecomend.getText().equals("Recomendado")){
            myRecomend.setBackgroundResource(R.color.teal_200);
+        } else if (myRecomend.getText().equals("")) {
+            myRecomend.setBackgroundResource(R.color.design_default_color_background);
         } else {
             myRecomend.setBackgroundResource(R.color.red_700);
         }
@@ -63,4 +67,6 @@ public class AdaptadorExigencias extends ArrayAdapter<String> {
 
         return row;
     }
+
+
 }

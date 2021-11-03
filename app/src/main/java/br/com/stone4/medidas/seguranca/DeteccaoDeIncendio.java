@@ -66,11 +66,16 @@ public class DeteccaoDeIncendio {
                         tem = true;
                     }
                     break;
-                case R.id.bt_E:
-                    tem = true;
                 case R.id.bt_D:
                     if (altura >= R.id.ALT6) tem = true;
                     break;
+                case R.id.bt_E:
+                    if (altura>=R.id.ALT5){
+                        tem = true;
+                    } else {
+                        if (alojamentos!=R.id.Alnao) tem = true;
+                    }
+
                 case R.id.bt_F:
                     switch (divisao){
                         case R.id.F1:

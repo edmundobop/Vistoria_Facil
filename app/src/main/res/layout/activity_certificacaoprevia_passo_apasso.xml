@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/txt_TpAp"
-                android:textColorHint="@color/design_default_color_error"
+                android:textColorHint="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -30,6 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="fill_horizontal"
+                android:padding="16dp"
                 android:justificationMode="inter_word"
                 android:hint="@string/txt_pAp"
                 android:textColorHint="@color/black"

@@ -109,6 +109,13 @@
                 android:paddingHorizontal="5dp"
                 style="@style/bizus"
                 />
+
+            <ImageView
+                android:id="@+id/img_bizus_consulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

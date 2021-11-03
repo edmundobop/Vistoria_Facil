@@ -78,7 +78,7 @@ public class AlarmeDeIncendio {
                     break;
                 case R.id.bt_E:
                     if (altura <= R.id.ALT2) {
-                        if (area >= 1500 || pavimentos == R.id.Psim || alojamentos == R.id.Alsim) tem = true;
+                        if (area >= 1500 || pavimentos == R.id.Psim || alojamentos == R.id.Al_maior_que_750) tem = true;
                     } else tem = true;
                     break;
                 case R.id.bt_F:

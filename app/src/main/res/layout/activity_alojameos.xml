@@ -1,49 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="br.com.stone4.criterios.Alojameos">
 
-    <TextView
-        android:id="@+id/tv_alojamento"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="@string/tv_alojamento"
-        android:textColorHint="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/Alsim"
-        style="@style/button_Divisao"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="@string/button_Alsim"
-        android:onClick="onClick"
-        app:backgroundTint="@color/purple_200"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_alojamento" />
+        <TextView
+            android:id="@+id/tv_alojamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/tv_alojamento"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/Alnao"
-        style="@style/button_Divisao"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:hint="@string/button_Alnao"
-        android:onClick="onClick"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Alsim" />
+        <Button
+            android:id="@+id/Al_maior_que_750"
+            style="@style/button_Divisao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/btn_alojamento_acima_de_750m"
+            android:onClick="onClick"
+            app:backgroundTint="#263238"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/Al_menor_que_750"
+            style="@style/button_Divisao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/btn_alojamento_abaixo_de_750m"
+            android:onClick="onClick"
+            app:backgroundTint="#263238"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/Alnao"
+            style="@style/button_Divisao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/btn_alojamento_nao_possui"
+            android:onClick="onClick"
+            app:backgroundTint="#263238"
+            tools:ignore="UsingOnClickInXml" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

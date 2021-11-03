@@ -21,6 +21,11 @@ public class Consulta_Rapida_NT extends AppCompatActivity {
 
         // PDF Viwer
         PDFView pdfView = findViewById(R.id.Rdetalhe);
+        pdfView.enableSwipe(true);
+        pdfView.enableDoubletap(true);
+        pdfView.enableAnnotationRendering(true);
+        pdfView.enableAntialiasing(true);
+
         pdfView.fromAsset(URLpdf).load();
     }
 }

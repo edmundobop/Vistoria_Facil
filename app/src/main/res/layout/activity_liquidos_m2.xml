@@ -39,7 +39,7 @@
             <CheckedTextView
                 android:id="@+id/ck_liquidos1"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:checkMark="?android:attr/listChoiceIndicatorMultiple"
                 android:checked="false"
                 android:gravity="center"
@@ -53,17 +53,16 @@
             <CheckedTextView
                 android:id="@+id/ck_liquidos2"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:checked="false"
                 android:gravity="center"
                 android:hint="@string/bt_liquidos2"
+                android:onClick="onClic"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColorHint="#FF5722"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:checked="false"
-                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-                android:onClick="onClic"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_produtos"
@@ -79,22 +78,21 @@
             <CheckedTextView
                 android:id="@+id/ck_produtos1"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:checked="false"
                 android:gravity="center"
                 android:hint="@string/bt_produtos1"
+                android:onClick="onClic"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColorHint="#009688"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:checked="false"
-                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-                android:onClick="onClic"
-                />
+                android:textStyle="bold" />
 
             <CheckedTextView
                 android:id="@+id/ck_produtos2"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:gravity="center"
                 android:hint="@string/bt_produtos2"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
@@ -120,7 +118,7 @@
             <CheckedTextView
                 android:id="@+id/ck_plataforma"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:gravity="center"
                 android:hint="@string/bt_plataforma"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"

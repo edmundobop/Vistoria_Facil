@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.github.barteksc.pdfviewer.PDFView;
+
 import br.com.stone4.R;
 
 public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
@@ -38,10 +40,13 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
         ImageView iCone = findViewById(R.id.imagem_detalhe);
         iCone.setImageResource(icone);
 
-
         TextView bizus = findViewById(R.id.bizus);
+        ImageView imgBizus = findViewById(R.id.img_bizus);
 
         switch (exigencia) {
+            case "Acesso de Viatura na Edificacao":
+                imgBizus.setImageResource(R.drawable.anexo_acesso_viatura);
+                break;
             case "Extintor":
                 bizus.setText(R.string.bizus_Extintor);
                 break;
@@ -65,6 +70,12 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
                 break;
             case "Hidrante e Mangotinho":
                 bizus.setText(R.string.bizus_hidranteM);
+                break;
+            case "Compartimentação Horizontal":
+                imgBizus.setImageResource(R.drawable.anexo_compartimentacao);
+                break;
+            case "Hidrante Hurbano":
+                bizus.setText(R.string.bizus_hidranteH);
                 break;
         }
     }

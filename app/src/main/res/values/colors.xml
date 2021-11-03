@@ -10,4 +10,6 @@
     <color name="red_700">#FFD50000</color>
     <color name="gray">#E1DEDE</color>
     <color name="black_text">#272626</color>
+    <color name="corPrimaria">#008577</color>
+    <color name="corPrimariaEscura">#00574B</color>
 </resources>
