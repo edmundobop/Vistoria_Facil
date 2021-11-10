@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/pergunta"
             android:text="Pergunta"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:padding="16dp"
             android:textStyle="bold"
             android:textColor="@color/black_text">
@@ -35,7 +35,7 @@
                 android:id="@+id/resposta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
+                android:padding="14dp"
                 android:text="Aqui é o local onde ficarão armazenadas as respostas"
                 android:textSize="18sp"
                 android:justificationMode="inter_word"

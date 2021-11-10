@@ -109,202 +109,190 @@ public class Consulta_rapida extends AppCompatActivity {
         images = new ArrayList<>();
         URLpdf = new ArrayList<>();
 
-        // Nts:
+        // Nt-01:
             mTitle.add("Nt 01/2020: Anexo A");
             sTitle.add("NORMA TÉCNICA 01/2020");
             mDescription.add("Procedimentos Administrativos – Anexo A");
             images.add(R.drawable.nt01);
             recomendado.add("");
             URLpdf.add("NT-01_2020_ANEXO-A.pdf");
-
-        // Demais exigências
-        if (acessoViatura.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
-            System.out.println("Entrei no acesso de viaturas");
+        // Acesso de Viatura
             mTitle.add(acessoViatura.getNome());
             sTitle.add(getString(R.string.subtit_viatura));
             mDescription.add(getString(R.string.desc_viatura));
             images.add(acessoViatura.getImagem());
             recomendado.add("");
             URLpdf.add("nt-06_2014-acesso-de-viaturas.pdf");
-        }
-        if (alarmeDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, alojamentos) || consulta) {
+       // Alarme
             mTitle.add(alarmeDeIncendio.getNome());
             sTitle.add(getString(R.string.subtit_alarme));
             mDescription.add(getString(R.string.desc_alarme));
             images.add(alarmeDeIncendio.getImagem());
             recomendado.add("");
             URLpdf.add("nt-19_2014-sistemas-de-deteccao-e-alarme-de-incendio.pdf");
-        }
-        if (brigada.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, publico) || consulta) {
+        // Brigada
             mTitle.add(brigada.getNome());
             sTitle.add(getString(R.string.subtit_brigada));
             mDescription.add(getString(R.string.desc_brigada));
             images.add(brigada.getImagem());
             recomendado.add("");
             URLpdf.add("NT-17_2021-Brigada-de-Incendio.pdf");
-        }
-        if (centralDeGas.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Carga de Incendio
+            mTitle.add("Carga de Incêndio");
+            sTitle.add("NORMA TÉCNICA 14/2020");
+            mDescription.add("CARGA DE INCÊNDIO NAS EDIFICAÇÕES E ÁREAS DE RISCO");
+            images.add(R.drawable.cargadeincendio);
+            recomendado.add("");
+            URLpdf.add("nt-14-carga_de_incendio.pdf");
+        // Central de Gás
             mTitle.add(centralDeGas.getNome());
             sTitle.add(getString(R.string.subtit_gas));
             mDescription.add(getString(R.string.desc_gas));
             images.add(centralDeGas.getImagem());
             recomendado.add("");
             URLpdf.add("nt-29_2014-comercializacao-distribuicao-e-utilizacao-de-gas-natural.pdf");
-        }
-        if (horizontal.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Compartimentação Horizontal
             mTitle.add(horizontal.getNome());
             sTitle.add(getString(R.string.subtit_horizontal));
             mDescription.add(getString(R.string.desc_horizontal));
             images.add(horizontal.getImagem());
             recomendado.add("");
             URLpdf.add("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
-        }
-        if (vertical.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Compartimentação Vertical
             mTitle.add(vertical.getNome());
             sTitle.add(getString(R.string.subtit_vertical));
             mDescription.add(getString(R.string.desc_vertical));
             images.add(vertical.getImagem());
             recomendado.add("");
             URLpdf.add("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
-        }
-        if (acabamento.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        //Materiais de Acabamento
             mTitle.add(acabamento.getNome());
             sTitle.add(getString(R.string.subtit_acabamento));
             mDescription.add(getString(R.string.desc_acabamento));
             images.add(acabamento.getImagem());
             recomendado.add("");
             URLpdf.add("nt-10_2014-controle-de-materiais-de-acabamento-e-revestimento.pdf");
-        }
-        if (controleDeFumaca.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        //Controle de Fumaça
             mTitle.add(controleDeFumaca.getNome());
             sTitle.add(getString(R.string.subtit_fumaca));
             mDescription.add(getString(R.string.desc_fumaca));
             images.add(controleDeFumaca.getImagem());
             recomendado.add("");
             URLpdf.add("nt-15_2014-controle-de-fumaca-parte-1-regras-gerais.pdf");
-        }
-        if (chuveiroAutomatico.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, publico) || consulta) {
+        // Chuveiros Automáticos
             mTitle.add(chuveiroAutomatico.getNome());
             sTitle.add(getString(R.string.subtit_chuveiros));
             mDescription.add(getString(R.string.desc_chuveiros));
             images.add(chuveiroAutomatico.getImagem());
             recomendado.add("");
             URLpdf.add("nt-23_2014-sistema-de-chuveiros-automaticos.pdf");
-        }
-        if (deteccaoDeIncendio.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, deposito, deteccaof4, prisoes, alojamentos) || consulta) {
+        // Detecção de Fumaça
             mTitle.add(deteccaoDeIncendio.getNome());
             sTitle.add(getString(R.string.subtit_deteccao));
             mDescription.add(getString(R.string.desc_deteccao));
             images.add(deteccaoDeIncendio.getImagem());
             recomendado.add("");
             URLpdf.add("nt-19_2014-sistemas-de-deteccao-e-alarme-de-incendio.pdf");
-        }
-        if (elevadorDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Elevador de Emergência
             mTitle.add(elevadorDeEmergencia.getNome());
             sTitle.add(getString(R.string.subtit_elevador));
             mDescription.add(getString(R.string.desc_elevador));
             images.add(elevadorDeEmergencia.getImagem());
             recomendado.add("");
             URLpdf.add("");
-        }
-        if (extintor.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Extintor
             mTitle.add(extintor.getNome());
             sTitle.add(getString(R.string.subtit_extintor));
             mDescription.add(getString(R.string.desc_extintor));
             images.add(extintor.getImagem());
             recomendado.add("");
             URLpdf.add("nt-21_2014-extintores.pdf");
-        }
-        if (hidranteEMangotinho.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma, alojamentos) || consulta) {
-            mTitle.add(hidranteEMangotinho.getNome());
-            sTitle.add(getString(R.string.subtit_mangotinhos));
-            mDescription.add(getString(R.string.desc_mangotinhos));
-            images.add(hidranteEMangotinho.getImagem());
-            recomendado.add("");
-            URLpdf.add("nt-22_2014-sistemas-de-hidrantes-e-de-mangotinhos-para-combate-a-incendio.pdf");
-        }
-        if (hidranteHurbano.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Hidrante Hurbano
             mTitle.add(hidranteHurbano.getNome());
             sTitle.add(getString(R.string.subtit_hidrante));
             mDescription.add(getString(R.string.desc_hidrante));
             images.add(hidranteHurbano.getImagem());
             recomendado.add("");
             URLpdf.add("nt-34_2014-hidrante-urbano.pdf");
-        }
-        if (iluminacaoDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Imulinação de Emergência
             mTitle.add(iluminacaoDeEmergencia.getNome());
             sTitle.add(getString(R.string.subtit_iluminacao));
             mDescription.add(getString(R.string.desc_iluminacao));
             images.add(iluminacaoDeEmergencia.getImagem());
             recomendado.add("");
             URLpdf.add("nt-18_2014-iluminacao-de-emergencia.pdf");
-        }
-        if (resfriamento.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Piscinas
+            mTitle.add("Piscinas e Guarda-vidas");
+            sTitle.add("NORMA TÉCNICA 16/2017");
+            mDescription.add("SEGURANÇA EM ÁREAS DE PISCINAS E EMPREGO DE GUARDA-VIDAS");
+            images.add(R.drawable.piscina);
+            recomendado.add("");
+            URLpdf.add("NT-16-Piscinas.pdf");
+        // Resfriamento
             mTitle.add(resfriamento.getNome());
             sTitle.add(getString(R.string.subtit_Resfriamento));
             mDescription.add(getString(R.string.desc_Resfriamento));
             images.add(resfriamento.getImagem());
             recomendado.add("");
             URLpdf.add("");
-        }
-        if (saidaDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Saída de Emergência
             mTitle.add(saidaDeEmergencia.getNome());
             sTitle.add(getString(R.string.subtit_saida));
             mDescription.add(getString(R.string.desc_saida));
             images.add(saidaDeEmergencia.getImagem());
             recomendado.add("");
             URLpdf.add("NT-11_2021-Saidas-de-Emergencia.pdf");
-        }
-        if (estrutural.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Segurança Estrutural
             mTitle.add(estrutural.getNome());
             sTitle.add(getString(R.string.subtit_estrutural));
             mDescription.add(getString(R.string.desc_estrutural));
             images.add(estrutural.getImagem());
             recomendado.add("");
             URLpdf.add("");
-        }
-        if (sinalizacaoDeEmergencia.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Sinalização de Emergência
             mTitle.add(sinalizacaoDeEmergencia.getNome());
             sTitle.add(getString(R.string.subtit_sinalizacao));
             mDescription.add(getString(R.string.desc_sinalizacao));
             images.add(sinalizacaoDeEmergencia.getImagem());
             recomendado.add("");
             URLpdf.add("nt-20_2014-sinalizacao-de-emergencia.pdf");
-        }
-        if (spda.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // SPDA
             mTitle.add(spda.getNome());
             sTitle.add(getString(R.string.subtit_SPDA));
             mDescription.add(getString(R.string.desc_SPDA));
             images.add(spda.getImagem());
             recomendado.add("");
             URLpdf.add("NT-40_2019-SPDA.pdf");
-        }
-        if (sistemaDeEspuma.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        // Sistema De Espuma
             mTitle.add(sistemaDeEspuma.getNome());
             sTitle.add(getString(R.string.subtit_espuma));
             mDescription.add(getString(R.string.desc_espuma));
             images.add(sistemaDeEspuma.getImagem());
             recomendado.add("");
             URLpdf.add("");
-        }
-        if (sistemaDeComunicacao.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        //Sistema de Comunicacao
             mTitle.add(sistemaDeComunicacao.getNome());
             sTitle.add(getString(R.string.subtit_comunicacao));
             mDescription.add(getString(R.string.desc_comunicacao));
             images.add(sistemaDeComunicacao.getImagem());
             recomendado.add("");
             URLpdf.add("");
-        }
-        if (sistemaDeCircuitoDeTv.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
+        //Sistema de Circuito de TV
             mTitle.add(sistemaDeCircuitoDeTv.getNome());
             sTitle.add(getString(R.string.subtit_tv));
             mDescription.add(getString(R.string.desc_tv));
             images.add(sistemaDeCircuitoDeTv.getImagem());
             recomendado.add("");
             URLpdf.add("");
-        }
+        // Subsolo:
+            mTitle.add("SubSolo");
+            sTitle.add("TABELA 7 - Anexo A - NT-01");
+            mDescription.add("Exigências para SubSolos");
+            images.add(R.drawable.subsolo);
+            recomendado.add("");
+            URLpdf.add("tabela7.pdf");
 
-        // DIRECIONA PARA CONSULTA OU VISTORIA INTELIGENTE
+        // CHAMA A CLASSE ADAPTER COM AS LISTAS DOS RESULTADOS
         AdaptadorExigencias adapter = new AdaptadorExigencias(this, mTitle, sTitle, mDescription, images, recomendado);
         listView.setAdapter(adapter);
 

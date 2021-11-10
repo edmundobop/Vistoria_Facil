@@ -74,6 +74,18 @@ public class Consulta_Rapida_Detalhes extends AppCompatActivity {
             case "Hidrante Hurbano":
                 bizus.setText(R.string.bizus_hidranteH);
                 break;
+            case "Alarme de Incêndio":
+                bizus.setText(R.string.bizus_alarme);
+                break;
+            case "Detecção de Incêndio":
+                bizus.setText(R.string.bizus_deteccao);
+                break;
+            case "Brigada":
+                bizus.setText(R.string.bizus_brigada);
+                break;
+            case "SubSolo":
+                bizus.setText(R.string.bizus_subsolo);
+                break;
         }
 
 

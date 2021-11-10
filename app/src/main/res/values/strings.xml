@@ -724,6 +724,71 @@ Outro distanciamento entre pontos pode ser adotado, desde que atenda aos parâme
         <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
     </string>
 
+    ALARME
+    <string name="bizus_alarme">
+        <b>No que devo ficar de olho:</b>\n
+        - A distância máxima a ser percorrida por uma pessoa, em qualquer ponto da área protegida até
+o acionador manual mais próximo, não deve ser superior a 30;\n
+        - O acionador manual deve ser instalado a uma altura entre 0,90 m e 1,35 m do piso acabado, na
+forma embutida ou de sobrepor, na cor vermelha.\n\n
+        <u>Central de Detecção e Alarme (Painel):</u>\n
+        - Nas centrais de detecção e/ou alarme é obrigatório conter um painel/esquema ilustrativo
+indicando a localização com identificação dos acionadores manuais ou detectores dispostos na
+área da edificação, respeitadas as características técnicas da central. Esse painel pode ser
+substituído por um display da central que indique a localização do acionamento;\n
+        - As centrais de detecção e alarme deverão ter dispositivo de teste dos indicadores luminosos e
+dos sinalizadores acústicos;\n
+        - A central de detecção e alarme e o painel repetidor devem ficar em local em que haja
+constante vigilância humana e de fácil visualização;\n
+        - A central deve acionar o alarme geral da edificação, que deve ser audível em toda edificação.\n
+        - Em locais de grande concentração de pessoas, o alarme geral pode ser substituído por
+um sinal sonoro (pré-alarme) emitido apenas na sala de segurança, junto à central, para evitar
+tumulto. No entanto, a central deve possuir um temporizador para o acionamento posterior do
+alarme geral, com tempo de retardo de no máximo 2 min, caso não sejam tomadas as ações
+necessárias para verificar o pré-alarme da central.\n\n
+
+
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    DETECÇÃO
+    <string name="bizus_deteccao">
+        <b>No que devo ficar de olho:</b>\n
+        - Os detectores pontuais de fumaça e de temperatura devem estar localizados no teto,
+distantes no mínimo 0,15 m da parede lateral ou vigas. Em casos justificados, os detectores podem
+ser instalados na parede lateral, a uma distância entre 0,15 m e 0,30 m do teto, desde que
+garantido o tempo de resposta do sistema;\n
+        - Onde houver sistema de detecção instalado será obrigatória a instalação de acionadores
+manuais, exceto para ocupações das divisões F-6, onde o acionador manual é opcional nas áreas de
+público e obrigatório nas demais áreas;\n
+        - Quando houver exigência de sistema de detecção para uma edificação, será obrigatória a
+instalação de detectores nos entreforros e entrepisos (pisos falsos) que contenham
+instalações com materiais combustíveis.\n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    BRIGADA
+    <string name="bizus_brigada">
+        <b>No que devo ficar de olho:</b>\n
+        - Verificar quantitativo no projeto;\n
+        - Certificados dos brigadistas: validade 3 anos.\n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    COMPARTIMENTAÇAO VERTICAL
+    <string name="bizus_compartV">
+        <b>No que devo ficar de olho:</b>\n
+        - Porta corta-fogo nas escadas;\n
+        - Material combustível na fachada.\n\n
+        <i><u>IMPORTANTES: Estes bizus tem o objetivo de facilitar seu trabalho na vistoria, mas não substituem a utilização da NT. Sempre que restar dúvidas, pesquise a NT relacionada.</u></i>
+    </string>
+
+    COMPARTIMENTAÇAO VERTICAL
+    <string name="bizus_subsolo">
+        <b>No que devo ficar de olho:</b>\n
+        - Para SubSolo DIFERENTE DE ESTACIONAMENTO, seguir tabela em anexo:\n
+    </string>
+
     -------------------------------------------------------------------------------------------------------------------------------
     PERGUNTAS E RESPOSTAS
     <string name="pergunta1_projeto">Quais os tipos de Vistoria (Processos) existem no CBMGO?</string>
@@ -798,7 +863,7 @@ Outro distanciamento entre pontos pode ser adotado, desde que atenda aos parâme
     <string name="resposta6_projeto">
         1 – FAZER PROTOCOLO NO SITE DO CBMGO\n
         2 – ANEXAR ANEXO G (PREENCHIDO E ASSINADO) NT 01 – site do cbmgo\n
-        3 – NOTA FISCAL DE EXTINTOR OU SUA RECARGA. OBSERVAR A QUANTIDADE MÍNINA PARA O TAMANHO DA EDIFICAÇÃO.\n
+        3 – NOTA FISCAL DE EXTINTOR OU SUA RECARGA. OBSERVAR A QUANTIDADE MÍNINA PARA O TAMANHO DA EDIFICAÇÃO, conforme abaixo:\n
             - Até 250m²: 1 (um) extintor, conforme risco predominante da edificação;\n
             - De 250m² a 500m²: 02 extintores de pó ABC (2A-20B:C) ou 01 extintor de água (2A); e 01 extintor (20B:C ou 5:BC);\n
             - De 500m² a 750m²: 03 extintores de pó ABC (2A-20B:C) OU 02 extintores de água (2A); e 01 extintor (20B:C ou 5:BC) ou 01 extintor de água (2A)
