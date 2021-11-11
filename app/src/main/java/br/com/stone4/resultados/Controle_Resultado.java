@@ -343,16 +343,16 @@ public class Controle_Resultado extends AppCompatActivity {
         int processo = tipoProcesso(grupo,divisao,area,pavimentos);
 
         switch (processo) {
-            case 2:
+            case 1:
                 tvProcesso.setText("Processo Simplificado para Certificação Prévia");
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertPrevia);
                 break;
-            case 1:
+            case 2:
                 tvProcesso.setText("Processo Técnico para Certificação Facilitada");
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
                 break;
             case 0:
-                tvProcesso.setText("Projeto Técnico");
+                tvProcesso.setText("Processo Técnico");
                 tvGuiaPratico.setText(R.string.txt_vistPaP1500HidTxt);
                 break;
         }
@@ -369,11 +369,22 @@ public class Controle_Resultado extends AppCompatActivity {
 
     public int tipoProcesso(int grupo, int divisao, int area, int pavimentos){
 
-        if (area > 750 || divisao==R.id.F5 || divisao==R.id.F6 || divisao==R.id.F7 || pavimentos == R.id.Psim) {
-            return 0;
-        } else if (area <= 200){
-            return 1;
-        } else return 2;
+        // 0 = Projeto Técnico;
+        // 1 = Processo Técnico para Certificação Prévia;
+        // 2 = Processo Simplificado para Certificação Facilitada
+        int tipo = 0;
+
+        if (area > 750 || grupo == R.id.bt_F || grupo == R.id.bt_L || divisao == R.id.M2 || pavimentos == R.id.Psim) {
+
+        } else if (grupo != R.id.bt_B && (divisao == R.id.C1 || divisao == R.id.C2 || divisao == R.id.E2
+                    || divisao == R.id.E3 || divisao == R.id.H1 || divisao == R.id.H6
+                    || divisao == R.id.J1)){
+                tipo = 1;
+            } else if (area <= 200) {
+            tipo = 2;
+        }
+
+        return tipo;
 
     }
 

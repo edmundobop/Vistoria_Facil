@@ -374,11 +374,12 @@ COMO SOLICITAR CERTIFICAÇÃO PRÉVIA
 
     //Tela do Passo-aPasso
     <string name="txt_TpAp">PASSO A PASSO PARA SOLICITAR VISTORIA NO CBMGO</string>
-    <string name="txt_pAp">1 – Acessar o site do CBMGO pelo link: <u><b>www.bombeiros.go.gov.br;</b></u>\n\n
-2 - A esquerda superior <b>MENU – SERVIÇOS – INSPEÇÕES E ANÁLISE PROJETOS;</b>\n\n
-3 – Em <b>azul</b> Solicitar serviço – Inspeções;\n\n
+    <string name="txt_pAp">
+1 – Acessar o site do CBMGO pelo link: <u><b>www.bombeiros.go.gov.br;</b></u>\n\n
+2 - Acessar o menu: <b>VISTORIA/PROJETO;</b>\n\n
+3 – Acessar a opção <b>Solicitar serviço – Inspeções</b>;\n\n
 4 – Aparecerá um informativo de Portaria 268/2020, role a barra e clique em continuar;\n\n
-5 – Buscar Solicitação de Serviço – Escolha a opção de vistoria para funcionamento;\n\n
+5 – Buscar Solicitação de Serviço – Escolha a opção de <b>vistoria para funcionamento</b>;\n\n
 6 - Informe o CNPJ/CPF, o CEP do município e clique em pesquisar;\n\n
 7 – Se a empresa já possuir a certificação do CBMGO, aparecerá a opção para renovar
 o serviço, confirme os dados cadastrados, prossiga até o item CNAE da barra de
