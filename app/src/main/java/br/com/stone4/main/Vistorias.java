@@ -1,12 +1,19 @@
 package br.com.stone4.main;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RemoteViews;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -23,9 +30,42 @@ public class Vistorias extends AppCompatActivity {
     private ArrayList<Integer> imagem;
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_item,menu);
+        return true;
+    }
+
+    // Menu da barra supeior
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int item_id = item.getItemId();
+
+        if (item_id == R.id.avaliar){
+            Toast.makeText(this,"Botão d avaliar", Toast.LENGTH_SHORT).show();
+            try {
+                Uri uri = Uri.parse("market://details?id=" +
+                        getPackageName());
+
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            } catch (ActivityNotFoundException e){
+                Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=" +getPackageName());
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        }
+
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vistorias_main);
+
+
 
         Intent intent = getIntent();
         Bundle parametros = intent.getExtras();

@@ -2,19 +2,27 @@ package br.com.stone4.resultados;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.ColorInt;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import br.com.stone4.R;
 
 public class Controle_Resultado extends AppCompatActivity {
 
+    private AlertDialog.Builder dialogBuilder;
+    private AlertDialog dialog;
+    private TextView tituloAlerta, textoAlerta;
+    private Button bt_ok;
     Intent intent;
 
-    @SuppressLint("NonConstantResourceId")
+    @SuppressLint({"NonConstantResourceId", "ResourceAsColor"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -340,22 +348,44 @@ public class Controle_Resultado extends AppCompatActivity {
         // Outras informações + Guia Prático:
         TextView tvProcesso = findViewById(R.id.tv_processo);
         TextView tvGuiaPratico = findViewById(R.id.txt_guiapratico);
+
+        // Quando clicar no tipo de processo:
+        @SuppressLint("CutPasteId") TextView processoSimplificado = (TextView) findViewById(R.id.tv_processo);
+
         int processo = tipoProcesso(grupo,divisao,area,pavimentos);
 
         switch (processo) {
             case 1:
-                tvProcesso.setText("Processo Simplificado para Certificação Prévia");
+                tvProcesso.setText("Processo Simplificado para Certificação Prévia*");
+                tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertPrevia);
+
+                processoSimplificado.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        createNewContactDialog();
+                    }
+                });
                 break;
             case 2:
-                tvProcesso.setText("Processo Técnico para Certificação Facilitada");
+                tvProcesso.setText("Processo Técnico para Certificação Facilitada*");
+                tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
+
+                processoSimplificado.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        createNewContactDialog();
+                    }
+                });
                 break;
             case 0:
                 tvProcesso.setText("Processo Técnico");
                 tvGuiaPratico.setText(R.string.txt_vistPaP1500HidTxt);
                 break;
         }
+
+
 
         intent.setClass(this, VistoriaInteligente_Resultado.class);
 
@@ -385,6 +415,28 @@ public class Controle_Resultado extends AppCompatActivity {
         }
 
         return tipo;
+
+    }
+
+    public void createNewContactDialog(){
+        dialogBuilder = new AlertDialog.Builder(this);
+        final View contactPopupView = getLayoutInflater().inflate(R.layout.popup,null);
+        tituloAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertTitle);
+        textoAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertText);
+
+        bt_ok = (Button) contactPopupView.findViewById(R.id.bt_alert);
+
+        dialogBuilder.setView(contactPopupView);
+        dialog = dialogBuilder.create();
+        dialog.show();
+
+        bt_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
 
     }
 

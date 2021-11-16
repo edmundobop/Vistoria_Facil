@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/img_alert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_alert"
+        android:layout_gravity="center">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_alertTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/alerta_tituloProcesso"
+        android:textColor="@color/black_text"
+        android:textColorHint="#535252"
+        android:textSize="24sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_alertText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/alerta_textoProcesso"
+        android:textColor="@color/black_text"
+        android:justificationMode="inter_word"
+        android:textColorHint="#535252"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_alert"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:text="OK"
+        app:backgroundTint="#0055FE">
+
+    </Button>
+
+</LinearLayout>
