@@ -1,56 +1,52 @@
 package br.com.stone4.main;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
-import java.util.ArrayList;
 
 import br.com.stone4.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ArrayList<String> titulo;
-    private ArrayList<String> subTitulo;
-    private ArrayList<Integer> imagem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView listView = (ListView) findViewById(R.id.main_id);
+        CardView card1 = (CardView) findViewById(R.id.card1);
+        CardView card2 = (CardView) findViewById(R.id.card2);
 
-        titulo = new ArrayList<>();
-        subTitulo = new ArrayList<>();
-        imagem = new ArrayList<>();
-
-        titulo.add("VISTORIA");
-        subTitulo.add("clique para ver tudo sobre vistorias");
-        imagem.add(R.drawable.prancheta);
-
-        // DIRECIONA PARA CONSULTA OU VISTORIA INTELIGENTE
-        Adaptador_Vistorias_Opcoes adapter = new Adaptador_Vistorias_Opcoes(this, titulo, subTitulo, imagem);
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent();
-
-                if (position == 0) {
-                    intent = new Intent(getApplicationContext(), Vistorias.class);
-                }
-
-                startActivity(intent);
-
-            }
-        });
+        card1.setOnClickListener(this);
+        card2.setOnClickListener(this);
     }
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public void onClick(View v) {
+
+        Intent intent = getIntent();
+        Bundle parametros = new Bundle();
+
+        switch (v.getId()){
+            case R.id.card1:
+                parametros.putString("perfil","perfil1");
+                break;
+            case R.id.card2:
+                parametros.putString("perfil","perfil2");
+                break;
+        }
+
+        intent.setClass(this, Vistorias.class);
+        intent.putExtras(parametros);
+        startActivity(intent);
+    }
+}
 /*
 
     problemas a resolver:
@@ -86,4 +82,4 @@ public class MainActivity extends AppCompatActivity {
 
 
      */
-}
+

@@ -165,6 +165,7 @@
         <activity
             android:name=".main.Vistorias"
             android:label="Vistorias"
+            android:launchMode="singleTop"
             android:parentActivityName=".main.MainActivity" />
         <activity
             android:name=".main.MainActivity"
