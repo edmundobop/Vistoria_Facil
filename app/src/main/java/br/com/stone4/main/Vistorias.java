@@ -22,6 +22,7 @@ import br.com.stone4.main.vistoria.CertiPreviaPassoApasso;
 import br.com.stone4.main.vistoria.Consulta_rapida;
 import br.com.stone4.main.vistoria.VistoriaInteligente;
 import br.com.stone4.main.vistoria.perguntas_frequentes.Perguntas_Frequentes;
+import br.com.stone4.modulos.TipoProcesso;
 
 public class Vistorias extends AppCompatActivity {
 
@@ -80,23 +81,29 @@ public class Vistorias extends AppCompatActivity {
         if (perfil.equals("perfil1")){
             titulo.add("Vistoria Inteligente");
             titulo.add("Consulta Rápida");
+            titulo.add("Modulos");
             titulo.add("Solicitar Vistoria");
             titulo.add("Perguntas Frequentes");
             subTitulo.add("Passo-a-passo para realizar uma vistoria");
             subTitulo.add("Consulte todos os Bizus e Nt's");
+            subTitulo.add("Consulte os módulos do app separadamente");
             subTitulo.add("Passo-a-passo para solicitar vistoria no site do CBMGO");
             subTitulo.add("PerguntasS e respostas frequentes");
             imagem.add(R.drawable.vistoria_inteligente);
             imagem.add(R.drawable.lupa);
+            imagem.add(R.drawable.modulos);
             imagem.add(R.drawable.solicitar_vistoria);
             imagem.add(R.drawable.perguntas_respostas);
         } else {
             titulo.add("Solicitar Vistoria");
             titulo.add("Perguntas Frequentes");
+            titulo.add("Modulos");
             subTitulo.add("Passo-a-passo para solicitar vistoria no site do CBMGO");
             subTitulo.add("PerguntasS e respostas frequentes");
+            subTitulo.add("Consulte os módulos do app separadamente");
             imagem.add(R.drawable.solicitar_vistoria);
             imagem.add(R.drawable.perguntas_respostas);
+            imagem.add(R.drawable.modulos);
         }
 
         // DIRECIONA PARA CONSULTA OU VISTORIA INTELIGENTE
@@ -120,9 +127,12 @@ public class Vistorias extends AppCompatActivity {
                             intent.putExtras(chave);
                             break;
                         case 2:
-                            intent = new Intent(getApplicationContext(), CertiPreviaPassoApasso.class);
+                            intent = new Intent(getApplicationContext(), TipoProcesso.class);
                             break;
                         case 3:
+                            intent = new Intent(getApplicationContext(), CertiPreviaPassoApasso.class);
+                            break;
+                        case 4:
                             intent = new Intent(getApplicationContext(), Perguntas_Frequentes.class);
                             break;
                         }
@@ -133,6 +143,9 @@ public class Vistorias extends AppCompatActivity {
                                 break;
                             case 1:
                                 intent = new Intent(getApplicationContext(), Perguntas_Frequentes.class);
+                                break;
+                            case 2:
+                                intent = new Intent(getApplicationContext(), TipoProcesso.class);
                                 break;
                     }
                 }

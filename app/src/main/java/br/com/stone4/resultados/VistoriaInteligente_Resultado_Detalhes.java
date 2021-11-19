@@ -4,9 +4,12 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.barteksc.pdfviewer.PDFView;
@@ -15,6 +18,12 @@ import br.com.stone4.R;
 
 public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
 
+    private AlertDialog.Builder dialogBuilder;
+    private AlertDialog dialog;
+    private TextView tituloAlerta;
+    private Spinner spinner;
+    private Button bt_nt;
+    private Button bt_fechar;
     Intent intent;
     Bundle parametros;
 
@@ -89,19 +98,60 @@ public class VistoriaInteligente_Resultado_Detalhes extends AppCompatActivity {
         }
     }
 
+     // Janela de Escolha das partes de Nts
+        public void createNewContactDialog(){
+            dialogBuilder = new AlertDialog.Builder(this);
+            final View contactPopupView = getLayoutInflater().inflate(R.layout.popup_nts,null);
+            tituloAlerta = (TextView) contactPopupView.findViewById(R.id.tv_tituloAlertNt);
+            spinner = (Spinner) contactPopupView.findViewById(R.id.spinner_nts);
+            bt_nt = (Button) contactPopupView.findViewById(R.id.bt_acessarNt);
+            bt_fechar = (Button) contactPopupView.findViewById(R.id.bt_fecharNt);
+
+            dialogBuilder.setView(contactPopupView);
+            dialog = dialogBuilder.create();
+            dialog.show();
+
+            bt_nt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int itemId = spinner.getSelectedItemPosition();
+                    if (itemId == 0){
+                        intent.setClass(getApplicationContext(), Bizus_NT.class);
+                        parametros.putString("urlPDF","nt28_pt01.pdf");
+                        intent.putExtras(parametros);
+                        startActivity(intent);
+                    } else if (itemId == 1){
+                        intent.setClass(getApplicationContext(), Bizus_NT.class);
+                        parametros.putString("urlPDF","nt28_pt02.pdf");
+                        intent.putExtras(parametros);
+                        startActivity(intent);
+                    } else {
+                        intent.setClass(getApplicationContext(), Bizus_NT.class);
+                        parametros.putString("urlPDF","nt-29_2014.pdf");
+                        intent.putExtras(parametros);
+                        startActivity(intent);
+                    }
+                }
+            });
+
+            bt_fechar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.dismiss();
+                }
+            });
+
+    }
 
         public void onClick (View view){
             // PDF Viwer
-            intent.setClass(this, Bizus_NT.class);
-            intent.putExtras(parametros);
-            startActivity(intent);
+            if (parametros.getString("title").equals("Central de Gás")){
+                createNewContactDialog();
+            } else {
+                intent.setClass(this, Bizus_NT.class);
+                intent.putExtras(parametros);
+                startActivity(intent);
+            }
+
         }
     }
-
-/* Use o codigo abaixo para utilizar string-array
-        TextView bizus = findViewById(R.id.bizus);
-        Resources res = getResources();
-        String[] Sbizus = res.getStringArray(R.array.bizu_extintores_array);
-        bizus.setText(Arrays.toString(Sbizus));
-
- */

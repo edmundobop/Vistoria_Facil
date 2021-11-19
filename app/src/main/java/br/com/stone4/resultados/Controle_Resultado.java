@@ -2,17 +2,18 @@ package br.com.stone4.resultados;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.media.Image;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.annotation.ColorInt;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import br.com.stone4.R;
+import br.com.stone4.modulos.Algoritmos;
 
 public class Controle_Resultado extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class Controle_Resultado extends AppCompatActivity {
     private Button bt_ok;
     Intent intent;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @SuppressLint({"NonConstantResourceId", "ResourceAsColor"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -352,7 +354,9 @@ public class Controle_Resultado extends AppCompatActivity {
         // Quando clicar no tipo de processo:
         @SuppressLint("CutPasteId") TextView processoSimplificado = (TextView) findViewById(R.id.tv_processo);
 
-        int processo = tipoProcesso(grupo,divisao,area,pavimentos);
+        // Chama o método Tipo Processo da classe Modulos
+        Algoritmos algoritmos = new Algoritmos();
+        int processo = algoritmos.tipoProcesso(grupo,divisao,area,pavimentos);
 
         switch (processo) {
             case 1:
@@ -395,27 +399,6 @@ public class Controle_Resultado extends AppCompatActivity {
     public int CargaDeIncendio(int grupo, int divisao){
 
         return 0;
-    }
-
-    public int tipoProcesso(int grupo, int divisao, int area, int pavimentos){
-
-        // 0 = Projeto Técnico;
-        // 1 = Processo Técnico para Certificação Prévia;
-        // 2 = Processo Simplificado para Certificação Facilitada
-        int tipo = 0;
-
-        if (area > 750 || grupo == R.id.bt_F || grupo == R.id.bt_L || divisao == R.id.M2 || pavimentos == R.id.Psim) {
-
-        } else if (grupo != R.id.bt_B && (divisao == R.id.C1 || divisao == R.id.C2 || divisao == R.id.E2
-                    || divisao == R.id.E3 || divisao == R.id.H1 || divisao == R.id.H6
-                    || divisao == R.id.J1)){
-                tipo = 1;
-            } else if (area <= 200) {
-            tipo = 2;
-        }
-
-        return tipo;
-
     }
 
     public void createNewContactDialog(){

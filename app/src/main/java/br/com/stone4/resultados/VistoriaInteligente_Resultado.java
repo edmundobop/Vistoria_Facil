@@ -141,7 +141,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_gas));
             images.add(centralDeGas.getImagem());
             recomendado.add("Obrigatório");
-            URLpdf.add("nt-29_2014-comercializacao-distribuicao-e-utilizacao-de-gas-natural.pdf");
+            URLpdf.add("nt28_pt01.pdf");
         }
         if (horizontal.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
             mTitle.add(horizontal.getNome());

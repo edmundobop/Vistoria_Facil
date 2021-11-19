@@ -19,6 +19,13 @@
             android:value="ca-app-pub-6018756003845465/2294999075"/>
 
         <activity
+            android:name=".modulos.TipoProcesso"
+            android:label="Tipos de Processo"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.Vistorias" >
+        </activity>
+
+        <activity
             android:name=".resultados.Consulta_Rapida_NT"
             android:label="Detalhes"
             android:launchMode="singleTop"

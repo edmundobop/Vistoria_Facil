@@ -150,7 +150,7 @@ public class Consulta_rapida extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_gas));
             images.add(centralDeGas.getImagem());
             recomendado.add("");
-            URLpdf.add("nt-29_2014-comercializacao-distribuicao-e-utilizacao-de-gas-natural.pdf");
+            URLpdf.add("nt28_pt01.pdf");
         // Compartimentação Horizontal
             mTitle.add(horizontal.getNome());
             sTitle.add(getString(R.string.subtit_horizontal));

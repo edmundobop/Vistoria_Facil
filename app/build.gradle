@@ -10,8 +10,8 @@ android {
         applicationId "com.vistoria.vistoriaFacil_v2"
         minSdkVersion 19
         targetSdkVersion 31
-        versionCode 5
-        versionName "1.5"
+        versionCode 8
+        versionName "1.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

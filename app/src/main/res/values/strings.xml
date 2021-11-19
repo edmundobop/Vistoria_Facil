@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">vistoriaFacil_v2</string>
+    <string name="app_name">vistoriaFacil</string>
     <string name="button_vistorias">VISTORIA</string>
     <string name="button_vistPassoApasso">VISTORIA RÁPIDA: <i>Utilize se não tem dúvida sobre a edificação e os conceitos</i></string>
     <string name="button_VistoriaInteligente_Title">VISTORIA INTELIGENTE</string>
@@ -269,8 +269,8 @@ recuperação de materiais.</string>
     <string name="subtit_estrutural">""</string>
     <string name="desc_estrutural">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
     // Central de Gás
-    <string name="tit_gas">NORMA TÉCNICA 29/2014</string>
-    <string name="subtit_gas">NORMA TÉCNICA 29/2014</string>
+    <string name="tit_gas">NORMA TÉCNICA 28-29/2014</string>
+    <string name="subtit_gas">NORMA TÉCNICA 28-29/2014</string>
     <string name="desc_gas">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
     // Compartimentação Vertical
     <string name="tit_vertical">NORMA TÉCNICA 09/2017</string>
@@ -336,7 +336,13 @@ recuperação de materiais.</string>
     <string name="tit_tv">""</string>
     <string name="subtit_tv">""</string>
     <string name="desc_tv">NORMA TÉCNICA 21/2014:\nSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIOSISTEMA DE PROTEÇÃO POR EXTINTORES DE INCÊNDIO</string>
-
+____________________________________________________________________________________________________________________________________________________________________________
+    Spinner de Arrays de Nts
+    <string-array name="nt_28">
+        <item>NT 28 Parte 1</item>
+        <item>NT 28 Parte 2</item>
+        <item>Nt 29</item>
+    </string-array>
 
     //---------------------------------------------------------------------------------------------------------------------------------------------------
     // Tela da Certificação Prévia

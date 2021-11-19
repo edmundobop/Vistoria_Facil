@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements InAppUpdateManage
 
 
        // Método de Update
-        inAppUpdateManager = InAppUpdateManager.Builder(this,5)
+        inAppUpdateManager = InAppUpdateManager.Builder(this,7)
                 .resumeUpdates(true)
                 .mode(Constants.UpdateMode.IMMEDIATE)
                 .snackBarAction("Uma atualização foi baixada.")
