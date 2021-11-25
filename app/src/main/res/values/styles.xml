@@ -86,4 +86,9 @@
         <item name="cornerRadius">10dp</item>
     </style>
 
+    // Font family
+    <style name="fonts">
+        <item name="android:fontFamily">Times</item>
+    </style>
+
 </resources>

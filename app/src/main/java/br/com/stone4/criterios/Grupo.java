@@ -1,9 +1,6 @@
 package br.com.stone4.criterios;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-
-import br.com.stone4.R;
 
 public class Grupo implements Serializable {
 

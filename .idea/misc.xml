@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/bg_spinner_grupo.xml" value="0.2203125" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/ic_alert.xml" value="0.2203125" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/ic_arrow_down.xml" value="0.1" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_alojameos.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_bizus.xml" value="0.1" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_certificacaoprevia_passo_apasso.xml" value="0.33" />
@@ -25,12 +27,13 @@
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_vistorias.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/arte_resultado.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/banner_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/item_divisao.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/item_grupos.xml" value="0.33" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/menu_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/popup.xml" value="0.22" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/popup_nts.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/spinner_adapter.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/spinner_tipo_processos.xml" value="0.3938832252085264" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/spinner_tipo_processos.xml" value="0.33" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/menu/menu_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Projeto CBMGO_vistorias/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_bizus.xml" value="0.19746376811594202" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Projeto CBMGO_vistorias/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_main.xml" value="0.16" />

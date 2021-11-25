@@ -40,12 +40,17 @@
     <string name="button_A2">A-2:Habitação multifamiliar: Condomínios de casas térreas ou assobradadas não isoladas, edifícios de apartamentos em geral e condomínios verticais e assemelhados</string>
     <string name="button_A3">A-3:Habitação coletiva: Pensionatos, internatos, alojamentos, mosteiros, conventos, residências geriátricas. Todos com capacidade máxima de 16 leitos e assemelhados</string>
     // botôes Divisão B
-    <string name="button_B1">B-1:Hotel e assemelhado: Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos e divisão A3 com mais de 16 leitos e assemelhados</string>
-    <string name="button_B2">B-2:Hotel residencial: Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se apart-hotéis, flats, hotéis residenciais) e assemelhados</string>
+    <string name="button_B1">B-1:Hotel e assemelhado: Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas
+        de cômodos e divisão A3 com mais de 16 leitos e assemelhados</string>
+    <string name="button_B2">B-2:Hotel residencial: Hotéis e assemelhados com cozinha própria nos apartamentos
+        (incluem-se apart-hotéis, flats, hotéis residenciais) e assemelhados</string>
     // botôes Divisão C
-    <string name="button_C1">C-1:Comércio com baixa carga de incêndio: Armarinhos, artigos de metal, louças, artigos hospitalares e outros</string>
-    <string name="button_C2">C-2:Comércio com média e alta carga de incêndio: Edifícios de lojas de departamentos, magazines, galerias comerciais, supermercados em geral, mercados e outros</string>
-    <string name="button_C3">C-3:Shoppings centers: Centro de compras em geral, feiras permanentes, shopping centers e outros</string>
+    <string name="button_C1">C-1:Comércio com baixa carga de incêndio: Armarinhos, artigos de metal, louças, artigos
+        hospitalares e outros</string>
+    <string name="button_C2">C-2:Comércio com média e alta carga de incêndio: Edifícios de lojas de departamentos,
+        magazines, galerias comerciais, supermercados em geral, mercados e outros</string>
+    <string name="button_C3">C-3:Shoppings centers: Centro de compras em geral, feiras permanentes, shopping centers
+        e outros</string>
 
     // botôes Divisão D
     <string name="button_D1">D-1:Local para prestação de serviço profissional ou condução de negócios. Administração pública em geral.</string>
