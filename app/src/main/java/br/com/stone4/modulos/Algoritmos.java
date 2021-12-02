@@ -11,14 +11,14 @@ public class Algoritmos {
         // 2 = Processo Simplificado para Certificação Facilitada
         int tipo = 0;
 
-        if (area > 750 || grupo == R.id.bt_F || grupo == R.id.bt_L || divisao == R.id.M2) {
-
-        } else if (grupo != R.id.bt_B && (divisao == R.id.C1 || divisao == R.id.C2 || divisao == R.id.E2
-                || divisao == R.id.E3 || divisao == R.id.H1 || divisao == R.id.H6
-                || divisao == R.id.J1)) {
-            tipo = 1;
-        } else if (area <= 200) {
+        if (area <= 200) {
             tipo = 2;
+        } else if (divisao != R.id.F5 && divisao != R.id.F6 && divisao != R.id.F7 && grupo != R.id.bt_L
+                && divisao != R.id.M2 && area <= 750){
+            if (grupo != R.id.bt_B && grupo != R.id.bt_F && (divisao == R.id.C1 || divisao == R.id.C2 || divisao == R.id.E2
+                    || divisao == R.id.E3 || divisao == R.id.H1 || divisao == R.id.H6 || divisao == R.id.J1)) {
+                tipo = 1;
+            }
         }
 
         return tipo;
