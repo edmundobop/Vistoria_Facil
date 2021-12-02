@@ -127,5 +127,6 @@
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: eu.dkaratzas:android-inapp-update:1.0.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.play:core:1.10.2@aar" level="project" />
   </component>
 </module>
