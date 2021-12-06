@@ -3,6 +3,7 @@ package br.com.stone4.main;
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,12 +12,22 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.play.core.appupdate.AppUpdateInfo;
+import com.google.android.play.core.appupdate.AppUpdateManager;
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
+import com.google.android.play.core.install.InstallState;
+import com.google.android.play.core.install.InstallStateUpdatedListener;
+import com.google.android.play.core.install.model.AppUpdateType;
+import com.google.android.play.core.install.model.InstallStatus;
+import com.google.android.play.core.install.model.UpdateAvailability;
+import com.google.android.play.core.tasks.OnSuccessListener;
 
 import br.com.stone4.R;
 import br.com.stone4.main.vistoria.CertiPreviaPassoApasso;
@@ -24,10 +35,11 @@ import eu.dkaratzas.android.inapp.update.Constants;
 import eu.dkaratzas.android.inapp.update.InAppUpdateManager;
 import eu.dkaratzas.android.inapp.update.InAppUpdateStatus;
 
-public class MainActivity extends AppCompatActivity implements InAppUpdateManager.InAppUpdateHandler{
+public class MainActivity extends AppCompatActivity{
 
     private ActionBarDrawerToggle actionBarDrawerToggle;
-    InAppUpdateManager inAppUpdateManager;
+    private AppUpdateManager appUpdateManager;
+    private static final int RC_APP_UPDATE = 100;
     private Intent intent;
 
     // Menu da barra supeior
@@ -68,7 +80,6 @@ public class MainActivity extends AppCompatActivity implements InAppUpdateManage
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         Bundle parametros = new Bundle();
 
         CardView card1 = (CardView) findViewById(R.id.card1);
@@ -78,11 +89,11 @@ public class MainActivity extends AppCompatActivity implements InAppUpdateManage
             @Override
             public void onClick(View v) {
 
-            parametros.putString("perfil","perfil1");
+                parametros.putString("perfil", "perfil1");
 
-            intent = new Intent(getApplicationContext(), Vistorias.class);
-            intent.putExtras(parametros);
-            startActivity(intent);
+                intent = new Intent(getApplicationContext(), Vistorias.class);
+                intent.putExtras(parametros);
+                startActivity(intent);
             }
         });
 
@@ -90,48 +101,72 @@ public class MainActivity extends AppCompatActivity implements InAppUpdateManage
             @Override
             public void onClick(View v) {
 
-            parametros.putString("perfil","perfil2");
+                parametros.putString("perfil", "perfil2");
 
-            intent = new Intent(getApplicationContext(), Vistorias.class);
-            intent.putExtras(parametros);
-            startActivity(intent);
+                intent = new Intent(getApplicationContext(), Vistorias.class);
+                intent.putExtras(parametros);
+                startActivity(intent);
             }
         });
 
-
-
-       // Método de Update
-        inAppUpdateManager = InAppUpdateManager.Builder(this,7)
-                .resumeUpdates(true)
-                .mode(Constants.UpdateMode.IMMEDIATE)
-                .snackBarAction("Uma atualização foi baixada.")
-                .handler(this);
-
-        inAppUpdateManager.checkForAppUpdate();
-    }
-
-    @Override
-    public void onInAppUpdateError(int code, Throwable error) {
-
-    }
-
-    @Override
-    public void onInAppUpdateStatus(InAppUpdateStatus status) {
-        if (status.isDownloaded()){
-            View view = getWindow().getDecorView().findViewById(android.R.id.content);
-            Snackbar snackbar = Snackbar.make(view,
-                    "Uma atualização foi baixada.",
-                    Snackbar.LENGTH_INDEFINITE);
-
-            snackbar.setAction("", new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    inAppUpdateManager.completeUpdate();
+        // Método Update
+        appUpdateManager = AppUpdateManagerFactory.create(this);
+        appUpdateManager.getAppUpdateInfo().addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
+            @Override
+            public void onSuccess(AppUpdateInfo result) {
+                if(result.updateAvailability()  == UpdateAvailability.UPDATE_AVAILABLE
+                        && result.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE))
+                {
+                    try {
+                        appUpdateManager.startUpdateFlowForResult(result,AppUpdateType.FLEXIBLE, MainActivity.this,
+                                RC_APP_UPDATE);
+                    } catch (IntentSender.SendIntentException e) {
+                        e.printStackTrace();
+                    }
                 }
-            });
+            }
+        });
 
-            snackbar.show();
+        appUpdateManager.registerListener(installStateUpdatedListener);
+    }
+
+    private InstallStateUpdatedListener installStateUpdatedListener = new InstallStateUpdatedListener() {
+        @Override
+        public void onStateUpdate(@NonNull InstallState state) {
+            if (state.installStatus() == InstallStatus.DOWNLOADED) {
+                showCompleteUpdate();
+            }
         }
+    };
+
+    @Override
+    protected void onStop()
+    {
+        if(appUpdateManager != null) appUpdateManager.unregisterListener(installStateUpdatedListener);
+        super.onStop();
+    }
+
+    private void showCompleteUpdate()
+    {
+        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Existe uma nova Atualização do APP!",
+                Snackbar.LENGTH_INDEFINITE);
+        snackbar.setAction("Instalar", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                appUpdateManager.completeUpdate();
+            }
+        });
+        snackbar.show();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
+    {
+        if(requestCode == RC_APP_UPDATE && resultCode != RESULT_OK)
+        {
+            Toast.makeText(this,"Cancelado",Toast.LENGTH_SHORT).show();
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }
 /*

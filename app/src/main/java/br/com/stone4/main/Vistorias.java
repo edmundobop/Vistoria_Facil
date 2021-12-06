@@ -88,7 +88,7 @@ public class Vistorias extends AppCompatActivity {
             subTitulo.add("Consulte todos os Bizus e Nt's");
             subTitulo.add("Consulte os módulos do app separadamente");
             subTitulo.add("Passo-a-passo para solicitar vistoria no site do CBMGO");
-            subTitulo.add("PerguntasS e respostas frequentes");
+            subTitulo.add("Consulte as dúvidas mais frequentes aqui");
             imagem.add(R.drawable.vistoria_inteligente);
             imagem.add(R.drawable.lupa);
             imagem.add(R.drawable.modulos);
