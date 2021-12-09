@@ -38,6 +38,10 @@ public class GrupoAdapter extends BaseAdapter {
         return position;
     }
 
+    public String getItemName(int position) {
+        return grupoList.get(position).getId();
+    }
+
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         View rootView = LayoutInflater.from(context).inflate(R.layout.item_grupos, viewGroup, false);

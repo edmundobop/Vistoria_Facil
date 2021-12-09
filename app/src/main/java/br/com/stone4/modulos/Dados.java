@@ -11,72 +11,72 @@ import br.com.stone4.criterios.Grupo;
 
 public class Dados {
 
-    public static List<Grupo> getGrupoList(){
+    public static List<Grupo> getGrupoList(Context context){
 
         List<Grupo> grupoList = new ArrayList<>();
 
         Grupo Residencial = new Grupo();
-        Residencial.setId("A-Residêncial");
+        Residencial.setId(context.getString(R.string.button_A));
         Residencial.setImage(R.drawable.ic_residencia);
         grupoList.add(Residencial);
 
         Grupo Hospedagem = new Grupo();
-        Hospedagem.setId("B-Serviços De Hospedagem");
+        Hospedagem.setId(context.getString(R.string.button_B));
         Hospedagem.setImage(R.drawable.ic_residencia);
         grupoList.add(Hospedagem);
 
         Grupo Comercial = new Grupo();
-        Comercial.setId("C-Comercial");
+        Comercial.setId(context.getString(R.string.button_C));
         Comercial.setImage(R.drawable.ic_residencia);
         grupoList.add(Comercial);
 
         Grupo Profissional = new Grupo();
-        Profissional.setId("D-Serviço Profissional");
+        Profissional.setId(context.getString(R.string.button_D));
         Profissional.setImage(R.drawable.ic_residencia);
         grupoList.add(Profissional);
 
         Grupo Educacional = new Grupo();
-        Educacional.setId("E-Educacional E Cultura Física");
+        Educacional.setId(context.getString(R.string.button_E));
         Educacional.setImage(R.drawable.ic_residencia);
         grupoList.add(Educacional);
 
         Grupo Publico = new Grupo();
-        Publico.setId("F-Local De Reunião De Público");
+        Publico.setId(context.getString(R.string.button_F));
         Publico.setImage(R.drawable.ic_residencia);
         grupoList.add(Publico);
 
         Grupo Automotivo = new Grupo();
-        Automotivo.setId("G-Serviço Automotivo E Assemelhados");
+        Automotivo.setId(context.getString(R.string.button_G));
         Automotivo.setImage(R.drawable.ic_residencia);
         grupoList.add(Automotivo);
 
         Grupo Saude = new Grupo();
-        Saude.setId("H-Serviço De Saúde E Institucional");
+        Saude.setId(context.getString(R.string.button_H));
         Saude.setImage(R.drawable.ic_residencia);
         grupoList.add(Saude);
 
         Grupo Industria = new Grupo();
-        Industria.setId("I-Indústria");
+        Industria.setId(context.getString(R.string.button_I));
         Industria.setImage(R.drawable.ic_residencia);
         grupoList.add(Industria);
 
         Grupo Deposito = new Grupo();
-        Deposito.setId("J-Depósito");
+        Deposito.setId(context.getString(R.string.button_J));
         Deposito.setImage(R.drawable.ic_residencia);
         grupoList.add(Deposito);
 
         Grupo Explosivo = new Grupo();
-        Explosivo.setId("L-Explosivos");
+        Explosivo.setId(context.getString(R.string.button_L));
         Explosivo.setImage(R.drawable.ic_residencia);
         grupoList.add(Explosivo);
 
         Grupo Especial = new Grupo();
-        Especial.setId("M-Especial");
+        Especial.setId(context.getString(R.string.button_M));
         Especial.setImage(R.drawable.ic_residencia);
         grupoList.add(Especial);
 
         Grupo Primario = new Grupo();
-        Primario.setId("N-Setor Primário");
+        Primario.setId(context.getString(R.string.button_N));
         Primario.setImage(R.drawable.ic_residencia);
         grupoList.add(Primario);
 
@@ -84,23 +84,23 @@ public class Dados {
 
     }
 
-    public static List<Divisao> getDivisaoListA(){
+    public static List<Divisao> getDivisaoListA(Context context){
 
         List<Divisao> divisaoList = new ArrayList<>();
 
         // GRUPO A
         Divisao ResidencialA1 = new Divisao();
-        ResidencialA1.setId("A-1:Habitação unifamiliar: Condomínios de casas térreas ou assobradadas isoladas e assemelhados");
+        ResidencialA1.setId(context.getString(R.string.button_A1));
         ResidencialA1.setImage(R.drawable.ic_residencia);
         divisaoList.add(ResidencialA1);
 
         Divisao ResidencialA2 = new Divisao();
-        ResidencialA2.setId("A-2:Habitação multifamiliar: Condomínios de casas térreas ou assobradadas não isoladas, edifícios de apartamentos em geral e condomínios verticais e assemelhados");
+        ResidencialA2.setId(context.getString(R.string.button_A2));
         ResidencialA2.setImage(R.drawable.ic_residencia);
         divisaoList.add(ResidencialA2);
 
         Divisao ResidencialA3 = new Divisao();
-        ResidencialA3.setId("A-3:Habitação coletiva: Pensionatos, internatos, alojamentos, mosteiros, conventos, residências geriátricas. Todos com capacidade máxima de 16 leitos e assemelhados");
+        ResidencialA3.setId(context.getString(R.string.button_A3));
         ResidencialA3.setImage(R.drawable.ic_residencia);
         divisaoList.add(ResidencialA3);
 
@@ -108,20 +108,18 @@ public class Dados {
 
     }
 
-    public static List<Divisao> getDivisaoListB(){
+    public static List<Divisao> getDivisaoListB(Context context){
 
         List<Divisao> divisaoList = new ArrayList<>();
 
         // GRUPO B
         Divisao HospedagemB1 = new Divisao();
-        HospedagemB1.setId("B-1:Hotel e assemelhado: Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas \n" +
-                "        de cômodos e divisão A3 com mais de 16 leitos e assemelhados");
+        HospedagemB1.setId(context.getString(R.string.button_B1));
         HospedagemB1.setImage(R.drawable.ic_residencia);
         divisaoList.add(HospedagemB1);
 
         Divisao HospedagemB2 = new Divisao();
-        HospedagemB2.setId("B-2:Hotel residencial: Hotéis e assemelhados com cozinha própria nos apartamentos \n" +
-                "        (incluem-se apart-hotéis, flats, hotéis residenciais) e assemelhados");
+        HospedagemB2.setId(context.getString(R.string.button_B2));
         HospedagemB2.setImage(R.drawable.ic_residencia);
         divisaoList.add(HospedagemB2);
 
