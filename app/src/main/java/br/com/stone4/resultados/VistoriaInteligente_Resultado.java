@@ -100,7 +100,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
         SistemaDeComunicacao sistemaDeComunicacao = new SistemaDeComunicacao();
         SistemaDeCircuitoDeTv sistemaDeCircuitoDeTv = new SistemaDeCircuitoDeTv();
 
-        ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView = (ListView) findViewById(R.id.lv_colsulta_rapida);
 
         mTitle = new ArrayList<>();
         sTitle = new ArrayList<>();
@@ -213,7 +213,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
             mDescription.add(getString(R.string.desc_mangotinhos));
             images.add(hidranteEMangotinho.getImagem());
             recomendado.add("Obrigatório");
-            URLpdf.add("nt-22_2014-sistemas-de-hidrantes-e-de-mangotinhos-para-combate-a-incendio.pdf");
+            URLpdf.add("NT-22_2014-sistemas-de-hidrantes-e-de-mangotinhos.pdf");
         }
         if (hidranteHurbano.Exigencia(grupo, divisao, area, altura, lotacao, pavimentos, tunel, liquidos, produtos, plataforma) || consulta) {
             mTitle.add(hidranteHurbano.getNome());

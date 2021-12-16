@@ -372,7 +372,7 @@ public class Controle_Resultado extends AppCompatActivity {
                 });
                 break;
             case 2:
-                tvProcesso.setText("Processo Técnico para Certificação Facilitada*");
+                tvProcesso.setText("Processo Simplificado para Certificação Facilitada*");
                 tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
 

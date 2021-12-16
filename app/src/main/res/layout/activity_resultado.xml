@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="8dp"
-    android:background="@color/cardview_light_background"
     tools:context=".resultados.Controle_Resultado">
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/lv_colsulta_rapida"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="#CCC1C1">
-
     </ListView>
 
     <!--now check how it looks-->
@@ -24,4 +19,4 @@
     <!--so friends this looks much better now
     thank for watching this is special tutorial for beginners-->
 
-</LinearLayout>
+</RelativeLayout>

@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.RemoteViews;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -72,7 +71,7 @@ public class Vistorias extends AppCompatActivity {
         Bundle parametros = intent.getExtras();
         String perfil = parametros.getString("perfil");
 
-        ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView = (ListView) findViewById(R.id.lv_colsulta_rapida);
 
         titulo = new ArrayList<>();
         subTitulo = new ArrayList<>();

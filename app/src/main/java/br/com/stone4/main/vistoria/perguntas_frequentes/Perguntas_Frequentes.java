@@ -37,10 +37,13 @@ public class Perguntas_Frequentes extends AppCompatActivity {
         listaPerguntas = new ArrayList<>();
 
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta1_projeto),getString(R.string.resposta1_projeto)));
+        listaPerguntas.add(new Perguntas(getString(R.string.pergunta8_projeto),getString(R.string.resposta8_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta2_projeto),getString(R.string.resposta2_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta3_projeto),getString(R.string.resposta3_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta4_projeto),getString(R.string.resposta4_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta5_projeto),getString(R.string.resposta5_projeto)));
+        listaPerguntas.add(new Perguntas(getString(R.string.pergunta9_projeto),getString(R.string.resposta9_projeto)));
+        listaPerguntas.add(new Perguntas(getString(R.string.pergunta11_projeto),getString(R.string.resposta11_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta6_projeto),getString(R.string.resposta6_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta7_projeto),getString(R.string.resposta7_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta1_fat),getString(R.string.resposta1_fat)));

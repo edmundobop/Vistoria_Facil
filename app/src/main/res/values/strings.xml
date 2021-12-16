@@ -803,14 +803,21 @@ instalações com materiais combustíveis.\n\n
 
     -------------------------------------------------------------------------------------------------------------------------------
     PERGUNTAS FREQUENTES
+    <string name="pergunta10_projeto">Como emitir o CERCON para minha Empresa?</string>
+    <string name="resposta10_projeto">
+        Esse processo <b>dispensa a vistoria in loco</b>, ficando a cargo do proprietário ou responsável pela edificação a instalação dos
+        sistemas de incêndio. Com esse tipo de solicitação <b>o CERCON é liberado após a conferência de documentos</b>. SEGUIR CONFORME ITEM CERTIFICAÇÃO PRÉVIA.
+    </string>
+
     <string name="pergunta1_projeto">Quais os tipos de Vistoria (Processos) existem no CBMGO?</string>
     <string name="resposta1_projeto">
-        Existem 2 (dois) tipo de Processos:\n
-        - Projeto Técnico;\n
-        - Processo Simplificado;\n\n
+        Existem 3 (três) tipos de Processos:\n
+        - Processo Técnico (Vistoria in loco ou Inspeção);\n
+        - Processo Simplificado;\n
+        - Processo Temporário;\n\n
         O Processo Simplificado é classificado em 2 (dois) tipos:\n
-        - Processo para Certificação Prévia;\n
-        - Processo para Certificação Facilitada.
+        - Processo Simplificado para Certificação Prévia;\n
+        - Processo Simplificado para Certificação Facilitada.
     </string>
 
     <string name="pergunta2_projeto">Para quais Edificações o Projeto Técnico é obrigatório?</string>
@@ -851,32 +858,98 @@ instalações com materiais combustíveis.\n\n
         EXCETO:\n
         As edificações com área construída e/ou área de risco maior que 200 m2 classificadas nas divisões B-1, B-2, C-3, E-1, E-4, E-5, E-6, F-1,
         F-2, F-3, F-4, F-5, F-6, F-7, F-8, F-9, F-10, F-11, H-2, H3, H-4, H-5, J-2, J-3 e J-4 devem ser classificadas como Processo Técnico.
-        Não necessariamente terá que ter projeto, mais obrigatoriamente terá vistoria.\n
+        <u>Não necessariamente terá que ter projeto, mais obrigatoriamente terá vistoria.</u>\n
         As edificações com área construída e/ou área de risco que se enquadrem nas divisões: L-1, L-2, L-3 e M-2 devem ser classificadas como
         Processo Técnico, independentemente da área. Não necessariamente terá que ter projeto mais obrigatoriamente terá vistoria.
 
     </string>
 
 
-    <string name="pergunta4_projeto">O que é a Certificação Prévia?</string>
+    <string name="pergunta4_projeto">O que é o Processo Simplificado para Certificação Prévia?</string>
     <string name="resposta4_projeto">
-        Esse processo dispensa a vistoria in loco, ficando a cargo do proprietário ou responsável pela edificação a instalação dos
-        sistemas de incêndio. Com esse tipo de solicitação o CERCON é liberado após a conferência de documentos. SEGUIR CONFORME ITEM CERTIFICAÇÃO PRÉVIA.
+        Esse processo <b>dispensa a vistoria in loco</b>, ficando a cargo do proprietário ou responsável pela edificação a instalação dos
+        sistemas de incêndio. Com esse tipo de solicitação <b>o CERCON é liberado após a conferência de documentos</b>. SEGUIR CONFORME ITEM CERTIFICAÇÃO PRÉVIA.
     </string>
 
-    <string name="pergunta5_projeto">O que é a Certificação Facilitada?</string>
+    <string name="pergunta5_projeto">O que é o Processo Simplificado para Certificação Facilitada?</string>
     <string name="resposta5_projeto">
-        São os mesmo critérios da certificação prévia, porém edificações que possuam até 200m2. Nesse caso, não será necessário sequer a
-        conferência de documento, bastando para o responsável pela edificação apenas anexar os documentos (mesmos da certificação prévia)
+        São os mesmo critérios da certificação prévia, porém <b>edificações que possuam até 200m2</b>. Nesse caso, <b>não será necessário sequer a
+        conferência de documento</b>, bastando para o responsável pela edificação apenas <b>anexar os documentos</b> (mesmos da certificação prévia)
         pagar a taxa e o certificado ficará disponível para impressão pelo contribuinte.
     </string>
 
-    <string name="pergunta6_projeto">Quais os Procedimentos para a Certificação Prévia e Certificação Facilitada (SEM NECESSIDADE DE VISTORIA)?</string>
+    <string name="pergunta9_projeto">O que é o Processo Temporário?</string>
+    <string name="resposta9_projeto">
+        É um tipo de Certificação para Eventos Temporários:\n
+        •	É obrigatório projeto e inspeção para edificações do gruo F-5, F-6 e F-7, como por exemplo,
+        boates (F-6), teatro, cinema, auditórios (F-5) e eventos temporários com concentração de público (F-7).\n
+•	É necessário projeto sempre que o evento for realizado em uma ocupação temporária e possuir instalação
+        provisória (circos, parques, rodeios, etc), ou se a edificação for permanente porém não destinada ao tipo
+        de evento proposto. Por exemplo, uma feira de roupas no salão de festa da igreja Divino Espírito Santo.
+        Lá será necessário apresentação de projeto e inspeção para os eventos realizados que fogem a certificação
+        original do local. Se esse feira for montada todo ano, basta o responsável pela feira, apresentar o
+        projeto da feira aprovado todos os anos novamente ao vistoriador, não sendo necessário um projeto
+        novo todo ano. Isso vale se caso a feira for feita sempre com mesmo layout, mesmas estruturas..
+        Lembrando que o local deverá ter certificação permanente.\n
+•	Em locais públicos, abertos, como praças ou parques, não será necessário apresentação de projeto, porém se
+        existir instalações como palco, barracas ou outras, será necessário inspeção com apresentação de ART
+        específica para tais instalações. Ex. Art elétrica, de palco, de tendas, etc.\n
+•	Para instalações temporárias em praças públicas, como circos, parques ou outros eventos com montagem de
+        estrutura faz-se necessário apresentação de projeto e inspeção. Lembrando que esses eventos o projeto
+        não tem prazo de validade, desde que seja aprovado pelo CBMGO. Se for realizada a festa todo ano nos
+        mesmos moldes, não há necessidade de aprovação de novo projeto, basta apresentar ao vistoriador o
+        projeto aprovado anteriormente.\n
+•	Eventos realizados em locais já certificados destinados ao mesmo fim, não necessita de inspeção ou
+        apresentação de projeto, desde que seja utilizado a estrutura como foi aprovada, como público máximo,
+        sem alteração do layout, sem mudança nas características da edificação certificada. Caso seja feito
+        alguma alteração é necessário vistoria e projeto.\n
+•	Divisão F-7 são aqueles eventos com concentração de público que não acontecem com frequência, exemplo um show,
+        uma festa específica como queima do alho, nesses eventos é necessário vistoria no local e apresentação de
+        projeto. Já eventos que acontecem com frequência e tem no local a destinação específica pra isso, não há
+        necessidade de toda vez apresentar projeto. Por exemplo clube rei do gado, boates, esses têm que ser
+        certificados todo ano, e apenas apresentar 1 vez o projeto. O Projeto não tem prazo de validade, somente
+        terão vistorias todo ano.\n
+•	Divisão F-11, que são clubes sociais e salões de festas, são locais específicos que realizam eventos aleatórios,
+        porém sempre dentro do padrão daquele local. Por exemplo casa de festa infantil, tipo balão mágico,
+        ou local de festa como Flamboyant ou espaço prime. Nesses locais a certificação já vale o ano todo,
+        independente da festa que será realizada la nos finais de semana. Lembrando que sempre dentro dos
+        moldes aprovados na certificação para o local.\n
+•	Importante ressaltar que para processos de eventos temporários a apresentação de projeto deverá ser feita
+        a pelo menos 72 horas antes do evento, sob pena de não conseguir a aprovação.
+    </string>
+
+    <string name="pergunta11_projeto">Eventos Temporários precisam de Brigadistas?</string>
+    <string name="resposta11_projeto">
+        a) Locais com lotação de até 500 pessoas: a
+        presença de brigadistas é recomendatória;\n
+        b) Locais com lotação entre 501 e 2.000
+        pessoas: o número de brigadistas deve ser,
+        no mínimo, 03;\n
+        c) Locais com lotação entre 2.001 e 4.000
+        pessoas: o número de brigadistas deve ser,
+        no mínimo, 05;\n
+        d) Locais com lotação entre 4.001 e 6.000
+        pessoas: o número de brigadistas deve ser,
+        no mínimo, 07;\n
+        e) Locais com lotação entre 6.001 e 8.000
+        pessoas: o número de brigadistas deve ser,
+        no mínimo, 09;\n
+        f) Locais com lotação entre 8.001 e 10.000
+        pessoas: o número de brigadistas deve ser,
+        no mínimo, 11;\n
+        g) Locais com lotação acima de 10.000
+        pessoas: além do número mínimo indicado
+        na alínea anterior, deverá ser acrescido 01
+        brigadista para cada grupo de 1.000
+        pessoas.
+    </string>
+
+    <string name="pergunta6_projeto">Quais os Procedimentos para a Certificação Prévia e Certificação Facilitada?</string>
     <string name="resposta6_projeto">
         1 – FAZER PROTOCOLO NO SITE DO CBMGO\n
         2 – ANEXAR ANEXO G (PREENCHIDO E ASSINADO) NT 01 – site do cbmgo\n
         3 – NOTA FISCAL DE EXTINTOR OU SUA RECARGA. OBSERVAR A QUANTIDADE MÍNINA PARA O TAMANHO DA EDIFICAÇÃO, conforme abaixo:\n
-            - Até 250m²: 1 (um) extintor, conforme risco predominante da edificação;\n
+        <ol>- Até 250m²: 1 (um) extintor, conforme risco predominante da edificação;\n</ol>
             - De 250m² a 500m²: 02 extintores de pó ABC (2A-20B:C) ou 01 extintor de água (2A); e 01 extintor (20B:C ou 5:BC);\n
             - De 500m² a 750m²: 03 extintores de pó ABC (2A-20B:C) OU 02 extintores de água (2A); e 01 extintor (20B:C ou 5:BC) ou 01 extintor de água (2A)
         e 02 extintores (20B:C ou 5:BC);\n
@@ -895,6 +968,12 @@ instalações com materiais combustíveis.\n\n
     <string name="pergunta7_projeto">Quando é necessário a atualização de Projeto Técnico?</string>
     <string name="resposta7_projeto">
         Quando houver modificação estrutural acima de 20% que cause alteração nas medidas de segurança contra incêndio e pânico
+    </string>
+
+    <string name="pergunta8_projeto">Qual a diferença entre Processo Técnico e Projeto Técnico?</string>
+    <string name="resposta8_projeto">
+        Processo Técnico = Vistoria in loco, ou Inspeção: É a exigência de vistoria presencial por parte do CBMGO, exigindo em casos específicos a apresentação de Projeto Técnico;\n\n
+        Projeto Técnico = Documento exigido pelo Processo Ténico (quando a empresa se enquandra nesse tipo). É emitido por Engenheiros e deve ser aprovado pelo CBMGO.
     </string>
 
     <string name="pergunta1_fat">O que é o FAT? E para que serve?</string>
@@ -920,5 +999,26 @@ instalações com materiais combustíveis.\n\n
         peróxidos orgânicos ou substâncias oxidantes, tóxicas, radioativas, corrosivas e perigosas diversas.
     </string>
 
+    ALERTAS DE PROJETO TÉCNICO
+    <string name="alerta_tituloProjeto">
+        Desde que atendam NÃO se enquadrem nas seguintes condições:
+    </string>
+
+    <string name="alerta_textoProjeto">
+        c)	Possuir acima de 03 (três) pavimentos;\n
+        d)	Possuir subsolo com ocupação distinta de estacionamento;\n
+        e)	Possuir armazenamento superior a 05 recipientes transportáveis com massa líquida unitária de até
+                13 kg de GLP (P-13) para consumo próprio, ou qualquer volume de GLP destinado à comercialização;\n
+        f)	Possuir central de GLP com recipiente estacionário;\n
+        g)	Armazenar acima de 500 (quinhentos) litros de líquidos inflamáveis ou combustíveis em tanques aéreos,
+                subterrâneos, cilindros ou recipientes fracionados, para qualquer finalidade;\n
+        h)	Comercializar, produzir ou armazenar fogos de artifício e/ou outros materiais explosivos;\n
+        i)	Quando houver necessidade de comprovação de Isolamento de Risco entre edificações, conforme NT-07.
+                Neste caso deve-se apresentar o cálculo de isolamento de risco entre edificações. (se não comprovar
+                o isolamento e as áreas excederem os 750m, exigir-se-á projeto);\n\n
+        Nota 1: As edificações que possuírem afastamento mínimo de 12 metros entre si estarão dispensadas da
+                aprovação do projeto técnico exigido na alínea “i”, desde que a referida aprovação não seja exigida
+                em alguma das demais alíneas deste item.
+    </string>
 
 </resources>

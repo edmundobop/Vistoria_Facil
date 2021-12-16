@@ -26,13 +26,13 @@
         </activity>
 
         <activity
-            android:name=".resultados.Consulta_Rapida_NT"
+            android:name=".ConsultaRapida.Consulta_Rapida_NT"
             android:label="Detalhes"
             android:launchMode="singleTop"
-            android:parentActivityName=".resultados.Consulta_Rapida_Detalhes" >
+            android:parentActivityName=".ConsultaRapida.Consulta_Rapida_Detalhes" >
         </activity>
         <activity
-            android:name=".resultados.Consulta_Rapida_Detalhes"
+            android:name=".ConsultaRapida.Consulta_Rapida_Detalhes"
             android:label="Consulta Rápida"
             android:launchMode="singleTop"
             android:parentActivityName=".main.vistoria.Consulta_rapida" >
