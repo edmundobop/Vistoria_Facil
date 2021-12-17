@@ -865,22 +865,23 @@ instalações com materiais combustíveis.\n\n
     </string>
 
 
-    <string name="pergunta4_projeto">O que é o Processo Simplificado para Certificação Prévia?</string>
+    <string name="pergunta4_projeto">O que é a Certificação Prévia?</string>
     <string name="resposta4_projeto">
-        Esse processo <b>dispensa a vistoria in loco</b>, ficando a cargo do proprietário ou responsável pela edificação a instalação dos
+        É um tipo de Processo Simplificado, o qual <b>dispensa a vistoria in loco</b>, ficando a cargo do proprietário ou responsável pela edificação a instalação dos
         sistemas de incêndio. Com esse tipo de solicitação <b>o CERCON é liberado após a conferência de documentos</b>. SEGUIR CONFORME ITEM CERTIFICAÇÃO PRÉVIA.
     </string>
 
-    <string name="pergunta5_projeto">O que é o Processo Simplificado para Certificação Facilitada?</string>
+    <string name="pergunta5_projeto">O que é a Certificação Facilitada?</string>
     <string name="resposta5_projeto">
-        São os mesmo critérios da certificação prévia, porém <b>edificações que possuam até 200m2</b>. Nesse caso, <b>não será necessário sequer a
+        É um tipo de Processo Simplificado. São os mesmo critérios da certificação prévia, porém <b>edificações que possuam até 200m2</b>. Nesse caso, <b>não será necessário sequer a
         conferência de documento</b>, bastando para o responsável pela edificação apenas <b>anexar os documentos</b> (mesmos da certificação prévia)
         pagar a taxa e o certificado ficará disponível para impressão pelo contribuinte.
     </string>
 
     <string name="pergunta9_projeto">O que é o Processo Temporário?</string>
     <string name="resposta9_projeto">
-        É um tipo de Certificação para Eventos Temporários:\n
+        É o procedimento adotado para ocupação temporária em instalações permanentes ou
+instalações provisórias.\n
         •	É obrigatório projeto e inspeção para edificações do gruo F-5, F-6 e F-7, como por exemplo,
         boates (F-6), teatro, cinema, auditórios (F-5) e eventos temporários com concentração de público (F-7).\n
 •	É necessário projeto sempre que o evento for realizado em uma ocupação temporária e possuir instalação
@@ -920,44 +921,30 @@ instalações com materiais combustíveis.\n\n
 
     <string name="pergunta11_projeto">Eventos Temporários precisam de Brigadistas?</string>
     <string name="resposta11_projeto">
-        a) Locais com lotação de até 500 pessoas: a
-        presença de brigadistas é recomendatória;\n
-        b) Locais com lotação entre 501 e 2.000
-        pessoas: o número de brigadistas deve ser,
-        no mínimo, 03;\n
-        c) Locais com lotação entre 2.001 e 4.000
-        pessoas: o número de brigadistas deve ser,
-        no mínimo, 05;\n
-        d) Locais com lotação entre 4.001 e 6.000
-        pessoas: o número de brigadistas deve ser,
-        no mínimo, 07;\n
-        e) Locais com lotação entre 6.001 e 8.000
-        pessoas: o número de brigadistas deve ser,
-        no mínimo, 09;\n
-        f) Locais com lotação entre 8.001 e 10.000
-        pessoas: o número de brigadistas deve ser,
-        no mínimo, 11;\n
-        g) Locais com lotação acima de 10.000
-        pessoas: além do número mínimo indicado
-        na alínea anterior, deverá ser acrescido 01
-        brigadista para cada grupo de 1.000
-        pessoas.
+        a) Locais com lotação de até 500 pessoas: a presença de brigadistas é recomendatória;\n
+        b) Locais com lotação entre 501 e 2.000 pessoas: o número de brigadistas deve ser, no mínimo, 03;\n
+        c) Locais com lotação entre 2.001 e 4.000 pessoas: o número de brigadistas deve ser, no mínimo, 05;\n
+        d) Locais com lotação entre 4.001 e 6.000 pessoas: o número de brigadistas deve ser, no mínimo, 07;\n
+        e) Locais com lotação entre 6.001 e 8.000 pessoas: o número de brigadistas deve ser, no mínimo, 09;\n
+        f) Locais com lotação entre 8.001 e 10.000 pessoas: o número de brigadistas deve ser, no mínimo, 11;\n
+        g) Locais com lotação acima de 10.000 pessoas: além do número mínimo indicado
+        na alínea anterior, deverá ser acrescido 01 brigadista para cada grupo de 1.000 pessoas.
     </string>
 
     <string name="pergunta6_projeto">Quais os Procedimentos para a Certificação Prévia e Certificação Facilitada?</string>
     <string name="resposta6_projeto">
-        1 – FAZER PROTOCOLO NO SITE DO CBMGO\n
-        2 – ANEXAR ANEXO G (PREENCHIDO E ASSINADO) NT 01 – site do cbmgo\n
-        3 – NOTA FISCAL DE EXTINTOR OU SUA RECARGA. OBSERVAR A QUANTIDADE MÍNINA PARA O TAMANHO DA EDIFICAÇÃO, conforme abaixo:\n
+        1 – Fazer Protocolo no site do CBMGO\n\n
+        2 – Anexar ANEXO G (PREENCHIDO E ASSINADO) NT 01 – site do cbmgo\n\n
+        3 – Nota Fiscal de Extintor ou sua recarga. Obervar a quantidade mínima para o tamanho da edificação, conforme abaixo:\n
         <ol>- Até 250m²: 1 (um) extintor, conforme risco predominante da edificação;\n</ol>
             - De 250m² a 500m²: 02 extintores de pó ABC (2A-20B:C) ou 01 extintor de água (2A); e 01 extintor (20B:C ou 5:BC);\n
             - De 500m² a 750m²: 03 extintores de pó ABC (2A-20B:C) OU 02 extintores de água (2A); e 01 extintor (20B:C ou 5:BC) ou 01 extintor de água (2A)
-        e 02 extintores (20B:C ou 5:BC);\n
-        4 – CÓPIA DO CERTIFICADO DE CONFORMIDADE DA EDIFICAÇÃO EM QUE ESTA INSERIDO. ESTÃO DISPENSADAS DESTE ITEM OS ESTABELECIMENTOS QUE
-        POSSUAM SAÍDA DIRETA PARA VIA PÚBLICA.\n
-        5 – FOTO DA FACHADA DA EDIFICAÇÃO\n
-        6 – FOTO DO EXTINTOR DE INCÊNDIO INSTALADO, NOS CASOS EM QUE FOR OBRIGATÓRIO\n
-        7 – DOCUMENTO DE RESPONSABILIDADE TÉCNICA, NOS CASOS EM QUE FOREM NECESSÁRIOS. \n\n
+        e 02 extintores (20B:C ou 5:BC);\n\n
+        4 – Cópia do certificado de conformidade da edificação em que está inserido. Estão dispensados deste item os
+        estabelecimentos que possuem saída direta para a via pública.\n\n
+        5 – Foto da fachada da edificação\n\n
+        6 – Foto do extintor de incêndio instalado, nos casos em que for obrigatório\n\n
+        7 – Documento De Responsabilidade Técnica, nos casos em que forem necessários. \n\n
         <u>OBS:</u> Os empreendimentos de prestação de serviço que exerçam suas atividades em edificações exclusivamente residenciais
         (pontos de referência) que não caracterizem ocupação mista (exercício de outra atividade auxiliar que demande medidas de segurança
         contra incêndio e pânico) e que necessitem do Certificado de Conformidade estão dispensados das exigências “3”, “4” e “6” do item acima,
@@ -967,7 +954,22 @@ instalações com materiais combustíveis.\n\n
 
     <string name="pergunta7_projeto">Quando é necessário a atualização de Projeto Técnico?</string>
     <string name="resposta7_projeto">
-        Quando houver modificação estrutural acima de 20% que cause alteração nas medidas de segurança contra incêndio e pânico
+        As edificações que tiveram ampliação/redução de área ou alteração de seu leiaute interno
+        em até 20% deve-se verificar uma das situações abaixo:\n\n
+        a) Se após as alterações todas as áreas da edificação continuarem protegidas pelas Medidas
+        de Segurança do projeto anteriormente aprovado, não será necessário adaptar e nem acrescentar
+        novos sistemas, salvo exceções da nota abaixo;\n
+        b) Se após as alterações alguma área da edificação ficar desprotegida, devem ser aplicadas
+        as Normas vigentes no momento da análise apenas para ampliar as Medidas de Segurança que o
+        projeto anteriormente aprovado possuía, salvo exceções da nota abaixo.\n
+        <u>Nota 1: A análise deverá ser realizada adotando as Normas Técnicas vigentes para: Iluminação de
+        Emergência; Sinalização de Emergência e Sistema de  Proteção por Extintores de Incêndio.</u>\n
+        Para edificações onde a alteração seja acima de 20% da área construída originalmente
+        aprovada, deverão ser aplicadas as exigências e parâmetros constantes das normas vigentes no
+        momento da análise a toda edificação, ressalvadas as exceções da NT-41 – Edificações Existentes.\n
+        Havendo isolamento de risco de acordo com a NT-07 entre a área ampliada e a área
+        anteriormente aprovada, podem-se manter as medidas de segurança na área anteriormente
+        aprovada e aplicar os parâmetros constantes das normas vigentes na área ampliada.
     </string>
 
     <string name="pergunta8_projeto">Qual a diferença entre Processo Técnico e Projeto Técnico?</string>
@@ -978,10 +980,79 @@ instalações com materiais combustíveis.\n\n
 
     <string name="pergunta1_fat">O que é o FAT? E para que serve?</string>
     <string name="resposta1_fat">
-        (FAT) FORMULÁRIO PARA ATENDIMENTO TÉCNICO. É um documento oficial utilizado para requisições, solicitações
-        e informações por parte do requerinte ao CMBGO.
+        (FAT) FORMULÁRIO PARA ATENDIMENTO TÉCNICO (Anexo F). É um documento oficial utilizado para requisições, solicitações
+        e informações por parte do requerinte ao CMBGO.\n
+        Deve ser específico para determinado protocolo e utilizado nos seguintes casos:\n
+        a) Para esclarecimento de dúvida quanto a procedimentos administrativo e técnicos;\n
+        b) Para solicitação de revisão de ato praticado pelo Serviço de Segurança Contra Incêndio e
+        Pânico (relatórios de inspeções ou análise de projetos);\n
+        c) Para solicitação de Certificado Parcial;\n
+        d) Outras situações a critério do Serviço de Segurança Contra Incêndio e Pânico.\n\n
+        No ato de preenchimento do Formulário para Atendimento Técnico, o interessado deverá propor
+        questão específica e fundamentada sobre a aplicação da legislação, ficando vedadas as
+        perguntas genéricas com a intenção de delegar ao Serviço de Segurança Contra Incêndio e Pânico a
+        busca da solução específica.\n\n
+        O FAT possui caráter individual e sua solução deve ser restrita ao PSCIP que o originou, não
+        podendo ser extendida ou generalizada para situações semelhantes verificadas em outros PSCIP.\n\n
+        Apresentação\n\n
+        A solicitação do interessado pode ser feita conforme Anexo F desta norma, e pode ser
+        acompanhada de documentos, a serem anexados ao processo no SIAPI, que elucidem a dúvida ou
+        comprovem os argumentos apresentados.\n\n
+        Competências\n\n
+        Podem fazer uso do presente instrumento o proprietário, seu procuradoror o responsável pelo
+        uso da edificação ou o responsável técnico.\n\n
+        O FAT deverá ser respondido pelo chefe ou pelo auxiliar da Seção de Segurança Contra
+        Incêndio e Pânico do quartel do CBMGO com atribuição no município ou área de atuação onde se
+        localiza a edificação, através de despacho no sistema, carta-resposta ou ofício encaminhado ao
+        interessado.\n\n
+        Em caso de atendimento técnico relativo à análise de projetos, o FAT poderá ser respondido
+        pelo próprio analista responsável do PSCIP em questão.\n\n
+        Prazo do FAT\n\n
+        A contar da data do protocolo, o Serviço de Segurança Contra Incêndio e Pânico deve
+        responder no prazo máximo de 10 (dez) dias úteis, respeitando a ordem cronológica de entrada do
+        pedido.\n\n
+        Em caso do FAT ser encaminhado para instância superior, o prazo de resposta fica
+        prorrogado para 30 (trinta) dias
     </string>
 
+    <string name="pergunta1_art">Quais Documentos de Responsabilidade Téncica (ART) podem ser cobrados pelo CBMGO?</string>
+    <string name="resposta1_art">
+        a) De instalação, inspeção e/ou manutenção do sistema de hidrantes ou mangotinhos;\n
+        b) De instalação, inspeção e/ou manutenção do sistema de iluminação de emergência (quando
+        alimentados por grupo motogerador);\n
+        c) De instalação, inspeção e/ou manutenção do grupo motogerador (somente quando alimentar
+        algum sistema de combate a incêndio);\n
+        d) De instalação, inspeção e/ou manutenção do sistema de pressurização da escada de segurança;\n
+        e) De instalação, inspeção e/ou manutenção do elevador de emergência;\n
+        f) De instalação, inspeção e/ou manutenção do revestimento dos elementos estruturais
+        protegidos contra o fogo;\n
+        g) De instalação, inspeção e/ou manutenção da central de GLP;\n
+        h) De instalação, inspeção e/ou manutenção de instalações internas de GLP;\n
+        i) De instalação, inspeção e/ou de manutenção dos sistemas de chuveiros automáticos;\n
+        j) De instalação, inspeção e/ou manutenção do sistema de detecção de incêndio;\n
+        k) De instalação, inspeção e/ou manutenção do sistema de controle de fumaça;\n
+        l) De instalação, inspeção e/ou manutenção do emprego de material de acabamento e revestimento;\n
+        m) De instalação da segurança estrutural da edificação (somente para inspeção de Habite-se);\n
+        n) De instalação, inspeção e/ou manutenção da compartimentação vertical de shafts e de
+        fachada envidraçada ou similar;\n
+        o) De instalação, inspeção e/ou manutenção do sistema de alarme de incêndio;\n
+        p) De instalação, inspeção e/ou manutenção do sistema de proteção contra descargas
+        atmosféricas – SPDA;\n
+        q) De instalação, inspeção e/ou manutenção das instalações elétricas de baixa tensão;\n
+        r) De instalação, inspeção e/ou manutenção dos sistemas de controle de explosão de silos;\n
+        s) De instalação de estruturas e das lonas de cobertura com material específico, conforme
+        determinado na NT-10, para ocupação com lotação superior a 200 pessoas (não se aplica em
+        montagens abertas lateralmente);\n
+        t) De instalação de arquibancadas e arenas desmontáveis;\n
+        u) De instalação de brinquedos de parques de diversões;\n
+        v) De instalação de palcos e palanques;\n
+        w) De instalação de armações de circos;\n
+        x) De instalação das instalações elétricas de montagens provisórias e temporárias.
+    </string>
+
+
+
+    __________________________________________________________________________________________________________
     ALERTAS DE PROCESSO SIMPLIFICADO
     <string name="alerta_tituloProcesso">
         Desde que atendam às seguintes condições:
@@ -1000,11 +1071,33 @@ instalações com materiais combustíveis.\n\n
     </string>
 
     ALERTAS DE PROJETO TÉCNICO
+        ALERTA NÃO
     <string name="alerta_tituloProjeto">
-        Desde que atendam NÃO se enquadrem nas seguintes condições:
+        Desde que se enquadrem nas seguintes condições:
     </string>
 
-    <string name="alerta_textoProjeto">
+    <string name="alerta_textoProjetoNao">
+        a)	NÃO ter área construída e/ou áreas de risco acima de 750 m2 ;\n
+        b)	NÃO ser classificada nas divisões F-5, F-6 e F7, de acordo com a Tabela 1 do Anexo – A desta NT;\n
+        c)	NÃO possuir acima de 03 (três) pavimentos;\n
+        d)	NÃO possuir subsolo com ocupação distinta de estacionamento;\n
+        e)	NÃO possuir armazenamento superior a 05 recipientes transportáveis com massa líquida unitária de até
+                13 kg de GLP (P-13) para consumo próprio, ou qualquer volume de GLP destinado à comercialização;\n
+        f)	NÃO possuir central de GLP com recipiente estacionário;\n
+        g)	NÃO armazenar acima de 500 (quinhentos) litros de líquidos inflamáveis ou combustíveis em tanques aéreos,
+                subterrâneos, cilindros ou recipientes fracionados, para qualquer finalidade;\n
+        h)	NÃO comercializar, produzir ou armazenar fogos de artifício e/ou outros materiais explosivos;\n
+        i)	Quando houver necessidade de comprovação de Isolamento de Risco entre edificações, conforme NT-07.
+                Neste caso deve-se apresentar o cálculo de isolamento de risco entre edificações. (se não comprovar
+                o isolamento e as áreas excederem os 750m, exigir-se-á projeto);\n\n
+        Nota 1: As edificações que possuírem afastamento mínimo de 12 metros entre si estarão dispensadas da
+                aprovação do projeto técnico exigido na alínea “i”, desde que a referida aprovação não seja exigida
+                em alguma das demais alíneas deste item.
+    </string>
+    ALERTA SIM
+    <string name="alerta_textoProjetoSim">
+        a)	Ter área construída e/ou áreas de risco acima de 750 m2 ;\n
+        b)	Ser classificada nas divisões F-5, F-6 e F7, de acordo com a Tabela 1 do Anexo – A desta NT;\n
         c)	Possuir acima de 03 (três) pavimentos;\n
         d)	Possuir subsolo com ocupação distinta de estacionamento;\n
         e)	Possuir armazenamento superior a 05 recipientes transportáveis com massa líquida unitária de até

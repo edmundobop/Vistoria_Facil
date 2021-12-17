@@ -353,6 +353,8 @@ public class Controle_Resultado extends AppCompatActivity {
 
         // Quando clicar no tipo de processo:
         @SuppressLint("CutPasteId") TextView processoSimplificado = (TextView) findViewById(R.id.tv_processo);
+        TextView tvProjeto = (TextView) findViewById(R.id.tv_projeto);
+
 
         // Chama o método Tipo Processo da classe Modulos
         Algoritmos algoritmos = new Algoritmos();
@@ -364,10 +366,12 @@ public class Controle_Resultado extends AppCompatActivity {
                 tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertPrevia);
 
+                tvProjeto.setText("Não");
+
                 processoSimplificado.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        createNewContactDialog();
+                        createNewContactDialog("Não","Não");
                     }
                 });
                 break;
@@ -376,20 +380,29 @@ public class Controle_Resultado extends AppCompatActivity {
                 tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
 
+                tvProjeto.setText("Não");
+
                 processoSimplificado.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        createNewContactDialog();
+                        createNewContactDialog("Não","Não");
                     }
                 });
                 break;
             case 0:
                 tvProcesso.setText("Processo Técnico");
                 tvGuiaPratico.setText(R.string.txt_vistPaP1500HidTxt);
+                tvProjeto.setText("Sim");
+                tvProjeto.setTextColor(getColor(R.color.red_700));
+
+                tvProjeto.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        createNewContactDialog("Sim","Sim");
+                    }
+                });
                 break;
         }
-
-
 
         intent.setClass(this, VistoriaInteligente_Resultado.class);
 
@@ -401,13 +414,23 @@ public class Controle_Resultado extends AppCompatActivity {
         return 0;
     }
 
-    public void createNewContactDialog(){
+    public void createNewContactDialog(String TemProjeto, String tipoProjeto){
         dialogBuilder = new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.popup,null);
         tituloAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertTitle);
         textoAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertText);
 
         bt_ok = (Button) contactPopupView.findViewById(R.id.bt_alert);
+
+        if(TemProjeto.equals("Sim")) {
+            if (tipoProjeto.equals("Sim")) {
+                tituloAlerta.setText(R.string.alerta_tituloProjeto);
+                textoAlerta.setText(R.string.alerta_textoProjetoSim);
+            } else {
+                tituloAlerta.setText(R.string.alerta_tituloProjeto);
+                textoAlerta.setText(R.string.alerta_textoProjetoNao);
+            }
+        }
 
         dialogBuilder.setView(contactPopupView);
         dialog = dialogBuilder.create();

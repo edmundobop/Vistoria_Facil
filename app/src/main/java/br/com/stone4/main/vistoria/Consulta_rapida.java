@@ -11,6 +11,7 @@ import android.widget.SearchView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import br.com.stone4.ConsultaRapida.AdaptadorConsulta;
 import br.com.stone4.ConsultaRapida.Consulta_Rapida_Detalhes;
@@ -20,8 +21,8 @@ import br.com.stone4.R;
 
 public class Consulta_rapida extends AppCompatActivity {
 
-    private ArrayList<MedidaDeSeguranca> medidasList;
     private AdaptadorConsulta adaptadorConsulta;
+    private List<MedidaDeSeguranca> medidasList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,22 +36,21 @@ public class Consulta_rapida extends AppCompatActivity {
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
 
-            System.out.println("O id do item clicado é: " + view.getId());
+            System.out.println("O id do item clicado é: "+ adaptadorConsulta.getTitle(position));
 
-            /*Intent intent = new Intent(getApplicationContext(), Consulta_Rapida_Detalhes.class);
+            Intent intent = new Intent(getApplicationContext(), Consulta_Rapida_Detalhes.class);
             // this intent put our 0 index image to another activity
             Bundle bundle = new Bundle();
-            bundle.putInt("image", images.get(position));
+            bundle.putInt("image", adaptadorConsulta.getSubImage(position));
             intent.putExtras(bundle);
             // now put title and description to another activity
-            intent.putExtra("title", mTitle.get(position));
-            intent.putExtra("subTitle", sTitle.get(position));
-            intent.putExtra("description", mDescription.get(position));
-            intent.putExtra("recomendado", recomendado.get(position));
-            intent.putExtra("urlPDF", URLpdf.get(position));
+            intent.putExtra("title", adaptadorConsulta.getTitle(position));
+            intent.putExtra("subTitle", adaptadorConsulta.getSubTitle(position));
+            intent.putExtra("recomendado", adaptadorConsulta.getRecomend(position));
+            intent.putExtra("urlPDF", adaptadorConsulta.getUrl(position));
             // also put your position
             intent.putExtra("position", "" + position);
-            startActivity(intent);*/
+            startActivity(intent);
 
         });
 

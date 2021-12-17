@@ -25,6 +25,13 @@ public class Algoritmos {
 
     }
 
+    public boolean exigeProjeto(int grupo, int divisao, int area,int processo){
+        if(processo == 0) return true;
+        else return false;
+
+    }
+
+
     public void cargaIncendio(){
 
     }

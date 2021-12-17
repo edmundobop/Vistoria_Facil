@@ -234,7 +234,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        >
 
                         <TextView
                             android:id="@+id/textView14"
@@ -253,6 +254,34 @@
                             android:layout_marginStart="3dp"
                             android:textSize="18dp"
                             style="@style/vist_passoApassoTxt"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            style="@style/bizus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exige Projeto:"
+                            android:textColor="#FF6D00"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_projeto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:textSize="18dp"
+                            style="@style/vist_passoApassoTxt"/>
+
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

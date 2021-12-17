@@ -35,12 +35,36 @@ public class AdaptadorConsulta extends BaseAdapter implements Filterable {
 
     @Override
     public Object getItem(int position) {
-        return position;
+        return medidasList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
         return position;
+    }
+
+    public List getList(){
+        return medidasList;
+    }
+
+    public String getTitle(int position){
+        return medidasList.get(position).getTitle();
+    }
+
+    public String getSubTitle(int position){
+        return medidasList.get(position).getSubTitle();
+    }
+
+    public int getSubImage(int position){
+        return medidasList.get(position).getImage();
+    }
+
+    public String getUrl(int position){
+        return medidasList.get(position).getURLpdf();
+    }
+
+    public String getRecomend(int position){
+        return medidasList.get(position).getRecomend();
     }
 
     @Override
@@ -72,7 +96,7 @@ public class AdaptadorConsulta extends BaseAdapter implements Filterable {
                 String filterPattern = charSequence.toString().toLowerCase().trim();
 
                 for (MedidaDeSeguranca item : medidasListFull) {
-                    if (item.getTitle().toLowerCase().contains(filterPattern)) {
+                    if (item.getTitle().toLowerCase().contains(filterPattern) || item.getSubTitle().toLowerCase().contains(filterPattern)) {
                         filteredList.add(item);
                     }
                 }

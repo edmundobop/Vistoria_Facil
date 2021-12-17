@@ -65,7 +65,7 @@ public class Dados {
         CentralDeGas.setImage(R.drawable.central_de_gas);
         CentralDeGas.setRecomend("");
         CentralDeGas.setTitle("Central de Gás");
-        CentralDeGas.setSubTitle("Norma tecnica N: 25/2014");
+        CentralDeGas.setSubTitle("Norma tecnica NT:28-29/2014");
         CentralDeGas.setURLpdf("nt28_pt01.pdf");
         medidasList.add(CentralDeGas);
 
@@ -74,7 +74,7 @@ public class Dados {
         CompartimentacaoHorizontal.setImage(R.drawable.comp_horizontal);
         CompartimentacaoHorizontal.setRecomend("");
         CompartimentacaoHorizontal.setTitle("Compartimentação Horizontal");
-        CompartimentacaoHorizontal.setSubTitle("Norma tecnica N: 09/2017");
+        CompartimentacaoHorizontal.setSubTitle("Norma tecnica NT: 09/2017");
         CompartimentacaoHorizontal.setURLpdf("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
         medidasList.add(CompartimentacaoHorizontal);
 
@@ -83,7 +83,7 @@ public class Dados {
         CompartimentacaoVertical.setImage(R.drawable.com_vertical);
         CompartimentacaoVertical.setRecomend("");
         CompartimentacaoVertical.setTitle("Compartimentação Vertical");
-        CompartimentacaoVertical.setSubTitle("Norma tecnica N: 09/2017");
+        CompartimentacaoVertical.setSubTitle("Norma tecnica NT: 09/2017");
         CompartimentacaoVertical.setURLpdf("NT-09_2017-Compartimentação-horizontal-e-compartimentação-vertical_.pdf");
         medidasList.add(CompartimentacaoVertical);
 
@@ -92,7 +92,7 @@ public class Dados {
         MateriaisDeAcabamento.setImage(R.drawable.mat_acabamento);
         MateriaisDeAcabamento.setRecomend("");
         MateriaisDeAcabamento.setTitle("Controle de Materiais de Acabamento");
-        MateriaisDeAcabamento.setSubTitle("Norma tecnica N: 10/2014");
+        MateriaisDeAcabamento.setSubTitle("Norma tecnica NT: 10/2014");
         MateriaisDeAcabamento.setURLpdf("nt-10_2014-controle-de-materiais-de-acabamento-e-revestimento.pdf");
         medidasList.add(MateriaisDeAcabamento);
 
@@ -101,7 +101,7 @@ public class Dados {
         ControleDeFumaca.setImage(R.drawable.cont_fumaca);
         ControleDeFumaca.setRecomend("");
         ControleDeFumaca.setTitle("Controle de Fumaca");
-        ControleDeFumaca.setSubTitle("Norma tecnica N: 15/2014");
+        ControleDeFumaca.setSubTitle("Norma tecnica NT: 15/2014");
         ControleDeFumaca.setURLpdf("nt-15_2014-controle-de-fumaca-parte-1-regras-gerais.pdf");
         medidasList.add(ControleDeFumaca);
 
@@ -110,7 +110,7 @@ public class Dados {
         ChuveirosAutomaticos.setImage(R.drawable.chuveiro_aut);
         ChuveirosAutomaticos.setRecomend("");
         ChuveirosAutomaticos.setTitle("Chuveiro Automático");
-        ChuveirosAutomaticos.setSubTitle("Norma tecnica N: 23/2014");
+        ChuveirosAutomaticos.setSubTitle("Norma tecnica NT: 23/2014");
         ChuveirosAutomaticos.setURLpdf("nt-23_2014-sistema-de-chuveiros-automaticos.pdf");
         medidasList.add(ChuveirosAutomaticos);
 
@@ -119,7 +119,7 @@ public class Dados {
         deteccaoDeFumaca.setImage(R.drawable.detector_inc);
         deteccaoDeFumaca.setRecomend("");
         deteccaoDeFumaca.setTitle("Detecção de Incêndio");
-        deteccaoDeFumaca.setSubTitle("Norma tecnica N: 19/2014");
+        deteccaoDeFumaca.setSubTitle("Norma tecnica NT: 19/2014");
         deteccaoDeFumaca.setURLpdf("nt-19_2014-sistemas-de-deteccao-e-alarme-de-incendio.pdf");
         medidasList.add(deteccaoDeFumaca);
 
@@ -137,7 +137,7 @@ public class Dados {
         extintor.setImage(R.drawable.extintor);
         extintor.setRecomend("");
         extintor.setTitle("Extintor");
-        extintor.setSubTitle("Norma tecnica N: 25/2014");
+        extintor.setSubTitle("Norma tecnica NT: 21/2014");
         extintor.setURLpdf("nt-21_2014-extintores.pdf");
         medidasList.add(extintor);
 
@@ -146,7 +146,7 @@ public class Dados {
         HidranteHurbano.setImage(R.drawable.hidrante_hurb);
         HidranteHurbano.setRecomend("");
         HidranteHurbano.setTitle("Hidrante Hurbano");
-        HidranteHurbano.setSubTitle("Norma tecnica N: 34/2014");
+        HidranteHurbano.setSubTitle("Norma tecnica NT: 34/2014");
         HidranteHurbano.setURLpdf("nt-34_2014-hidrante-urbano.pdf");
         medidasList.add(HidranteHurbano);
 
@@ -155,7 +155,7 @@ public class Dados {
         hidranteEmangotinho.setImage(R.drawable.hidrante_mang);
         hidranteEmangotinho.setRecomend("");
         hidranteEmangotinho.setTitle("Hidrante e Mangotinho");
-        hidranteEmangotinho.setSubTitle("Norma tecnica N: 22/2014");
+        hidranteEmangotinho.setSubTitle("Norma tecnica NT: 22/2014");
         hidranteEmangotinho.setURLpdf("NT-22_2014-sistemas-de-hidrantes-e-de-mangotinhos.pdf");
         medidasList.add(hidranteEmangotinho);
 
@@ -164,7 +164,7 @@ public class Dados {
         iluminacaoDeEmergencia.setImage(R.drawable.ilu_emergencia);
         iluminacaoDeEmergencia.setRecomend("");
         iluminacaoDeEmergencia.setTitle("Iluminção de Emergência");
-        iluminacaoDeEmergencia.setSubTitle("Norma tecnica N: 18/2014");
+        iluminacaoDeEmergencia.setSubTitle("Norma tecnica NT: 18/2014");
         iluminacaoDeEmergencia.setURLpdf("nt-18_2014-iluminacao-de-emergencia.pdf");
         medidasList.add(iluminacaoDeEmergencia);
 
@@ -191,7 +191,7 @@ public class Dados {
         saidaDeEmergencia.setImage(R.drawable.saida_emergencia);
         saidaDeEmergencia.setRecomend("");
         saidaDeEmergencia.setTitle("Saida de Emergencia");
-        saidaDeEmergencia.setSubTitle("Norma tecnica N: 11/2021");
+        saidaDeEmergencia.setSubTitle("Norma tecnica NT: 11/2021");
         saidaDeEmergencia.setURLpdf("NT-11_2021-Saidas-de-Emergencia.pdf");
         medidasList.add(saidaDeEmergencia);
 
@@ -209,7 +209,7 @@ public class Dados {
         sinalizacaoDeEmergencia.setImage(R.drawable.sin_emergencia);
         sinalizacaoDeEmergencia.setRecomend("");
         sinalizacaoDeEmergencia.setTitle("Sinalização de Emergência");
-        sinalizacaoDeEmergencia.setSubTitle("Norma tecnica N: 20/2014");
+        sinalizacaoDeEmergencia.setSubTitle("Norma tecnica NT: 20/2014");
         sinalizacaoDeEmergencia.setURLpdf("nt-20_2014-sinalizacao-de-emergencia.pdf");
         medidasList.add(sinalizacaoDeEmergencia);
 
@@ -218,13 +218,13 @@ public class Dados {
         spda.setImage(R.drawable.spda);
         spda.setRecomend("");
         spda.setTitle("SPDA");
-        spda.setSubTitle("Norma tecnica N: 40/2019");
+        spda.setSubTitle("Norma tecnica NT: 40/2019");
         spda.setURLpdf("NT-40_2019-SPDA.pdf");
         medidasList.add(spda);
 
         // Sistema De Espuma
         MedidaDeSeguranca sistemaEspuma = new MedidaDeSeguranca();
-        sistemaEspuma.setImage(R.drawable.spda);
+        sistemaEspuma.setImage(R.drawable.espuma);
         sistemaEspuma.setRecomend("");
         sistemaEspuma.setTitle("Sistema de Espuma");
         sistemaEspuma.setSubTitle("");
@@ -233,7 +233,7 @@ public class Dados {
 
         //Sistema de Comunicacao
         MedidaDeSeguranca sistemaComunicacao = new MedidaDeSeguranca();
-        sistemaComunicacao.setImage(R.drawable.spda);
+        sistemaComunicacao.setImage(R.drawable.sist_comunica);
         sistemaComunicacao.setRecomend("");
         sistemaComunicacao.setTitle("Sistema de Comunicação");
         sistemaComunicacao.setSubTitle("");
@@ -242,7 +242,7 @@ public class Dados {
 
         //Sistema de Circuito de TV
         MedidaDeSeguranca sistemaCircuitoTv = new MedidaDeSeguranca();
-        sistemaCircuitoTv.setImage(R.drawable.spda);
+        sistemaCircuitoTv.setImage(R.drawable.circuito_tv);
         sistemaCircuitoTv.setRecomend("");
         sistemaCircuitoTv.setTitle("Sistema de Circuito de Tv");
         sistemaCircuitoTv.setSubTitle("");
@@ -251,7 +251,7 @@ public class Dados {
 
         // Subsolo:
         MedidaDeSeguranca subsolo = new MedidaDeSeguranca();
-        subsolo.setImage(R.drawable.spda);
+        subsolo.setImage(R.drawable.subsolo);
         subsolo.setRecomend("");
         subsolo.setTitle("SubSolo");
         subsolo.setSubTitle("TABELA 7 - Anexo A - NT-01");
