@@ -1,5 +1,7 @@
 package br.com.stone4.ConsultaRapida;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.io.Serializable;
 
 public class MedidaDeSeguranca implements Serializable {
@@ -53,4 +55,5 @@ public class MedidaDeSeguranca implements Serializable {
     public void setURLpdf(String URLpdf) {
         this.URLpdf = URLpdf;
     }
+
 }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 
@@ -11,58 +12,32 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import br.com.stone4.ConsultaRapida.AdaptadorConsulta;
+import br.com.stone4.ConsultaRapida.Consulta_Rapida_Detalhes;
 import br.com.stone4.ConsultaRapida.Dados;
 import br.com.stone4.ConsultaRapida.MedidaDeSeguranca;
 import br.com.stone4.R;
-import br.com.stone4.medidas.seguranca.AcessoViaturaEdificacao;
-import br.com.stone4.medidas.seguranca.AlarmeDeIncendio;
-import br.com.stone4.medidas.seguranca.Brigada;
-import br.com.stone4.medidas.seguranca.CentralDeGas;
-import br.com.stone4.medidas.seguranca.ChuveiroAutomatico;
-import br.com.stone4.medidas.seguranca.CompartimentacaoHorizontal;
-import br.com.stone4.medidas.seguranca.CompartimentacaoVertical;
-import br.com.stone4.medidas.seguranca.ControleDeFumaca;
-import br.com.stone4.medidas.seguranca.ControleMaterialAcabamento;
-import br.com.stone4.medidas.seguranca.DeteccaoDeIncendio;
-import br.com.stone4.medidas.seguranca.ElevadorDeEmergencia;
-import br.com.stone4.medidas.seguranca.Extintor;
-import br.com.stone4.medidas.seguranca.HidranteEMangotinho;
-import br.com.stone4.medidas.seguranca.HidranteHurbano;
-import br.com.stone4.medidas.seguranca.IluminacaoDeEmergencia;
-import br.com.stone4.medidas.seguranca.Resfriamento;
-import br.com.stone4.medidas.seguranca.SPDA;
-import br.com.stone4.medidas.seguranca.SaidaDeEmergencia;
-import br.com.stone4.medidas.seguranca.SegurancaEstrutural;
-import br.com.stone4.medidas.seguranca.SinalizacaoDeEmergencia;
-import br.com.stone4.medidas.seguranca.SistemaDeCircuitoDeTv;
-import br.com.stone4.medidas.seguranca.SistemaDeComunicacao;
-import br.com.stone4.medidas.seguranca.SistemaDeEspuma;
-import br.com.stone4.ConsultaRapida.AdaptadorConsulta;
-import br.com.stone4.ConsultaRapida.Consulta_Rapida_Detalhes;
-import br.com.stone4.modulos.GrupoAdapter;
-import br.com.stone4.modulos.TipoProcesso;
 
 public class Consulta_rapida extends AppCompatActivity {
 
-    private ListView listView;
-    AdaptadorConsulta adaptadorConsulta;
+    private ArrayList<MedidaDeSeguranca> medidasList;
+    private AdaptadorConsulta adaptadorConsulta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resultado);
+        setContentView(R.layout.consulta_rapida);
 
-        listView = findViewById(R.id.lv_colsulta_rapida);
+        ListView listView = findViewById(R.id.lv_consultaRapida);
 
-        adaptadorConsulta = new AdaptadorConsulta(Consulta_rapida.this, Dados.getMedidasList(getApplicationContext()));
+        adaptadorConsulta = new AdaptadorConsulta(Consulta_rapida.this,Dados.getMedidasList(getApplicationContext()));
         listView.setAdapter(adaptadorConsulta);
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
 
             System.out.println("O id do item clicado é: " + view.getId());
 
-            /*
-            Intent intent = new Intent(getApplicationContext(), Consulta_Rapida_Detalhes.class);
+            /*Intent intent = new Intent(getApplicationContext(), Consulta_Rapida_Detalhes.class);
             // this intent put our 0 index image to another activity
             Bundle bundle = new Bundle();
             bundle.putInt("image", images.get(position));
@@ -75,17 +50,13 @@ public class Consulta_rapida extends AppCompatActivity {
             intent.putExtra("urlPDF", URLpdf.get(position));
             // also put your position
             intent.putExtra("position", "" + position);
-            startActivity(intent);
-*/
+            startActivity(intent);*/
+
         });
-
-
 
     }
 
     // Barra de pesquisa
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -105,7 +76,7 @@ public class Consulta_rapida extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
 
-                //filter(newText.toString());
+                adaptadorConsulta.getFilter().filter(newText);
 
                 return false;
             }
@@ -113,19 +84,7 @@ public class Consulta_rapida extends AppCompatActivity {
 
         return super.onCreateOptionsMenu(menu);
     }
-/*
-    private void filter(String text){
 
-        ArrayList<MedidaDeSeguranca> filteredList = new ArrayList<>();
-
-        for (MedidaDeSeguranca item: listView){
-            if(item.getTitle().toLowerCase().contains(text.toLowerCase())){
-                filteredList.add(item);
-            }
-        }
-
-        adaptadorConsulta.filterList(listView.);
-    }*/
 }
 
 

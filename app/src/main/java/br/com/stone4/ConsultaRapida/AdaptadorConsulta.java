@@ -5,30 +5,27 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import br.com.stone4.R;
-import br.com.stone4.criterios.Divisao;
 
-public class AdaptadorConsulta extends BaseAdapter {
+public class AdaptadorConsulta extends BaseAdapter implements Filterable {
 
-    private Context context;
+    Context context;
+    private List<MedidaDeSeguranca> medidasListFull;
     private List<MedidaDeSeguranca> medidasList;
 
     public AdaptadorConsulta(Context context, List<MedidaDeSeguranca> medidasList) {
-        this.context = context;
         this.medidasList = medidasList;
+        medidasListFull = new ArrayList<>(medidasList);
+        this.context = context;
     }
 
     @Override
@@ -63,9 +60,40 @@ public class AdaptadorConsulta extends BaseAdapter {
         return rootView;
     }
 
-    public void filterList(ArrayList<MedidaDeSeguranca> filteredList){
+    private Filter exampleFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence charSequence) {
 
-        medidasList = filteredList;
-        notifyDataSetChanged();
+            List<MedidaDeSeguranca> filteredList = new ArrayList<>();
+
+            if (charSequence.toString().isEmpty()) {
+                filteredList.addAll(medidasListFull);
+            } else {
+                String filterPattern = charSequence.toString().toLowerCase().trim();
+
+                for (MedidaDeSeguranca item : medidasListFull) {
+                    if (item.getTitle().toLowerCase().contains(filterPattern)) {
+                        filteredList.add(item);
+                    }
+                }
+            }
+
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            medidasList.clear();
+            medidasList.addAll((List) results.values);
+            notifyDataSetChanged();
+        }
+    };
+
+    @Override
+    public Filter getFilter() {
+        return exampleFilter;
     }
 }

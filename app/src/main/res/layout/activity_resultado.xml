@@ -6,7 +6,7 @@
     tools:context=".resultados.Controle_Resultado">
 
     <ListView
-        android:id="@+id/lv_colsulta_rapida"
+        android:id="@+id/lv_resultado"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="#CCC1C1">
