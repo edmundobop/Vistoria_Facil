@@ -6,6 +6,8 @@
     <ImageView
         android:layout_width="32dp"
         android:layout_height="32dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
         android:src="@drawable/ic_residencia"
         android:id="@+id/img_iconDivisao">
 
@@ -14,11 +16,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
         android:text="Name"
         android:layout_toRightOf="@id/img_iconDivisao"
         android:layout_centerVertical="true"
         android:layout_marginStart="5dp"
-        android:textSize="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/black_text"
         android:justificationMode="inter_word"
         android:id="@+id/tv_nameDivisao"/>
 

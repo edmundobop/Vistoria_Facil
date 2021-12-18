@@ -1,6 +1,9 @@
 package br.com.stone4.main.vistoria.perguntas_frequentes;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +17,7 @@ public class Perguntas_Frequentes extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Perguntas> listaPerguntas;
+    PerguntasAdaptador perguntasAdaptador;
 
     @Override
     protected void onCreate (Bundle savedInstanceStace) {
@@ -27,7 +31,7 @@ public class Perguntas_Frequentes extends AppCompatActivity {
     }
 
     private void setRecyclerView() {
-        PerguntasAdaptador perguntasAdaptador = new PerguntasAdaptador(listaPerguntas);
+        perguntasAdaptador = new PerguntasAdaptador(listaPerguntas);
         recyclerView.setAdapter(perguntasAdaptador);
         recyclerView.setHasFixedSize(true);
     }
@@ -48,5 +52,33 @@ public class Perguntas_Frequentes extends AppCompatActivity {
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta7_projeto),getString(R.string.resposta7_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta1_fat),getString(R.string.resposta1_fat)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta1_art),getString(R.string.resposta1_art)));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.nav_menu,menu);
+
+        MenuItem menuItem = menu.findItem(R.id.nav_search);
+        SearchView searchView = (SearchView) menuItem.getActionView();
+        searchView.setQueryHint("Digite aqui para procurar");
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                perguntasAdaptador.getFilter().filter(newText);
+
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 }

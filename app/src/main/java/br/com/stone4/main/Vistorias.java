@@ -71,7 +71,7 @@ public class Vistorias extends AppCompatActivity {
         Bundle parametros = intent.getExtras();
         String perfil = parametros.getString("perfil");
 
-        ListView listView = (ListView) findViewById(R.id.lv_colsulta_rapida);
+        ListView listView = (ListView) findViewById(R.id.lv_list_resultado);
 
         titulo = new ArrayList<>();
         subTitulo = new ArrayList<>();

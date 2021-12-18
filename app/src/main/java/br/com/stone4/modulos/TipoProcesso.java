@@ -131,7 +131,7 @@ public class TipoProcesso extends AppCompatActivity{
                             });
                             break;
                         case 2:
-                            resultado.setText("Processo Técnico para Certificação Facilitada*");
+                            resultado.setText("Processo Simplificado para Certificação Facilitada*");
                             resultado.setTextColor(getColor(R.color.red_700));
 
                             resultado.setOnClickListener(new View.OnClickListener() {
@@ -142,7 +142,7 @@ public class TipoProcesso extends AppCompatActivity{
                             });
                             break;
                         case 0:
-                            resultado.setText("Processo Técnico");
+                            resultado.setText("Processo Técnico (Vistoria)");
                             break;
                     }
                 }

@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="20dp">
+    android:layout_margin="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/img_alert"
@@ -42,7 +43,7 @@
             android:padding="5dp"
             android:textColor="@color/black_text"
             android:textColorHint="#535252"
-            android:textSize="16sp">
+            android:textSize="20sp">
 
         </TextView>
 

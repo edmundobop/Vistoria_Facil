@@ -100,7 +100,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
         SistemaDeComunicacao sistemaDeComunicacao = new SistemaDeComunicacao();
         SistemaDeCircuitoDeTv sistemaDeCircuitoDeTv = new SistemaDeCircuitoDeTv();
 
-        ListView listView = (ListView) findViewById(R.id.lv_colsulta_rapida);
+        ListView listView = (ListView) findViewById(R.id.lv_resultado);
 
         mTitle = new ArrayList<>();
         sTitle = new ArrayList<>();
@@ -301,7 +301,7 @@ public class VistoriaInteligente_Resultado extends AppCompatActivity {
         }
 
         // DIRECIONA PARA CONSULTA OU VISTORIA INTELIGENTE
-        AdaptadorExigencias adapter = new AdaptadorExigencias(this, mTitle, sTitle, mDescription, images, recomendado);
+        AdaptadorExigencias adapter = new AdaptadorExigencias(VistoriaInteligente_Resultado.this, mTitle, sTitle, mDescription, images, recomendado);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
