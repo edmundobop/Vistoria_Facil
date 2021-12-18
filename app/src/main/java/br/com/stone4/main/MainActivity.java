@@ -1,6 +1,5 @@
 package br.com.stone4.main;
 
-import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.IntentSender;
@@ -17,7 +16,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
 import com.google.android.play.core.appupdate.AppUpdateManager;
@@ -30,17 +28,22 @@ import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.OnSuccessListener;
 
 import br.com.stone4.R;
-import br.com.stone4.main.vistoria.CertiPreviaPassoApasso;
-import eu.dkaratzas.android.inapp.update.Constants;
-import eu.dkaratzas.android.inapp.update.InAppUpdateManager;
-import eu.dkaratzas.android.inapp.update.InAppUpdateStatus;
 
 public class MainActivity extends AppCompatActivity{
 
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private AppUpdateManager appUpdateManager;
-    private static final int RC_APP_UPDATE = 100;
+    private static final int RC_APP_UPDATE = 19;
     private Intent intent;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        MenuPrincipal();
+        startUpdate();
+    }
 
     // Menu da barra supeior
     @Override
@@ -74,12 +77,9 @@ public class MainActivity extends AppCompatActivity{
 
         return true;
     }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+    //--------------------------------------------------------------------------------------------------------
+    // Menu Principal
+    public void MenuPrincipal(){
         Bundle parametros = new Bundle();
 
         CardView card1 = (CardView) findViewById(R.id.card1);
@@ -108,9 +108,12 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+    }
 
-        // Método Update
-        appUpdateManager = AppUpdateManagerFactory.create(this);
+    //---------------------------------------------------------------------------------------------------------
+    // Métodos Update
+    public void startUpdate(){
+        appUpdateManager = AppUpdateManagerFactory.create(MainActivity.this);
         appUpdateManager.getAppUpdateInfo().addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
             @Override
             public void onSuccess(AppUpdateInfo result) {

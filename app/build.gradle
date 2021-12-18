@@ -3,6 +3,15 @@ plugins {
 }
 
 android {
+    /*signingCOnfigs {
+        release{
+            storeFile('')
+            storePassword''
+            keyPassword''
+            keyAllias = ''
+        }
+    }*/
+
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
@@ -10,8 +19,8 @@ android {
         applicationId "com.vistoria.vistoriaFacil_v2"
         minSdkVersion 20
         targetSdkVersion 31
-        versionCode 18
-        versionName "1.9"
+        versionCode 20
+        versionName "1.9.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
