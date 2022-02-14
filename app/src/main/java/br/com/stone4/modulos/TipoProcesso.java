@@ -142,7 +142,7 @@ public class TipoProcesso extends AppCompatActivity{
                             });
                             break;
                         case 0:
-                            resultado.setText("Processo Técnico (Vistoria)");
+                            resultado.setText("*Processo Técnico (Vistoria)");
                             break;
                     }
                 }

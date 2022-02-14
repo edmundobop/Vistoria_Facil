@@ -355,7 +355,6 @@ public class Controle_Resultado extends AppCompatActivity {
         @SuppressLint("CutPasteId") TextView processoSimplificado = (TextView) findViewById(R.id.tv_processo);
         TextView tvProjeto = (TextView) findViewById(R.id.tv_projeto);
 
-
         // Chama o método Tipo Processo da classe Modulos
         Algoritmos algoritmos = new Algoritmos();
         int processo = algoritmos.tipoProcesso(grupo,divisao,area,pavimentos);
@@ -366,6 +365,7 @@ public class Controle_Resultado extends AppCompatActivity {
                 tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertPrevia);
 
+                // botão pra acessar o diálogo
                 tvProjeto.setText("Não");
 
                 processoSimplificado.setOnClickListener(new View.OnClickListener() {
@@ -380,6 +380,7 @@ public class Controle_Resultado extends AppCompatActivity {
                 tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
 
+                // botão pra acessar o diálogo
                 tvProjeto.setText("Não");
 
                 processoSimplificado.setOnClickListener(new View.OnClickListener() {
@@ -392,6 +393,7 @@ public class Controle_Resultado extends AppCompatActivity {
             case 0:
                 tvProcesso.setText("Processo Técnico");
                 tvGuiaPratico.setText(R.string.txt_vistPaP1500HidTxt);
+                // botão pra acessar o diálogo
                 tvProjeto.setText("Sim");
                 tvProjeto.setTextColor(getColor(R.color.red_700));
 
@@ -414,7 +416,7 @@ public class Controle_Resultado extends AppCompatActivity {
         return 0;
     }
 
-    public void createNewContactDialog(String TemProjeto, String tipoProjeto){
+    public void createNewContactDialog(String TemProjeto, String tipoProcesso){
         dialogBuilder = new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.popup,null);
         tituloAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertTitle);
@@ -423,7 +425,7 @@ public class Controle_Resultado extends AppCompatActivity {
         bt_ok = (Button) contactPopupView.findViewById(R.id.bt_alert);
 
         if(TemProjeto.equals("Sim")) {
-            if (tipoProjeto.equals("Sim")) {
+            if (tipoProcesso.equals("Sim")) {
                 tituloAlerta.setText(R.string.alerta_tituloProjeto);
                 textoAlerta.setText(R.string.alerta_textoProjetoSim);
             } else {
