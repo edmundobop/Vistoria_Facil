@@ -16,6 +16,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
 import com.google.android.play.core.appupdate.AppUpdateManager;
@@ -28,6 +29,7 @@ import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.OnSuccessListener;
 
 import br.com.stone4.R;
+import br.com.stone4.ads.AdsManager;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -35,13 +37,22 @@ public class MainActivity extends AppCompatActivity{
     private AppUpdateManager appUpdateManager;
     private static final int RC_APP_UPDATE = 19;
     private Intent intent;
+    AdView adview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // anuncios
+        adview = findViewById(R.id.adView);
+        AdsManager adsManager = new AdsManager(this);
+        adsManager.createAds(adview);
+
+        // carrega o menu principal
         MenuPrincipal();
+
+        // starta o modulo de update
         startUpdate();
     }
 
@@ -191,19 +202,11 @@ public class MainActivity extends AppCompatActivity{
     - passo a passo de como fazer uma vistoria: desde organizar os processos até lançar no sistema: com fotos
 
     - menu resultado contendo:
-        - resumo das escolhas feitas
         - carga de incêndio
         - exigências
 
     Observações:
     - Divisao f4 não testada - motivo: fora da nossa realidade
-
-    Alterações:
-    Dia 11/08/21 - Quarta
-    - Correção Descrição Normas Técnicas
-    - Implementação aviso de Recomendado ou Exigência no painel de Resultado
-    - Implementação do Visualizador de PDF da Classe Detalhes de Vistorias
-    - Implementação de Opção de COnsulta Rápida
 
 
      */
