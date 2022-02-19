@@ -56,6 +56,7 @@
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/activity_altura.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/activity_certificacaoprevia_passo_apasso.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/activity_perguntas_frequentes.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/activity_resultado.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/activity_resultado__detalhes.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/activity_resultado__detalhes2.xml" value="0.20520833333333333" />
@@ -67,6 +68,9 @@
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/popup.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/sol_acomp_vist.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/solicitarAcompanhar_Vistoria.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/layout/spinner_tipo_processos.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/menu/menu_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/Vistoria_CBMGO/Vistoria_Facil/app/src/main/res/menu/nav_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

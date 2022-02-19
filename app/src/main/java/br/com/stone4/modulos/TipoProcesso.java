@@ -2,6 +2,8 @@ package br.com.stone4.modulos;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -96,81 +98,98 @@ public class TipoProcesso extends AppCompatActivity{
         });
 
 
-        /// Comportamento Botao Buscar
+        // Comportamento do EditedText área
 
         EditText area = (EditText) findViewById(R.id.edtx_area);
 
-        Button buscar = (Button) findViewById(R.id.btn_buscar);
-        buscar.setOnClickListener(new View.OnClickListener() {
+        area.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
-            public void onClick(View v)
-            {
-                if (area.getText().length() == 0) // se o campo area estiver vazio, avisa pra inserir algo
-                {
-                    Toast.makeText(getBaseContext(), "Informe um valor para a Área!", Toast.LENGTH_SHORT).show();
-                } else { // senao passa para a verificação do tipo de processo
-                    // spinner_grupos.getSelectedItem().toString() = mostra a posicao
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-                    System.out.println("valores de divisao: "+grupoAdapter.getItemName(0));
-                    Algoritmos algoritmos = new Algoritmos();
-                    int processo = algoritmos.tipoProcesso(spinner_grupos.getSelectedItem().hashCode(), spinner_divisao.getSelectedItem().hashCode(), Integer.parseInt(area.getText().toString()), 0);
+                Algoritmos algoritmos = new Algoritmos();
+                int processo = algoritmos.tipoProcesso(spinner_grupos.getSelectedItem().hashCode(), spinner_divisao.getSelectedItem().hashCode(), Integer.parseInt(area.getText().toString()), 0);
 
-                    TextView resultado = (TextView) findViewById(R.id.txt_resultado);
+                TextView resultado = (TextView) findViewById(R.id.txt_resultado);
 
-                    switch (processo) {
-                        case 1:
-                            resultado.setText("Processo Simplificado para Certificação Prévia*");
-                            resultado.setTextColor(getColor(R.color.red_700));
+                switch (processo) {
+                    case 1:
+                        resultado.setText("Processo Simplificado para Certificação Prévia*");
+                        resultado.setTextColor(getColor(R.color.red_700));
 
-                            resultado.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    createNewContactDialog();
-                                }
-                            });
-                            break;
-                        case 2:
-                            resultado.setText("Processo Simplificado para Certificação Facilitada*");
-                            resultado.setTextColor(getColor(R.color.red_700));
+                        resultado.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                createNewContactDialog("Certificação Prévia");
+                            }
+                        });
+                        break;
+                    case 2:
+                        resultado.setText("Processo Simplificado para Certificação Facilitada*");
+                        resultado.setTextColor(getColor(R.color.red_700));
 
-                            resultado.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    createNewContactDialog();
-                                }
-                            });
-                            break;
-                        case 0:
-                            resultado.setText("*Processo Técnico (Vistoria)");
-                            break;
-                    }
+                        resultado.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                createNewContactDialog("Certificação Facilitada");
+                            }
+                        });
+                        break;
+                    case 0:
+                        resultado.setText("*Processo Técnico - Vistoria");
+                        resultado.setTextColor(getColor(R.color.red_700));
+
+                        resultado.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                createNewContactDialog("Processo Técnico");
+                            }
+                        });
+                        break;
                 }
-
             }
-        });
-    }
 
-    public void createNewContactDialog(){
-        dialogBuilder = new AlertDialog.Builder(this);
-        final View contactPopupView = getLayoutInflater().inflate(R.layout.popup,null);
-        tituloAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertTitle);
-        textoAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertText);
-
-        bt_ok = (Button) contactPopupView.findViewById(R.id.bt_alert);
-
-        dialogBuilder.setView(contactPopupView);
-        dialog = dialogBuilder.create();
-        dialog.show();
-
-        bt_ok.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                dialog.dismiss();
+            public void afterTextChanged(Editable s) {
+                if(s != null && s.length() > 0 && s.charAt(s.length() - 1) == ' '){
+                    //dp something
+                }
             }
         });
+    }
 
+    // Método do Dialog
+    public void createNewContactDialog(String tipoProcesso){
+            dialogBuilder = new AlertDialog.Builder(this);
+            final View contactPopupView = getLayoutInflater().inflate(R.layout.popup, null);
+            tituloAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertTitle);
+            textoAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertText);
+
+            bt_ok = (Button) contactPopupView.findViewById(R.id.bt_alert);
+
+            // texto do dialogo
+            if ("Processo Técnico".equals(tipoProcesso)) {
+                tituloAlerta.setText(R.string.alerta_tituloProcessoTecnico);
+                textoAlerta.setText(R.string.alerta_textoProcessoTecnico);
+            }
+
+            dialogBuilder.setView(contactPopupView);
+            dialog = dialogBuilder.create();
+            dialog.show();
+
+            bt_ok.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.dismiss();
+                }
+            });
+        }
 
     }
 
-}
+

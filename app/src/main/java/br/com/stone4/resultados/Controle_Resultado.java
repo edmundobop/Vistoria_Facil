@@ -24,7 +24,7 @@ public class Controle_Resultado extends AppCompatActivity {
     Intent intent;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
-    @SuppressLint({"NonConstantResourceId", "ResourceAsColor"})
+    @SuppressLint({"NonConstantResourceId", "ResourceAsColor", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -348,59 +348,68 @@ public class Controle_Resultado extends AppCompatActivity {
         }
 
         // Outras informações + Guia Prático:
-        TextView tvProcesso = findViewById(R.id.tv_processo);
-        TextView tvGuiaPratico = findViewById(R.id.txt_guiapratico);
-
-        // Quando clicar no tipo de processo:
-        @SuppressLint("CutPasteId") TextView processoSimplificado = (TextView) findViewById(R.id.tv_processo);
+        TextView tvProcesso = (TextView) findViewById(R.id.tv_processo);
         TextView tvProjeto = (TextView) findViewById(R.id.tv_projeto);
+        TextView tvGuiaPratico = findViewById(R.id.txt_guiapratico);
 
         // Chama o método Tipo Processo da classe Modulos
         Algoritmos algoritmos = new Algoritmos();
         int processo = algoritmos.tipoProcesso(grupo,divisao,area,pavimentos);
+        boolean projeto = algoritmos.exigeProjeto(grupo,divisao,area);
 
         switch (processo) {
             case 1:
-                tvProcesso.setText("Processo Simplificado para Certificação Prévia*");
+                tvProcesso.setText("*Processo Simplificado para Certificação Prévia*");
                 tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertPrevia);
 
                 // botão pra acessar o diálogo
                 tvProjeto.setText("Não");
 
-                processoSimplificado.setOnClickListener(new View.OnClickListener() {
+                tvProcesso.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        createNewContactDialog("Não","Não");
+                        createNewContactDialog(projeto,"*Certificação Prévia","processo");
                     }
                 });
                 break;
             case 2:
-                tvProcesso.setText("Processo Simplificado para Certificação Facilitada*");
+                tvProcesso.setText("*Processo Simplificado para Certificação Facilitada*");
                 tvProcesso.setTextColor(getColor(R.color.red_700));
                 tvGuiaPratico.setText(R.string.txt_vistProcSimpCertFac);
 
                 // botão pra acessar o diálogo
                 tvProjeto.setText("Não");
 
-                processoSimplificado.setOnClickListener(new View.OnClickListener() {
+                tvProcesso.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        createNewContactDialog("Não","Não");
+                        createNewContactDialog(projeto,"*Certificação Facilitada","processo");
                     }
                 });
                 break;
             case 0:
-                tvProcesso.setText("Processo Técnico");
+                tvProcesso.setText("*Processo Técnico");
+                tvProcesso.setTextColor(getColor(R.color.red_700));
+
                 tvGuiaPratico.setText(R.string.txt_vistPaP1500HidTxt);
                 // botão pra acessar o diálogo
-                tvProjeto.setText("Sim");
-                tvProjeto.setTextColor(getColor(R.color.red_700));
+                if(projeto){
+                    tvProjeto.setText("Sim");
+                    tvProjeto.setTextColor(getColor(R.color.red_700));
+                } else tvProjeto.setText("Não");
+
+                tvProcesso.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        createNewContactDialog(projeto,"Processo Técnico", "processo");
+                    }
+                });
 
                 tvProjeto.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        createNewContactDialog("Sim","Sim");
+                        createNewContactDialog(projeto,"Processo Técnico","projeto");
                     }
                 });
                 break;
@@ -416,20 +425,28 @@ public class Controle_Resultado extends AppCompatActivity {
         return 0;
     }
 
-    public void createNewContactDialog(String TemProjeto, String tipoProcesso){
+    public void createNewContactDialog(boolean TemProjeto, String tipoProcesso, String chamada) {
         dialogBuilder = new AlertDialog.Builder(this);
-        final View contactPopupView = getLayoutInflater().inflate(R.layout.popup,null);
+        final View contactPopupView = getLayoutInflater().inflate(R.layout.popup, null);
         tituloAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertTitle);
         textoAlerta = (TextView) contactPopupView.findViewById(R.id.tv_alertText);
 
         bt_ok = (Button) contactPopupView.findViewById(R.id.bt_alert);
 
-        if(TemProjeto.equals("Sim")) {
-            if (tipoProcesso.equals("Sim")) {
-                tituloAlerta.setText(R.string.alerta_tituloProjeto);
+        System.out.println("cHAMADA: " + chamada);
+
+        if (chamada.equals("processo")) {
+            if ("Processo Técnico".equals(tipoProcesso)) {
+                tituloAlerta.setText(R.string.alerta_tituloProcessoTecnico);
+                textoAlerta.setText(R.string.alerta_textoProcessoTecnico);
+            }
+        } else {
+            tituloAlerta.setText(R.string.alerta_tituloProjeto);
+            if (TemProjeto) {
+                System.out.println("Entrei no if do TipoProcesso Sim");
                 textoAlerta.setText(R.string.alerta_textoProjetoSim);
             } else {
-                tituloAlerta.setText(R.string.alerta_tituloProjeto);
+                System.out.println("Entrei no if do TipoProcesso Não");
                 textoAlerta.setText(R.string.alerta_textoProjetoNao);
             }
         }
@@ -444,8 +461,6 @@ public class Controle_Resultado extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
-
-
     }
 
     public void onClick(View view) {

@@ -803,6 +803,38 @@ instalações com materiais combustíveis.\n\n
 
     -------------------------------------------------------------------------------------------------------------------------------
     PERGUNTAS FREQUENTES
+
+    <string name="perguntaVistoria">Como Consultar ou Solicitar uma vistoria pelo site do CBMGO?</string>
+    <string name="respostaVistoria">
+        1 – Acesse o Módulo "Consultar/Solicitar Vistoria" no menu principal deste aplicativo, ou acesse o site "https://siapi3.bombeiros.go.gov.br/paginaInicialWeb.jsf";\n\n
+        2 - Continue para o passo 3 para "Consultar uma vistoria". Caso queira "Solicitar uma vistoria", vá para o passo 7.\n\n
+        Consultar uma Vistoria:\n\n
+        3 – Digite o Número do Protocolo do atendimento no campo "Protocolo";\n\n
+        4 - Digite o Número do CNPJ ou CPF da sua empresa no campo "CPF/CNPJ";\n\n
+        5 - Clique na "Lupa" ao lado do campo "CPF/CNPJ" para pesquisar;\n\n
+        6 - Pronto, se as informações digitadas estiverem corretas, então aparecerá sua requisição. Caso não apareça, confira os dados informados e tente novamente;\n\n
+        Em caso de dúvidas procure atendimento pelo WhatsApp do CBMGO unidade Jataí: 3631-7616;\n\n
+
+        Solicitar Vistoria:\n\n
+        7 - Clique no Botão "Solicitar Serviço";\n\n
+        8 - Escolha a opção "Inspeções";\n\n
+        9 - Leia as instruções apresentadas para saber quais documentos e procedimentos serão necessários para sua solicitação e em seguida clique no Botão "Continuar";\n\n
+        10 - Escolha a opção "Vistoria para Funcionamento";\n\n
+        11 - Informe o CNPJ/CPF, o CEP do município e clique em "Pesquisar";\n\n
+        12 – Se a empresa já possuir a certificação do CBMGO, aparecerá a opção para renovar
+        o serviço. Confirme os dados cadastrados, prossiga até o item CNAE da barra de
+        cadastro, verifique se a área está correta e finalize o processo gerando o número de protocolo;\n\n
+        13 – Se a empresa não possui aprovação junto ao CBMGO, verificado após a pesquisa, acesse o cadastro pelo botão <b>"clique aqui";</b>\n\n
+        14 – Na parte do <b>"Cadastro"</b> informe o "CPF/CNPJ" e preencha os campos obrigatórios;\n\n
+        15 – Preencha os campos obrigatórios em <b>"Solicitante"</b>;\n\n
+        16 – Preencha os campos obrigatórios em <b>"Endereço da obra/Edificação";</b>\n\n
+        17 – Preencha os campos do <b>"CNAE"</b>, informando o CNAE principal e a área utilizada do
+        estabelecimento comercial;\n\n
+        18 – Clique em <b>"Incluir"</b> e após em <b>"Finalizar o cadastro"</b>;\n\n
+        19 – Aparecerá um questionário a ser preenchido, responda as perguntas para finalizar
+        o processo e gerar o número do protocolo.
+    </string>
+
     <string name="pergunta10_projeto">Como emitir o CERCON para minha Empresa?</string>
     <string name="resposta10_projeto">
         Esse processo <b>dispensa a vistoria in loco</b>, ficando a cargo do proprietário ou responsável pela edificação a instalação dos
@@ -824,7 +856,7 @@ instalações com materiais combustíveis.\n\n
     <string name="resposta2_projeto">
         Será exigido se a edificação se enquadrar em ao menos 1 item abaixo:\n\n
         a)	Ter área construída e/ou áreas de risco acima de 750 m2 ;\n
-        b)	Ser classificada nas divisões F-5, F-6 e F7, de acordo com a Tabela 1 do Anexo – A desta NT;\n
+        b)	Ser classificada nas divisões F-5, F-6 ou F7, de acordo com a Tabela 1 do Anexo – A desta NT;\n
         c)	Possuir acima de 03 (três) pavimentos;\n
         d)	Possuir subsolo com ocupação distinta de estacionamento;\n
         e)	Possuir armazenamento superior a 05 recipientes transportáveis com massa líquida unitária de até
@@ -1070,10 +1102,30 @@ instalações provisórias.\n
         peróxidos orgânicos ou substâncias oxidantes, tóxicas, radioativas, corrosivas e perigosas diversas.
     </string>
 
+    ALERTAS DE PROCESSO TÉCNICO
+    <string name="alerta_tituloProcessoTecnico">
+        Desde que atenda à PELO MENOS UMA das seguintes condições:
+    </string>
+    <string name="alerta_textoProcessoTecnico">
+        a) Ter área construída e/ou áreas de risco acima de 750 m2 ;\n\n
+        b) Ter área construída e/ou áreas de risco acima de 200 m2 classificadas nas divisões B-1, B-2, C-3, E-1, E-4, E-5, E-6, F-1,
+        F-2, F-3, F-4, F-5, F-6, F-7, F-8, F-9, F-10, F-11, H-2, H3, H-4, H-5, J-2, J-3 e J-4;\n\n
+        c) Ter área construída e/ou área de risco que se enquadrem nas divisões: L-1, L-2, L-3 e M-2 independentemente da área;\n\n
+        d) Possuir mais de 03 (três) pavimentos e não possuir qualquer tipo de abertura através de portas, telhados e janelas, para o interior de
+        edificações ou estabelecimentos adjacentes;\n\n
+        e) Possuir lotação ACIMA de 200 (duzentas) pessoas;\n\n
+        f) Possuir subsolo com ocupação distinta de estacionamento;\n\n
+        g) Comercializar ou armazenar volume superior a 500 (quinhentos) litros de líquido inflamável ou combustível;\n\n
+        h) Possuir GLP acima de 190 (cento e noventa) Kg;\n\n
+        i) Comercializar ou revender gás liquefeito de petróleo (GLP);\n\n
+        j) Comercializar, manipular ou armazenar produtos perigosos à saúde humana, ao meio ambiente ou ao patrimônio, tais como: explosivos,
+        peróxidos orgânicos ou substâncias oxidantes, tóxicas, radioativas, corrosivas e perigosas diversas.
+    </string>
+
     ALERTAS DE PROJETO TÉCNICO
         ALERTA NÃO
     <string name="alerta_tituloProjeto">
-        Desde que se enquadrem nas seguintes condições:
+        Desde que atenda à PELO MENOS UMA das seguintes condições:
     </string>
 
     <string name="alerta_textoProjetoNao">

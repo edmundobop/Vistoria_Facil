@@ -158,7 +158,7 @@
             android:label="Vistoria Inteligente"
             android:parentActivityName=".main.vistoria.VistoriaInteligente" />
         <activity
-            android:name=".main.vistoria.SolicitarAcompanhar_Vistoria"
+            android:name=".main.vistoria.Consultar_Solicitar_Vistoria"
             android:label="Passo-a-Passo"
             android:parentActivityName=".main.Vistorias" />
         <activity

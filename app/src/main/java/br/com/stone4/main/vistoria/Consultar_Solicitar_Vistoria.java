@@ -9,7 +9,7 @@ import android.webkit.WebViewClient;
 
 import br.com.stone4.R;
 
-public class SolicitarAcompanhar_Vistoria extends AppCompatActivity {
+public class Consultar_Solicitar_Vistoria extends AppCompatActivity {
 
     private WebView webView;
 
