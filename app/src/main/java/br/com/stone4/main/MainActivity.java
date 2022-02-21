@@ -28,6 +28,7 @@ import com.google.android.play.core.install.model.InstallStatus;
 import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.OnSuccessListener;
 
+import br.com.stone4.BuildConfig;
 import br.com.stone4.R;
 import br.com.stone4.ads.AdsManager;
 
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity{
 
         // starta o modulo de update
         startUpdate();
+
     }
 
     // Menu da barra supeior

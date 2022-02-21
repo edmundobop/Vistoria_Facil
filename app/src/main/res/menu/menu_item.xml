@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_menu"
         android:title="">
         <menu>
@@ -10,6 +10,11 @@
                 android:id="@+id/avaliar"
                 android:icon="@drawable/ic_avaliar"
                 android:title="Avaliar"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/versao"
+                android:icon="@drawable/ic_version"
+                android:title="@string/version_Name"
                 app:showAsAction="never"/>
         </menu>
     </item>

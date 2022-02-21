@@ -6,6 +6,9 @@
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/bg_spinner_grupo.xml" value="0.2203125" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/ic_alert.xml" value="0.2203125" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/ic_arrow_down.xml" value="0.1" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/ic_avaliar.xml" value="0.1" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/ic_version.xml" value="0.1" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/drawable/ic_version_foreground.xml" value="0.11" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout-v26/popup.xml" value="0.1921875" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_alojameos.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_altura.xml" value="0.1" />
@@ -20,7 +23,7 @@
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_perguntas_e_respostas.xml" value="0.25" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_perguntas_e_respostas_linha.xml" value="0.25" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_perguntas_frequentes.xml" value="0.178125" />
-        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_perguntas_frequentes_row.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_perguntas_frequentes_row.xml" value="0.1" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_processos.xml" value="0.11684782608695653" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_resultado.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_resultado__detalhes.xml" value="0.19610507246376813" />
@@ -41,6 +44,8 @@
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/layout/spinner_tipo_processos.xml" value="0.33" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/menu/menu_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/menu/nav_menu.xml" value="0.1921875" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/mipmap-anydpi-v26/ic_version.xml" value="0.1" />
+        <entry key="..\:/Users/Edmundo/Documents/Dev/GitHub/Vistoria_Facil/app/src/main/res/mipmap-anydpi-v26/ic_version_round.xml" value="0.1" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Projeto CBMGO_vistorias/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_bizus.xml" value="0.19746376811594202" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Projeto CBMGO_vistorias/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Users/Edmundo/Documents/Dev/Projeto CBMGO_vistorias/GitHub/Vistoria_Facil/app/src/main/res/layout/activity_main_menu.xml" value="0.19746376811594202" />

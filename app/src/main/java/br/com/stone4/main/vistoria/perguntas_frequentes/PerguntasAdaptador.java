@@ -82,6 +82,13 @@ public class PerguntasAdaptador extends RecyclerView.Adapter<PerguntasAdaptador.
                     notifyItemChanged(getAbsoluteAdapterPosition());
                 }
             });
+
+            linearLayout.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    return false;
+                }
+            });
         }
     }
 

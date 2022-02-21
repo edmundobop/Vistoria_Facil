@@ -1164,6 +1164,10 @@ instalações provisórias.\n
         Nota 1: As edificações que possuírem afastamento mínimo de 12 metros entre si estarão dispensadas da
                 aprovação do projeto técnico exigido na alínea “i”, desde que a referida aprovação não seja exigida
                 em alguma das demais alíneas deste item.
+
+
+        VERSÃO DO APP
     </string>
+    <string name="version_Name">Versão do App: 1.9.5</string>
 
 </resources>

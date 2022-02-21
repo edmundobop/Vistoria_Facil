@@ -35,11 +35,12 @@
                 android:id="@+id/resposta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="14dp"
                 android:text="Aqui é o local onde ficarão armazenadas as respostas"
                 android:textSize="18sp"
-                android:justificationMode="inter_word"
                 android:textStyle="bold"
+                android:textIsSelectable="true"
                 tools:targetApi="o">
 
             </TextView>
