@@ -53,6 +53,7 @@ public class Perguntas_Frequentes extends AppCompatActivity {
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta7_projeto),getString(R.string.resposta7_projeto)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta1_fat),getString(R.string.resposta1_fat)));
         listaPerguntas.add(new Perguntas(getString(R.string.pergunta1_art),getString(R.string.resposta1_art)));
+        listaPerguntas.add(new Perguntas(getString(R.string.pergunta2_art),getString(R.string.resposta2_art)));
     }
 
     @Override

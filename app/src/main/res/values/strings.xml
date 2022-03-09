@@ -1047,7 +1047,7 @@ instalações provisórias.\n
         prorrogado para 30 (trinta) dias
     </string>
 
-    <string name="pergunta1_art">Quais Documentos de Responsabilidade Téncica (ART) podem ser cobrados pelo CBMGO?</string>
+    <string name="pergunta1_art">Quais Anotação de Responsabilidade Técnica (ART) podem ser cobrados pelo CBMGO?</string>
     <string name="resposta1_art">
         a) De instalação, inspeção e/ou manutenção do sistema de hidrantes ou mangotinhos;\n
         b) De instalação, inspeção e/ou manutenção do sistema de iluminação de emergência (quando
@@ -1082,7 +1082,10 @@ instalações provisórias.\n
         x) De instalação das instalações elétricas de montagens provisórias e temporárias.
     </string>
 
-
+    <string name="pergunta2_art">Qual é a validade de uma (ART) Anotação de Responsabilidade Téncica? </string>
+    <string name="resposta2_art">
+        O CBMGO considera que uma ART (Anotação de Responsabilidade Técnica) tem validade de 3 (três) anos;
+    </string>
 
     __________________________________________________________________________________________________________
     ALERTAS DE PROCESSO SIMPLIFICADO
